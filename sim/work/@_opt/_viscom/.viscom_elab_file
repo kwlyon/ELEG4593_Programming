@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 41238816 work.Bus_Interface_TestBench -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_machxo3d +acc -allow_unnamed -o _opt -id 1-4cd717a71d7e-69e275c0-38-94c8 +__design_bin_path+C:/Users/kwlyon/Box/Codex/HW9_5_Code/sim +__betafsm

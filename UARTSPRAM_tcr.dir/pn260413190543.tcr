@@ -1,0 +1,7 @@
+#Start recording tcl command: 4/13/2026 18:54:15
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src add "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd"
+prj_src syn_sim -src "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd" SimulateOnly
+#Stop recording: 4/13/2026 19:05:43

@@ -1,0 +1,208 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn260303102703"></A><B><U><big>pn260303102703</big></U></B>
+#Start recording tcl command: 3/3/2026 10:24:48
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project new -name "UARTSPRAM" -impl "impl1" -dev LCMXO3D-9400HC-5BG256C -synthesis "lse"
+prj_src add "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/Internal_clk.vhd" "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UART_rs232.vhd"
+prj_project save
+prj_src add "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/uart_spram_top.vhd"
+prj_project save
+prj_project close
+#Stop recording: 3/3/2026 10:27:03
+
+
+
+<A name="pn260303102752"></A><B><U><big>pn260303102752</big></U></B>
+#Start recording tcl command: 3/3/2026 10:27:30
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+prj_project close
+#Stop recording: 3/3/2026 10:27:52
+
+
+
+<A name="pn260303103230"></A><B><U><big>pn260303103230</big></U></B>
+#Start recording tcl command: 3/3/2026 10:28:21
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+prj_src add "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/pll_24m93.vhd"
+prj_project save
+prj_project close
+#Stop recording: 3/3/2026 10:32:30
+
+
+
+<A name="pn260303114947"></A><B><U><big>pn260303114947</big></U></B>
+#Start recording tcl command: 3/3/2026 10:32:38
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+prj_src add "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/SPRAM.vhd"
+prj_run Export -impl impl1 -forceAll
+prj_strgy set_value -strategy Strategy1 thermal_default_clock_frequency=25
+prj_run Export -impl impl1 -forceAll
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_src add -exclude "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_src enable "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+pgr_program set -cable 
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 3/3/2026 11:49:47
+
+
+
+<A name="pn260303121625"></A><B><U><big>pn260303121625</big></U></B>
+#Start recording tcl command: 3/3/2026 11:52:22
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+pgr_project close
+pgr_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+pgr_program run
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 3/3/2026 12:16:25
+
+
+
+<A name="pn260303141013"></A><B><U><big>pn260303141013</big></U></B>
+#Start recording tcl command: 3/3/2026 12:16:38
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+prj_run Export -impl impl1 -forceAll
+pgr_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_run Export -impl impl1 -forceAll
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+pgr_program run
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 3/3/2026 14:10:13
+
+
+
+<A name="pn260303182926"></A><B><U><big>pn260303182926</big></U></B>
+#Start recording tcl command: 3/3/2026 18:28:03
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+#Stop recording: 3/3/2026 18:29:26
+
+
+
+<A name="pn260303183439"></A><B><U><big>pn260303183439</big></U></B>
+#Start recording tcl command: 3/3/2026 18:34:27
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+#Stop recording: 3/3/2026 18:34:39
+
+
+
+<A name="pn260303212213"></A><B><U><big>pn260303212213</big></U></B>
+#Start recording tcl command: 3/3/2026 21:21:20
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+#Stop recording: 3/3/2026 21:22:13
+
+
+
+<A name="pn260304072740"></A><B><U><big>pn260304072740</big></U></B>
+#Start recording tcl command: 3/4/2026 07:27:30
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code/UARTSPRAM.ldf"
+#Stop recording: 3/4/2026 07:27:40
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

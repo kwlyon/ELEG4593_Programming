@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/13/2026 20:59:26
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_run Export -impl impl1 -forceAll
+#Stop recording: 4/13/2026 21:04:14

@@ -1,0 +1,14 @@
+#Start recording tcl command: 4/13/2026 18:47:24
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src add "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd" "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd" "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_spi_wrapper.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/PID_Module/PID.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/PWM_Module/PWM_Module.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/SPI_Module/spi_ad7928_wrap.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/SPI_Module/spi_ad7928_wrap.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_spi_wrapper.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd"
+prj_project save
+prj_project close
+#Stop recording: 4/13/2026 18:53:05

@@ -1,0 +1,10 @@
+#Start recording tcl command: 4/13/2026 21:17:10
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src remove "C:/Users/kwlyon/Box/Codex/HW9_Code/tb_blinked_leds_top.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/HW9_Code/tb_uart_spram_top_adc.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/HW9_Code/Bus_Interface_tb.vhd"
+prj_src syn_sim -src "C:/Users/kwlyon/Box/Codex/HW9_Code/Bus_Interface_tb.vhd" SimulateOnly
+prj_src add "C:/Users/kwlyon/Box/Codex/HW9_Code/sim5/sim5.spf"
+prj_src add "C:/Users/kwlyon/Box/Codex/HW9_Code/sim9/sim9.spf"
+#Stop recording: 4/13/2026 21:28:38

@@ -1,0 +1,235 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/sim/sim.mdo}
+# Loading project sim
+# Error 133: Unable to remove directory "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/sim/work".
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:19 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/SPRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package components
+# -- Compiling entity SPRAM
+# -- Compiling architecture Structure of SPRAM
+# -- Compiling configuration Structure_CON
+# -- Loading entity SPRAM
+# -- Loading architecture Structure of SPRAM
+# -- Loading package VITAL_Timing
+# -- Loading entity inv
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package VITAL_Primitives
+# -- Loading package mem2
+# -- Loading entity rom16x1a
+# -- Loading entity vhi
+# -- Loading entity mux321
+# -- Loading entity mux21
+# -- Loading package mem1
+# -- Loading entity spr16x4c
+# End time: 21:25:20 on Mar 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:20 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/Bus_Master.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Bus_Master
+# -- Compiling architecture behavioral of Bus_Master
+# End time: 21:25:20 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:20 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/My_Own_FN_FIFO.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity My_Own_FN_FIFO
+# -- Compiling architecture rtl of My_Own_FN_FIFO
+# End time: 21:25:20 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:21 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/UART_rs232.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity uart_rs232
+# -- Compiling architecture behavioral of uart_rs232
+# End time: 21:25:21 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:21 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/UART_rs232_fifo_wrap.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity uart_rs232_fifo_wrap
+# -- Compiling architecture rtl of uart_rs232_fifo_wrap
+# -- Loading entity uart_rs232
+# -- Loading entity My_Own_FN_FIFO
+# End time: 21:25:21 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:21 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/uart_rs232_fifo_wrap_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity uart_rs232_fifo_wrap_controller
+# -- Compiling architecture behavioral of uart_rs232_fifo_wrap_controller
+# -- Loading entity uart_rs232_fifo_wrap
+# End time: 21:25:21 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:21 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/reset_delay.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reset_delay
+# -- Compiling architecture rtl of reset_delay
+# End time: 21:25:22 on Mar 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:22 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/pll_24m93.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package components
+# -- Compiling entity pll_24m93
+# -- Compiling architecture Structure of pll_24m93
+# ** Warning: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/pll_24m93.vhd(147): (vcom-1615) Existing configuration 'Structure_CON' at C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/SPRAM.vhd(5603) will be overwritten.
+# -- Compiling configuration Structure_CON
+# -- Loading entity pll_24m93
+# -- Loading architecture Structure of pll_24m93
+# -- Loading package VITAL_Timing
+# -- Loading entity vlo
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package VITAL_Primitives
+# -- Loading entity ehxpllj
+# End time: 21:25:22 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:22 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/Internal_clk.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package components
+# -- Compiling entity clock
+# -- Compiling architecture rtl of clock
+# End time: 21:25:22 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:22 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/uart_spram_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity uart_spram_top
+# -- Compiling architecture rtl of uart_spram_top
+# -- Loading package std_logic_arith
+# -- Loading package components
+# -- Loading entity clock
+# -- Loading entity pll_24m93
+# -- Loading entity reset_delay
+# -- Loading entity uart_rs232_fifo_wrap_controller
+# -- Loading entity Bus_Master
+# -- Loading entity SPRAM
+# End time: 21:25:23 on Mar 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:25:23 on Mar 16,2026
+# vcom -reportprogress 300 -work work C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/tb_uart_spram_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_uart_spram_top
+# -- Compiling architecture sim of tb_uart_spram_top
+# -- Loading entity uart_spram_top
+# End time: 21:25:23 on Mar 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo3d tb_uart_spram_top -t ps 
+# Start time: 21:25:23 on Mar 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 3 FSMs in architecture body "uart_rs232_fifo_wrap_controller(behavioral)".
+# ** Note: (vopt-143) Recognized 2 FSMs in architecture body "uart_rs232(behavioral)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Bus_Master(behavioral)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_uart_spram_top(sim)#1
+# Loading ieee.std_logic_arith(body)
+# Loading machxo3d.components(body)
+# Loading work.uart_spram_top(rtl)#1
+# Loading work.clock(rtl)#1
+# Loading machxo3d.OSCJ(fast)
+# Loading work.pll_24m93(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading machxo3d.vlo(v)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading machxo3d.ehxpllj(v)#1
+# Loading work.reset_delay(rtl)#1
+# Loading work.uart_rs232_fifo_wrap_controller(behavioral)#1
+# Loading work.uart_rs232_fifo_wrap(rtl)#1
+# Loading work.uart_rs232(behavioral)#1
+# Loading work.my_own_fn_fifo(rtl)#1
+# Loading work.bus_master(behavioral)#1
+# Loading work.spram(structure)#1
+# Loading machxo3d.inv(v)#1
+# Loading machxo3d.mem2(body)
+# Loading machxo3d.rom16x1a(v)#1
+# Loading machxo3d.rom16x1a(v)#2
+# Loading machxo3d.vhi(v)#1
+# Loading machxo3d.mux321(v)#1
+# Loading machxo3d.mux21(v)#1
+# Loading machxo3d.mem1(body)
+# Loading machxo3d.spr16x4c(v)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/tb_uart_spram_top/DUT/u_spram/Address
+add wave -position insertpoint  \
+sim:/tb_uart_spram_top/DUT/u_spram/Data
+add wave -position insertpoint  \
+sim:/tb_uart_spram_top/DUT/u_spram/Q
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading machxo3d.OSCJ(fast)
+run
+# Causality operation skipped due to absence of debug database file
+# Project file C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework8/HW8_Code_V5/sim/sim.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 20:55:37 on Mar 17,2026, Elapsed time: 23:30:14
+# Errors: 0, Warnings: 1

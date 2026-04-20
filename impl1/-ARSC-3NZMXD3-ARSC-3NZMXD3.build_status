@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1773798910"/>
+            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1773798910"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1773798927">
+            <Task name="Map" build_result="0" update_result="2" update_time="1773798927"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1773798927">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1773798927"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1773798927"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PowerCal" build_result="0" update_result="2" update_time="1773798927"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="0" build_time="1773715069">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1773715069"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1773715069"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1773715070"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1773715069"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/UARTSPRAM_impl1_map.vdb" last_build_time="1773710947" last_build_size="1565359"/>
+        <Report name="UARTSPRAM_impl1.bgn" last_build_time="1773711293" last_build_size="9737"/>
+        <Report name="UARTSPRAM_impl1.bit" last_build_time="1773711289" last_build_size="93325"/>
+        <Report name="UARTSPRAM_impl1.jed_list" last_build_time="1773711293" last_build_size="44"/>
+        <Report name="UARTSPRAM_impl1.lsedata" last_build_time="1773710886" last_build_size="7577402"/>
+        <Report name="UARTSPRAM_impl1.ncd" last_build_time="1773710999" last_build_size="5259257"/>
+        <Report name="UARTSPRAM_impl1.ngd" last_build_time="1773710922" last_build_size="3692192"/>
+        <Report name="UARTSPRAM_impl1.pwrp" last_build_time="1773711281" last_build_size="3414"/>
+        <Report name="UARTSPRAM_impl1.twr" last_build_time="1773711284" last_build_size="70421"/>
+        <Report name="UARTSPRAM_impl1_map.ncd" last_build_time="1773710946" last_build_size="3446910"/>
+    </Strategy>
+</BuildStatus>

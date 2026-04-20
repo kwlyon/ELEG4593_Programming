@@ -1,0 +1,230 @@
+<HTML>
+<HEAD><TITLE>Bitgen Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Bgn"></A>BITGEN: Bitstream Generator Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Apr 19 15:07:54 2026
+
+
+Command: bitgen -g RamCfg:Reset -path C:/Users/kwlyon/Box/Codex/HW9_5_Code -w -s ../security_setting/UARTSPRAM.secproj -jedec -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml UARTSPRAM_impl1.ncd UARTSPRAM_impl1.prf 
+
+Loading design for application Bitgen from file UARTSPRAM_impl1.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Bitgen from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from UARTSPRAM_impl1.prf.
+INFO -  SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###
+INFO -  SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK
+
+<A name="bgn_ps"></A>
+<B><U><big>Preference Summary:</big></U></B>
+
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|       CUR_DESIGN_BOOT_LOCATION  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|   BACKGROUND_RECONFIG_SECURITY  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               SLAVE_IDLE_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_RETRY  |                            0**  |
++---------------------------------+---------------------------------+
+|                     SFDP_CHECK  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|             SPIM_ADDRESS_32BIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                   PRIMARY_BOOT  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|                 SECONDARY_BOOT  |                         NONE**  |
++---------------------------------+---------------------------------+
+|               ROLLBACK_CONTROL  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|              I2C_GLITCH_FILTER  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        I2C_GLITCH_FILTER_RANGE  |                    R_16_50NS**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "UARTSPRAM_impl1_a.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        3582 Pages (128*3582 Bits).
+EBR: BITGEN_DUMMY_COMP_EBR_R8C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C47 => WID = 0b0000000000, its value = 0
+EBR: u_uart_ctrl/u_uart_wrap/u_rx_fifo/ram0 => WID = 0b0000000001, its value = 1
+WID == 1 , pending to handle.
+EBR: u_uart_ctrl/u_uart_wrap/u_tx_fifo/ram0 => WID = 0b0000000001, its value = 1
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 3582 Pages (Page 0 to Page 3581).
+Initialized UFM Pages:                     0 Page.
+ 
+=========
+Padding summary
+=========
+Padded 1248256 bits for this design
+
+
+Jedec File [0]: UARTSPRAM_impl1.fea
+Jedec File [1]: UARTSPRAM_impl1_a.jed
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 219 MB
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

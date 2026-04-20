@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="SPRAM" module="SPRAM" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2026 03 04 11:27:38.972" version="3.9" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2026 03 04 11:27:38.849"/>
+		<File name="SPRAM.lpc" type="lpc" modified="2026 03 04 11:27:13.428"/>
+		<File name="SPRAM.vhd" type="top_level_vhdl" modified="2026 03 04 11:27:13.533"/>
+		<File name="SPRAM_tmpl.vhd" type="template_vhdl" modified="2026 03 04 11:27:13.533"/>
+		<File name="tb_SPRAM_tmpl.vhd" type="testbench_vhdl" modified="2026 03 04 11:27:13.546"/>
+  </Package>
+</DiamondModule>

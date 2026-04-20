@@ -1,0 +1,1128 @@
+
+        Lattice Mapping Report File for Design Module 'uart_spram_top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO3D -p LCMXO3D-9400HC -t CABGA256 -s 5 -oc
+     Commercial UARTSPRAM_impl1.ngd -o UARTSPRAM_impl1_map.ncd -pr
+     UARTSPRAM_impl1.prf -mp UARTSPRAM_impl1.mrp -lpf
+     C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1/UARTSPRAM_impl1.lpf -lpf
+     C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf -c 0 -gui -msgset
+     C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3D-9400HCCABGA256
+Target Performance:   5
+Mapper:  se5c00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  04/19/26  15:05:42
+
+Design Summary
+--------------
+
+   Number of registers:   2942 out of 10021 (29%)
+      PFU registers:         2942 out of  9400 (31%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:      2416 out of  4700 (51%)
+      SLICEs as Logic/ROM:   1648 out of  4700 (35%)
+      SLICEs as RAM:          768 out of  3525 (22%)
+      SLICEs as Carry:        196 out of  4700 (4%)
+   Number of LUT4s:        4662 out of  9400 (50%)
+      Number used as logic LUTs:        2734
+      Number used as distributed RAM:   1536
+      Number used as ripple logic:      392
+      Number used as shift registers:     0
+   Number of PIO sites used: 14 + 4(JTAG) out of 207 (9%)
+   Number of block RAMs:  2 out of 48 (4%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Security used :   No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCSLEWRATEA):  0 out of 6 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+
+                                    Page 1
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Design Summary (cont)
+---------------------
+     Net clk_sys: 2153 loads, 2153 rising, 0 falling (Driver: u_pll/PLLInst_0 )
+     Net clk_osc: 1 loads, 1 rising, 0 falling (Driver: u_clk/u_osch )
+   Number of Clock Enables:  178
+     Net u_bus/clk_sys_enable_1845: 16 loads, 16 LSLICEs
+     Net clk_sys_enable_2573: 18 loads, 18 LSLICEs
+     Net u_bus/clk_sys_enable_1904: 9 loads, 9 LSLICEs
+     Net clk_sys_enable_2454: 15 loads, 15 LSLICEs
+     Net clk_sys_enable_2490: 11 loads, 11 LSLICEs
+     Net clk_sys_enable_579: 1 loads, 1 LSLICEs
+     Net clk_sys_enable_1910: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_1973: 9 loads, 9 LSLICEs
+     Net clk_sys_enable_1980: 4 loads, 4 LSLICEs
+     Net clk_sys_enable_2375: 3 loads, 3 LSLICEs
+     Net clk_sys_enable_555: 4 loads, 4 LSLICEs
+     Net clk_sys_enable_2420: 5 loads, 5 LSLICEs
+     Net clk_sys_enable_2428: 5 loads, 5 LSLICEs
+     Net clk_sys_enable_2456: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_2529: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_2540: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_2551: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_2358: 1 loads, 1 LSLICEs
+     Net clk_sys_enable_2458: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_1349: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_1974: 4 loads, 4 LSLICEs
+     Net u_pwm_client/clk_sys_enable_566: 2 loads, 2 LSLICEs
+     Net u_pwm_client/clk_sys_enable_563: 8 loads, 8 LSLICEs
+     Net u_pwm_client/clk_sys_enable_487: 8 loads, 8 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2472: 8 loads, 8 LSLICEs
+     Net clk_sys_enable_1906: 2 loads, 2 LSLICEs
+     Net u_pwm_client/clk_sys_enable_572: 1 loads, 1 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2481: 6 loads, 6 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2480: 1 loads, 1 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2484: 6 loads, 6 LSLICEs
+     Net u_pwm_client/clk_sys_enable_1869: 1 loads, 1 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2483: 6 loads, 6 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2482: 6 loads, 6 LSLICEs
+     Net clk_sys_enable_706: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_1822: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2574: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_195: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1916: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_72: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_99: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_172: 25 loads, 25 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_532: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_524: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_517: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_510: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_499: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_492: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_476: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_465: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_458: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_443: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_435: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_428: 4 loads, 4 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Design Summary (cont)
+---------------------
+     Net u_uart_ctrl/clk_sys_enable_421: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_414: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_406: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_397: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_390: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_383: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_376: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_366: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_359: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_350: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_277: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_269: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_262: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_255: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_247: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_239: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_231: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_224: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_216: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_209: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_202: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_122: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_114: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2514: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_736: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_729: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_714: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_627: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_618: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_610: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_603: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_595: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_588: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_580: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_749: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_756: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_763: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_770: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_777: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_784: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_791: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_798: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_805: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_812: 5 loads, 5 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_854: 8 loads, 8 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2412: 275 loads, 275 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_861: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_879: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_886: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_865: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2365: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/tx_busy: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2294: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1981: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2569: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1951: 10 loads, 10 LSLICEs
+
+                                    Page 3
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Design Summary (cont)
+---------------------
+     Net u_uart_ctrl/clk_sys_enable_2350: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1320: 21 loads, 21 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2371: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2421: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2336: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2507: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2021: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2035: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2049: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2063: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2077: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2091: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2105: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2119: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2133: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2147: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2161: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2175: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2189: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2203: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2217: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2231: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2245: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2259: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2273: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2287: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2357: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2308: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2315: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2322: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2329: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2518: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_709: 2 loads, 2 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1917: 3 loads, 3 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_929: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_979: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1029: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1079: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1129: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1179: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1229: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1279: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1823: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1866: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/clk_sys_enable_2398: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_542: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2390: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2386: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_1908: 3 loads, 3 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2571: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2388: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_1865: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2387: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_1863: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2389: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_tx_fifo/clk_sys_enable_2479: 6 loads, 6
+
+                                    Page 4
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Design Summary (cont)
+---------------------
+     LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_tx_fifo/clk_sys_enable_1937: 5 loads, 5
+     LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_rx_fifo/clk_sys_enable_1958: 5 loads, 5
+     LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_rx_fifo/clk_sys_enable_2478: 5 loads, 5
+     LSLICEs
+     Net u_adc_client/clk_sys_enable_695: 3 loads, 3 LSLICEs
+     Net u_adc_client/clk_sys_enable_1338: 8 loads, 8 LSLICEs
+     Net u_adc_client/sweep_start_pulse: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_2562: 8 loads, 8 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_597: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_617: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_624: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_634: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_1864: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_1991: 2 loads, 2 LSLICEs
+   Number of LSRs:  71
+     Net n30230: 32 loads, 32 LSLICEs
+     Net n30252: 26 loads, 26 LSLICEs
+     Net n30231: 36 loads, 36 LSLICEs
+     Net u_bus/n25200: 1 loads, 1 LSLICEs
+     Net u_bus/n18358: 1 loads, 1 LSLICEs
+     Net n30232: 50 loads, 50 LSLICEs
+     Net n30233: 35 loads, 35 LSLICEs
+     Net n30225: 1 loads, 1 LSLICEs
+     Net u_bus/n16955: 1 loads, 1 LSLICEs
+     Net n30253: 34 loads, 34 LSLICEs
+     Net n30226: 26 loads, 26 LSLICEs
+     Net n30254: 29 loads, 29 LSLICEs
+     Net n30229: 28 loads, 28 LSLICEs
+     Net n30263: 33 loads, 33 LSLICEs
+     Net n30264: 28 loads, 28 LSLICEs
+     Net n30227: 27 loads, 27 LSLICEs
+     Net n30243: 27 loads, 27 LSLICEs
+     Net n30228: 24 loads, 24 LSLICEs
+     Net n30265: 27 loads, 27 LSLICEs
+     Net n29759: 261 loads, 261 LSLICEs
+     Net u_pwm_client/n15130: 2 loads, 2 LSLICEs
+     Net u_pwm_client/n10814: 8 loads, 8 LSLICEs
+     Net u_pwm_client/n19370: 12 loads, 12 LSLICEs
+     Net u_pwm_client/n19404: 6 loads, 6 LSLICEs
+     Net u_pwm_client/n29642: 1 loads, 1 LSLICEs
+     Net n30255: 29 loads, 29 LSLICEs
+     Net n30256: 30 loads, 30 LSLICEs
+     Net u_pwm_client/n19381: 6 loads, 6 LSLICEs
+     Net u_pwm_client/gen_pwm_3..u_pwm/n19418: 8 loads, 8 LSLICEs
+     Net n30266: 27 loads, 27 LSLICEs
+     Net u_pwm_client/gen_pwm_2..u_pwm/n19417: 8 loads, 8 LSLICEs
+     Net u_pwm_client/gen_pwm_1..u_pwm/n19416: 8 loads, 8 LSLICEs
+     Net u_pwm_client/gen_pwm_0..u_pwm/n19430: 8 loads, 8 LSLICEs
+     Net u_pll/pll_lock: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/n15501: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/n15505: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/tx_busy: 2 loads, 2 LSLICEs
+     Net u_uart_ctrl/n25136: 1 loads, 1 LSLICEs
+
+                                    Page 5
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Design Summary (cont)
+---------------------
+     Net n30234: 26 loads, 26 LSLICEs
+     Net n30235: 26 loads, 26 LSLICEs
+     Net n30236: 26 loads, 26 LSLICEs
+     Net n30237: 26 loads, 26 LSLICEs
+     Net n30238: 26 loads, 26 LSLICEs
+     Net n30239: 26 loads, 26 LSLICEs
+     Net n30240: 26 loads, 26 LSLICEs
+     Net n30241: 26 loads, 26 LSLICEs
+     Net n30242: 26 loads, 26 LSLICEs
+     Net n30244: 25 loads, 25 LSLICEs
+     Net n30245: 25 loads, 25 LSLICEs
+     Net n30246: 25 loads, 25 LSLICEs
+     Net n30247: 25 loads, 25 LSLICEs
+     Net n30248: 25 loads, 25 LSLICEs
+     Net n30249: 25 loads, 25 LSLICEs
+     Net n30250: 25 loads, 25 LSLICEs
+     Net n30251: 25 loads, 25 LSLICEs
+     Net u_uart_ctrl/n19437: 6 loads, 6 LSLICEs
+     Net u_uart_ctrl/n19433: 8 loads, 8 LSLICEs
+     Net n30257: 29 loads, 29 LSLICEs
+     Net n30258: 29 loads, 29 LSLICEs
+     Net n30259: 28 loads, 28 LSLICEs
+     Net n30260: 29 loads, 29 LSLICEs
+     Net n30261: 28 loads, 28 LSLICEs
+     Net n30262: 29 loads, 29 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/n19504: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/n11792: 5 loads, 5 LSLICEs
+     Net u_adc_client/n18522: 1 loads, 1 LSLICEs
+     Net u_adc_client/n16934: 1 loads, 1 LSLICEs
+     Net u_adc_client/n16926: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/primed_o: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_2562: 2 loads, 2 LSLICEs
+     Net reset_i: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net mem_addr_4: 576 loads
+     Net mem_addr_0: 490 loads
+     Net mem_addr_1: 490 loads
+     Net mem_addr_2: 490 loads
+     Net mem_addr_3: 490 loads
+     Net n30210: 470 loads
+     Net n30211: 470 loads
+     Net n30212: 470 loads
+     Net n30213: 470 loads
+     Net n29759: 334 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+
+                                    Page 6
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf(7): Semantic
+     error in "FREQUENCY NET "osc_8m31" 8.310000 MHz ;": osc_8m31 matches no
+     clock nets in the design.  This preference has been disabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| PWM_1               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PWM_0               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SPI_Dout            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SPI_CSn             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RX                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LED_7               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LED_6               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LED_5               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LED_4               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PWM_3               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PWM_2               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SPI_Din             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SPI_clk             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| TX                  | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal u_adc_client/u_adc/n19423 was merged into signal
+     u_adc_client/u_adc/primed_o
+Signal u_uart_ctrl/n29698 was merged into signal u_uart_ctrl/ex_index_1
+Signal u_uart_ctrl/tx_busy_N_5196 was merged into signal u_uart_ctrl/tx_busy
+Signal u_uart_ctrl/n19434 was merged into signal n30225
+Signal n29699 was merged into signal u_pll/pll_lock
+Signal GND_net undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/VCC_net undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/VCC_net undriven or does not drive
+     anything - clipped.
+
+                                    Page 7
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_spram/VCC_net undriven or does not drive anything - clipped.
+Signal u_adc_client/add_7_1/S0 undriven or does not drive anything - clipped.
+Signal u_adc_client/add_7_1/CI undriven or does not drive anything - clipped.
+Signal u_adc_client/add_7_13/S1 undriven or does not drive anything - clipped.
+Signal u_adc_client/add_7_13/CO undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_9/S1 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_9/CO undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_7/S1 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_7/S0 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_8/S0 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_8/CO undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_9/S1 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_9/CO undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/count_5917_add_4_1/S0 undriven or does
+     not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/count_5917_add_4_1/CI undriven or does
+     not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/count_5917_add_4_9/CO undriven or does
+     not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_0/S1 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_0/S0 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_0/CI undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_9/S1 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_9/CO undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_9/S1 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_9/CO undriven or does not drive
+
+                                    Page 8
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/count_5915_add_4_1/S0 undriven or does
+     not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/count_5915_add_4_1/CI undriven or does
+     not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/count_5915_add_4_9/CO undriven or does
+     not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_0/S1 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_0/S0 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_0/CI undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_7/S1 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_7/S0 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_8/S0 undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_8/CO undriven or does not
+     drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_1/S0 undriven or
+     does not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_1/CI undriven or
+     does not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_9/S1 undriven or
+     does not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_9/CO undriven or
+     does not drive anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/add_271_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/add_271_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/add_271_13/S1 undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/u_uart_wrap/u_uart/add_271_13/CO undriven or does not drive
+     anything - clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_0/S1 undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_0/S0 undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_0/CI undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/add_1545_1/S0 undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1545_1/CI undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1545_9/S1 undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1545_9/CO undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1546_1/S0 undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1546_1/CI undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1546_7/CO undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_8/S0 undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_8/CO undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/req_valid_I_20_0/S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 9
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_uart_ctrl/req_valid_I_20_0/S0 undriven or does not drive anything -
+     clipped.
+Signal u_uart_ctrl/req_valid_I_20_0/CI undriven or does not drive anything -
+     clipped.
+Signal u_uart_ctrl/req_valid_I_20_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_uart_ctrl/req_valid_I_20_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_7/S1 undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/err_rsp_pending_I_24_7/S0 undriven or does not drive anything
+     - clipped.
+Signal u_uart_ctrl/add_1070_2/S0 undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1070_2/CI undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/req_valid_I_20_10/S0 undriven or does not drive anything -
+     clipped.
+Signal u_uart_ctrl/req_valid_I_20_10/CO undriven or does not drive anything -
+     clipped.
+Signal u_uart_ctrl/add_107_1/S0 undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_107_1/CI undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_1070_10/CO undriven or does not drive anything - clipped.
+     
+Signal u_uart_ctrl/add_107_9/S1 undriven or does not drive anything - clipped.
+Signal u_uart_ctrl/add_107_9/CO undriven or does not drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_1/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_1/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_1/CI undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_3/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_3/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_5/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_5/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_7/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_7/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_9/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_9/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_11/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_11/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_13/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_13/CO undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/add_12_1/S0 undriven or does not drive
+     anything - clipped.
+
+                                   Page 10
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_pwm_client/gen_pwm_0..u_pwm/add_12_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/add_12_13/S1 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_0..u_pwm/add_12_13/CO undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_5/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_5/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_7/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_7/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_9/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_9/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_11/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_11/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_13/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_13/CO undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/add_12_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/add_12_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/add_12_13/S1 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/add_12_13/CO undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_1/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_1/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_1/CI undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_3/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_3/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_5/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_5/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_7/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_7/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_9/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_9/S0 undriven or does not
+     drive anything - clipped.
+
+                                   Page 11
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_11/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_11/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_13/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_13/CO undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/add_12_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/add_12_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/add_12_13/S1 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/add_12_13/CO undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_1/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_1/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_1/CI undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_3/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_3/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_1/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_1/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_1/CI undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_3/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_3/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_5/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_5/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_7/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_7/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_9/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_9/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_11/S1 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_11/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_13/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_13/CO undriven or does not
+     drive anything - clipped.
+
+                                   Page 12
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_pwm_client/gen_pwm_3..u_pwm/add_12_1/S0 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/add_12_1/CI undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/add_12_13/S1 undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/gen_pwm_3..u_pwm/add_12_13/CO undriven or does not drive
+     anything - clipped.
+Signal u_pwm_client/sub_5203_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/add_8_1/S0 undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_8_1/CI undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_87_17/S1 undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_87_17/CO undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_135_1/S0 undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_135_1/CI undriven or does not drive anything - clipped.
+Signal u_pwm_client/sub_5202_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 13
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_pwm_client/sub_5202_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5202_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/add_135_17/S1 undriven or does not drive anything - clipped.
+     
+Signal u_pwm_client/add_135_17/CO undriven or does not drive anything - clipped.
+     
+Signal u_pwm_client/sub_5201_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5201_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/blink_prescale_count_5912_add_4_1/S0 undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/blink_prescale_count_5912_add_4_1/CI undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/sub_5203_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+
+                                   Page 14
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Removed logic (cont)
+--------------------
+Signal u_pwm_client/sub_5203_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/add_87_1/S0 undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_87_1/CI undriven or does not drive anything - clipped.
+Signal u_pwm_client/blink_prescale_count_5912_add_4_15/CO undriven or does not
+     drive anything - clipped.
+Signal u_pwm_client/sub_5203_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/add_8_13/S1 undriven or does not drive anything - clipped.
+Signal u_pwm_client/add_8_13/CO undriven or does not drive anything - clipped.
+Signal u_pwm_client/sub_5203_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal u_pwm_client/sub_5203_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Block u_adc_client/u_adc/i10188_1_lut was optimized away.
+Block u_uart_ctrl/i7596_1_lut_rep_789 was optimized away.
+Block u_uart_ctrl/tx_busy_I_0_1_lut was optimized away.
+Block u_uart_ctrl/i10199_2_lut_3_lut_1_lut_1_lut was optimized away.
+Block u_pll/i9838_1_lut_rep_790 was optimized away.
+Block rx_buf_46__i9 was optimized away.
+Block u_uart_ctrl/u_uart_wrap/u_rx_fifo/i1 was optimized away.
+Block u_uart_ctrl/u_uart_wrap/u_tx_fifo/i1 was optimized away.
+Block u_spram/i1 was optimized away.
+
+Memory Usage
+------------
+
+/u_spram:
+    EBRs: 0
+    RAM SLICEs: 768
+    Logic SLICEs: 0
+    PFU Registers: 999
+/u_uart_ctrl/u_uart_wrap/u_rx_fifo:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 15
+    PFU Registers: 27
+    -Contains EBR ram0:  TYPE= DP8KC,  Width_B= 8,  Depth_A= 256,  Depth_B= 256,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+
+                                   Page 15
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+Memory Usage (cont)
+-------------------
+         WRITETHROUGH,  GSR= DISABLED
+/u_uart_ctrl/u_uart_wrap/u_tx_fifo:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 17
+    PFU Registers: 30
+    -Contains EBR ram0:  TYPE= DP8KC,  Width_B= 8,  Depth_A= 256,  Depth_B= 256,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         WRITETHROUGH,  GSR= DISABLED
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u_pll/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             NODE     clk_osc
+  Output Clock(P):                         NODE     clk_sys
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_sys
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                         NODE     u_pll/pll_lock
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+
+                                   Page 16
+
+
+
+
+Design:  uart_spram_top                                Date:  04/19/26  15:05:42
+
+PLL/DLL Summary (cont)
+----------------------
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                       8.3100
+  Output Clock(P) Frequency (MHz):                  24.9300
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    3
+  CLKOP Divider:                                    21
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+ASIC Components
+---------------
+
+Instance Name: u_clk/u_osch
+         Type: OSCJ
+Instance Name: u_pll/PLLInst_0
+         Type: EHXPLLJ
+Instance Name: u_uart_ctrl/u_uart_wrap/u_tx_fifo/ram0
+         Type: DP8KC
+Instance Name: u_uart_ctrl/u_uart_wrap/u_rx_fifo/ram0
+         Type: DP8KC
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 3 secs  
+   Total REAL Time: 4 secs  
+   Peak Memory Usage: 111 MB
+        
+
+
+
+                                   Page 17
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.

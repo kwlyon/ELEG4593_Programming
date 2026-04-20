@@ -1,0 +1,263 @@
+[ START MERGED ]
+n29699 u_pll/pll_lock
+u_uart_ctrl/n29698 u_uart_ctrl/ex_index_1
+u_uart_ctrl/n19434 n30225
+u_uart_ctrl/tx_busy_N_5196 u_uart_ctrl/tx_busy
+u_adc_client/u_adc/n19423 u_adc_client/u_adc/primed_o
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/VCC_net
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/VCC_net
+u_spram/VCC_net
+u_adc_client/add_7_1/S0
+u_adc_client/add_7_1/CI
+u_adc_client/add_7_13/S1
+u_adc_client/add_7_13/CO
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_1/S0
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_1/CI
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_9/S1
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_14_9/CO
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_1/S0
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_1/CI
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_7/S1
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_7/S0
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_8/S0
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_8/CO
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_9/S1
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/add_16_9/CO
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/count_5917_add_4_1/S0
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/count_5917_add_4_1/CI
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/count_5917_add_4_9/CO
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_0/S1
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_0/S0
+u_uart_ctrl/u_uart_wrap/u_rx_fifo/equal_6809_0/CI
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_1/S0
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_1/CI
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_9/S1
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_14_9/CO
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_1/S0
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_1/CI
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_9/S1
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/add_16_9/CO
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/count_5915_add_4_1/S0
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/count_5915_add_4_1/CI
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/count_5915_add_4_9/CO
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_0/S1
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_0/S0
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_0/CI
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_7/S1
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_7/S0
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_8/S0
+u_uart_ctrl/u_uart_wrap/u_tx_fifo/equal_6836_8/CO
+u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_1/S0
+u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_1/CI
+u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_9/S1
+u_uart_ctrl/u_uart_wrap/u_uart/rx_tick_cnt_5914_add_4_9/CO
+u_uart_ctrl/u_uart_wrap/u_uart/add_271_1/S0
+u_uart_ctrl/u_uart_wrap/u_uart/add_271_1/CI
+u_uart_ctrl/u_uart_wrap/u_uart/add_271_13/S1
+u_uart_ctrl/u_uart_wrap/u_uart/add_271_13/CO
+u_uart_ctrl/err_rsp_pending_I_24_0/S1
+u_uart_ctrl/err_rsp_pending_I_24_0/S0
+u_uart_ctrl/err_rsp_pending_I_24_0/CI
+u_uart_ctrl/add_1545_1/S0
+u_uart_ctrl/add_1545_1/CI
+u_uart_ctrl/add_1545_9/S1
+u_uart_ctrl/add_1545_9/CO
+u_uart_ctrl/add_1546_1/S0
+u_uart_ctrl/add_1546_1/CI
+u_uart_ctrl/add_1546_7/CO
+u_uart_ctrl/err_rsp_pending_I_24_8/S0
+u_uart_ctrl/err_rsp_pending_I_24_8/CO
+u_uart_ctrl/req_valid_I_20_0/S1
+u_uart_ctrl/req_valid_I_20_0/S0
+u_uart_ctrl/req_valid_I_20_0/CI
+u_uart_ctrl/req_valid_I_20_9/S1
+u_uart_ctrl/req_valid_I_20_9/S0
+u_uart_ctrl/err_rsp_pending_I_24_7/S1
+u_uart_ctrl/err_rsp_pending_I_24_7/S0
+u_uart_ctrl/add_1070_2/S0
+u_uart_ctrl/add_1070_2/CI
+u_uart_ctrl/req_valid_I_20_10/S0
+u_uart_ctrl/req_valid_I_20_10/CO
+u_uart_ctrl/add_107_1/S0
+u_uart_ctrl/add_107_1/CI
+u_uart_ctrl/add_1070_10/CO
+u_uart_ctrl/add_107_9/S1
+u_uart_ctrl/add_107_9/CO
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_1/S1
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_1/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_1/CI
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_3/S1
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_3/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_5/S1
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_5/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_7/S1
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_7/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_9/S1
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_9/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_11/S1
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_11/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_13/S0
+u_pwm_client/gen_pwm_0..u_pwm/sub_5205_add_2_13/CO
+u_pwm_client/gen_pwm_0..u_pwm/add_12_1/S0
+u_pwm_client/gen_pwm_0..u_pwm/add_12_1/CI
+u_pwm_client/gen_pwm_0..u_pwm/add_12_13/S1
+u_pwm_client/gen_pwm_0..u_pwm/add_12_13/CO
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_5/S1
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_5/S0
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_7/S1
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_7/S0
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_9/S1
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_9/S0
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_11/S1
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_11/S0
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_13/S0
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_13/CO
+u_pwm_client/gen_pwm_1..u_pwm/add_12_1/S0
+u_pwm_client/gen_pwm_1..u_pwm/add_12_1/CI
+u_pwm_client/gen_pwm_1..u_pwm/add_12_13/S1
+u_pwm_client/gen_pwm_1..u_pwm/add_12_13/CO
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_1/S1
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_1/S0
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_1/CI
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_3/S1
+u_pwm_client/gen_pwm_1..u_pwm/sub_5207_add_2_3/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_5/S1
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_5/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_7/S1
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_7/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_9/S1
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_9/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_11/S1
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_11/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_13/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_13/CO
+u_pwm_client/gen_pwm_2..u_pwm/add_12_1/S0
+u_pwm_client/gen_pwm_2..u_pwm/add_12_1/CI
+u_pwm_client/gen_pwm_2..u_pwm/add_12_13/S1
+u_pwm_client/gen_pwm_2..u_pwm/add_12_13/CO
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_1/S1
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_1/S0
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_1/CI
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_3/S1
+u_pwm_client/gen_pwm_2..u_pwm/sub_5209_add_2_3/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_1/S1
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_1/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_1/CI
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_3/S1
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_3/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_5/S1
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_5/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_7/S1
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_7/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_9/S1
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_9/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_11/S1
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_11/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_13/S0
+u_pwm_client/gen_pwm_3..u_pwm/sub_5211_add_2_13/CO
+u_pwm_client/gen_pwm_3..u_pwm/add_12_1/S0
+u_pwm_client/gen_pwm_3..u_pwm/add_12_1/CI
+u_pwm_client/gen_pwm_3..u_pwm/add_12_13/S1
+u_pwm_client/gen_pwm_3..u_pwm/add_12_13/CO
+u_pwm_client/sub_5203_add_2_13/S1
+u_pwm_client/sub_5203_add_2_13/S0
+u_pwm_client/sub_5203_add_2_15/S1
+u_pwm_client/sub_5203_add_2_15/S0
+u_pwm_client/sub_5203_add_2_17/S0
+u_pwm_client/sub_5203_add_2_17/CO
+u_pwm_client/add_8_1/S0
+u_pwm_client/add_8_1/CI
+u_pwm_client/add_87_17/S1
+u_pwm_client/add_87_17/CO
+u_pwm_client/add_135_1/S0
+u_pwm_client/add_135_1/CI
+u_pwm_client/sub_5202_add_2_1/S1
+u_pwm_client/sub_5202_add_2_1/S0
+u_pwm_client/sub_5202_add_2_1/CI
+u_pwm_client/sub_5202_add_2_3/S1
+u_pwm_client/sub_5202_add_2_3/S0
+u_pwm_client/sub_5202_add_2_5/S1
+u_pwm_client/sub_5202_add_2_5/S0
+u_pwm_client/sub_5202_add_2_7/S1
+u_pwm_client/sub_5202_add_2_7/S0
+u_pwm_client/sub_5202_add_2_9/S1
+u_pwm_client/sub_5202_add_2_9/S0
+u_pwm_client/sub_5202_add_2_11/S1
+u_pwm_client/sub_5202_add_2_11/S0
+u_pwm_client/sub_5202_add_2_13/S1
+u_pwm_client/sub_5202_add_2_13/S0
+u_pwm_client/sub_5202_add_2_15/S1
+u_pwm_client/sub_5202_add_2_15/S0
+u_pwm_client/sub_5202_add_2_17/S0
+u_pwm_client/sub_5202_add_2_17/CO
+u_pwm_client/sub_5201_add_2_1/S1
+u_pwm_client/sub_5201_add_2_1/S0
+u_pwm_client/sub_5201_add_2_1/CI
+u_pwm_client/sub_5201_add_2_3/S1
+u_pwm_client/sub_5201_add_2_3/S0
+u_pwm_client/sub_5201_add_2_5/S1
+u_pwm_client/sub_5201_add_2_5/S0
+u_pwm_client/sub_5201_add_2_7/S1
+u_pwm_client/sub_5201_add_2_7/S0
+u_pwm_client/sub_5201_add_2_9/S1
+u_pwm_client/sub_5201_add_2_9/S0
+u_pwm_client/sub_5201_add_2_11/S1
+u_pwm_client/sub_5201_add_2_11/S0
+u_pwm_client/sub_5201_add_2_13/S1
+u_pwm_client/sub_5201_add_2_13/S0
+u_pwm_client/sub_5201_add_2_15/S1
+u_pwm_client/sub_5201_add_2_15/S0
+u_pwm_client/add_135_17/S1
+u_pwm_client/add_135_17/CO
+u_pwm_client/sub_5201_add_2_17/S0
+u_pwm_client/sub_5201_add_2_17/CO
+u_pwm_client/blink_prescale_count_5912_add_4_1/S0
+u_pwm_client/blink_prescale_count_5912_add_4_1/CI
+u_pwm_client/sub_5203_add_2_1/S1
+u_pwm_client/sub_5203_add_2_1/S0
+u_pwm_client/sub_5203_add_2_1/CI
+u_pwm_client/sub_5203_add_2_3/S1
+u_pwm_client/sub_5203_add_2_3/S0
+u_pwm_client/add_87_1/S0
+u_pwm_client/add_87_1/CI
+u_pwm_client/blink_prescale_count_5912_add_4_15/CO
+u_pwm_client/sub_5203_add_2_5/S1
+u_pwm_client/sub_5203_add_2_5/S0
+u_pwm_client/add_8_13/S1
+u_pwm_client/add_8_13/CO
+u_pwm_client/sub_5203_add_2_7/S1
+u_pwm_client/sub_5203_add_2_7/S0
+u_pwm_client/sub_5203_add_2_9/S1
+u_pwm_client/sub_5203_add_2_9/S0
+u_pwm_client/sub_5203_add_2_11/S1
+u_pwm_client/sub_5203_add_2_11/S0
+[ END CLIPPED ]
+[ START OSC ]
+clk_osc 8.31
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Apr 19 15:05:46 2026
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE I2C_GLITCH_FILTER=DISABLE I2C_GLITCH_FILTER_RANGE=R_16_50NS MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF BACKGROUND_RECONFIG_SECURITY=OFF SPIM_ADDRESS_32BIT=DISABLE SFDP_CHECK=DISABLE PRIMARY_BOOT=IMAGE_0 SECONDARY_BOOT=NONE SLAVE_IDLE_TIMER=0 MASTER_PREAMBLE_DETECTION_TIMER=0 MASTER_PREAMBLE_DETECTION_RETRY=0 CUR_DESIGN_BOOT_LOCATION=IMAGE_0 INBUF=ON ROLLBACK_CONTROL=DISABLE ;
+LOCATE COMP "PWM_1" SITE "J13" ;
+LOCATE COMP "PWM_0" SITE "H11" ;
+LOCATE COMP "SPI_Dout" SITE "D6" ;
+LOCATE COMP "SPI_CSn" SITE "C4" ;
+LOCATE COMP "RX" SITE "A11" ;
+LOCATE COMP "LED_7" SITE "P16" ;
+LOCATE COMP "LED_6" SITE "N15" ;
+LOCATE COMP "LED_5" SITE "L13" ;
+LOCATE COMP "LED_4" SITE "K11" ;
+LOCATE COMP "PWM_3" SITE "L12" ;
+LOCATE COMP "PWM_2" SITE "J11" ;
+LOCATE COMP "SPI_Din" SITE "C5" ;
+LOCATE COMP "SPI_clk" SITE "E6" ;
+LOCATE COMP "TX" SITE "C11" ;
+FREQUENCY NET "clk_sys" 24.930000 MHz ;
+FREQUENCY NET "clk_osc" 8.310000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

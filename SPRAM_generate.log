@@ -1,0 +1,50 @@
+Starting process: module
+
+Starting process: 
+
+SCUBA, Version Diamond (64-bit) 3.14.0.75.2
+Wed Mar 04 11:27:13 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n SPRAM -lang vhdl -synth lse -bus_exp 7 -bb -arch se5c00 -dram -type ramdq -addr_width 10 -num_words 1024 -data_width 16 -outData UNREGISTERED 
+    Circuit name     : SPRAM
+    Module type      : sspram
+    Module Version   : 3.9
+    Address width    : 10
+    Data width       : 16
+    Ports            : 
+	Inputs       : Address[9:0], Data[15:0], Clock, WE, ClockEn
+	Outputs      : Q[15:0]
+    I/O buffer       : not inserted
+    Clock edge       : rising edge
+    EDIF output      : SPRAM.edn
+    VHDL output      : SPRAM.vhd
+    VHDL template    : SPRAM_tmpl.vhd
+    VHDL testbench   : tb_SPRAM_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : SPRAM.srp
+    Estimated Resource Usage:
+            LUT : 464
+           DRAM : 256
+
+END   SCUBA Module Synthesis
+
+File: SPRAM.lpc created.
+
+
+End process: completed successfully.
+
+
+Total Warnings:  0
+
+Total Errors:  0
+
+

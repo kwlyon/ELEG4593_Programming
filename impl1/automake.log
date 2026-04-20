@@ -1,0 +1,1873 @@
+
+synthesis -f "UARTSPRAM_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Apr 19 15:05:31 2026
+
+
+Command Line:  synthesis -f UARTSPRAM_impl1_lattice.synproj -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO3D.
+The -s option is 5.
+The -t option is CABGA256.
+The -d option is LCMXO3D-9400HC.
+Using package CABGA256.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO3D
+
+### Device  : LCMXO3D-9400HC
+
+### Package : CABGA256
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = uart_spram_top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.14/ispfpga/se5c00/data (searchpath added)
+-p C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1 (searchpath added)
+-p C:/Users/kwlyon/Box/Codex/HW9_5_Code (searchpath added)
+VHDL library = work
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/My_Own_FN_FIFO.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_spram_top.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/Internal_clk.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/reset_delay.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_rs232_fifo_wrap_controller.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232_fifo_wrap.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/pll_24m93.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Master.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/SPRAM.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/bus_pkg.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/pwm_spram_client.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/adc_spram_client.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/PWM_Module/PWM_Module.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd
+NGD file = UARTSPRAM_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1"  />
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd(34): " arg1="my_own_fn_fifo" arg2="c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd" arg3="34"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd(54): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd" arg3="54"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd. VHDL-1481
+    <postMsg mid="35921014" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd(22): " arg1="bus_pkg" arg2="c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd" arg3="22"  />
+    <postMsg mid="35921013" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd(44): " arg1="bus_pkg" arg2="c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd" arg3="44"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd. VHDL-1481
+    <postMsg mid="35921240" type="Warning" dynamic="3" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(24): " arg1="components" arg2="machxo3d" arg3="c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd" arg4="24"  />
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(30): " arg1="clock" arg2="c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd" arg3="30"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(43): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd" arg3="43"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd(14): " arg1="pll_24m93" arg2="c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd(21): " arg1="structure" arg2="c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd" arg3="21"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd(28): " arg1="reset_delay" arg2="c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd" arg3="28"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd(39): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd" arg3="39"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(69): " arg1="pwm_generic" arg2="c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd" arg3="69"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(84): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd" arg3="84"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(27): " arg1="pwm_spram_client" arg2="c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd" arg3="27"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(50): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd" arg3="50"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(39): " arg1="ad7928_spi_master" arg2="c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd" arg3="39"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(83): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd" arg3="83"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd(83): " arg1="adc_spram_client" arg2="c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd" arg3="83"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd(106): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd" arg3="106"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd(55): " arg1="uart_rs232" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd" arg3="55"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd(89): " arg1="behavioral" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd" arg3="89"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd(41): " arg1="uart_rs232_fifo_wrap" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd" arg3="41"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd(75): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd" arg3="75"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd(118): " arg1="uart_rs232_fifo_wrap_controller" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd" arg3="118"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd(140): " arg1="behavioral" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd" arg3="140"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd(162): " arg1="bus_master" arg2="c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd" arg3="162"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd(196): " arg1="behavioral" arg2="c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd" arg3="196"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd(14): " arg1="spram" arg2="c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd(24): " arg1="structure" arg2="c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd" arg3="24"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(179): " arg1="uart_spram_top" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd" arg3="179"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(210): " arg1="rtl" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd" arg3="210"  />
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(179): executing uart_spram_top(rtl)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(208): " arg1="uart_spram_top" arg2="rtl" arg3="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd" arg4="208"  />
+Top module name (VHDL): uart_spram_top
+Last elaborated design is uart_spram_top(rtl)
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/se5c00/data/se5clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Top-level module name = uart_spram_top.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="TX"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="reset_i"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.req"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.we"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.addr[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[15]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[14]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[13]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[12]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_req.wdata[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.ack"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[15]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[14]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[13]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[12]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c0_rsp.rdata[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.req"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.we"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.addr[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[15]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[14]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[13]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[12]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_req.wdata[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.ack"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[15]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[14]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[13]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[12]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c1_rsp.rdata[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.req"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.we"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.addr[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[15]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[14]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[13]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[12]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_req.wdata[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.ack"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[15]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[14]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[13]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[12]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="c2_rsp.rdata[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="PWM_0"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="PWM_1"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="PWM_2"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="PWM_3"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="curr_addr[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwm_raw[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwm_raw[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwm_raw[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwm_raw[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="pwr"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_busy"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_data_valid"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[11]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[10]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[9]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[8]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[7]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[6]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[5]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[4]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result[0]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result_chan[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result_chan[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="adc_result_chan[0]"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(234): " arg1="c0_req.wdata[15]" arg2="c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd" arg3="234"  />
+######## Missing driver on net c0_req.wdata[15]. Patching with GND.
+######## Missing driver on net c0_req.wdata[14]. Patching with GND.
+######## Missing driver on net c0_req.wdata[13]. Patching with GND.
+######## Missing driver on net c0_req.wdata[12]. Patching with GND.
+######## Missing driver on net c0_req.wdata[11]. Patching with GND.
+######## Missing driver on net c0_req.wdata[10]. Patching with GND.
+######## Missing driver on net c0_req.wdata[9]. Patching with GND.
+######## Missing driver on net c0_req.wdata[8]. Patching with GND.
+######## Missing driver on net c0_req.wdata[7]. Patching with GND.
+######## Missing driver on net c0_req.wdata[6]. Patching with GND.
+######## Missing driver on net c0_req.wdata[5]. Patching with GND.
+######## Missing driver on net c0_req.wdata[4]. Patching with GND.
+######## Missing driver on net c0_req.wdata[3]. Patching with GND.
+######## Missing driver on net c0_req.wdata[2]. Patching with GND.
+######## Missing driver on net c0_req.wdata[1]. Patching with GND.
+######## Missing driver on net c0_req.wdata[0]. Patching with GND.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_pwm_client/state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_adc_client/sched_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_adc_client/state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 001
+
+ 01 -> 010
+
+ 10 -> 100
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_uart_ctrl/rx_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 000000000001
+
+ 0001 -> 000000000010
+
+ 0010 -> 000000000100
+
+ 0011 -> 000000001000
+
+ 0100 -> 000000010000
+
+ 0101 -> 000000100000
+
+ 0110 -> 000001000000
+
+ 0111 -> 000010000000
+
+ 1000 -> 000100000000
+
+ 1001 -> 001000000000
+
+ 1010 -> 010000000000
+
+ 1011 -> 100000000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_uart_ctrl/ex_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 000000001
+
+ 0001 -> 000000010
+
+ 0010 -> 000000100
+
+ 0011 -> 000001000
+
+ 0101 -> 000010000
+
+ 0110 -> 000100000
+
+ 0111 -> 001000000
+
+ 1000 -> 010000000
+
+ 1001 -> 100000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_uart_ctrl/tx_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 000001
+
+ 001 -> 000010
+
+ 010 -> 000100
+
+ 011 -> 001000
+
+ 100 -> 010000
+
+ 101 -> 100000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_bus/bus_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_adc_client/u_adc/state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_uart_ctrl/u_uart_wrap/u_uart/tx_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0001
+
+ 001 -> 0010
+
+ 010 -> 0100
+
+ 100 -> 1000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_uart_ctrl/u_uart_wrap/u_uart/rx_state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0001
+
+ 001 -> 0010
+
+ 010 -> 0100
+
+ 100 -> 1000
+
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\u_adc_client/bus_req_r.wdata"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\u_adc_client/bus_req_r.wdata"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="\u_adc_client/bus_req_r.wdata"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="\u_adc_client/bus_req_r.wdata"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_pwm_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="\u_adc_client/sample_addr_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\u_adc_client/sample_addr_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\u_adc_client/sample_addr_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\u_adc_client/sample_addr_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_adc_client/sample_addr_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_adc_client/sample_addr_reg"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="\u_adc_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\u_adc_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\u_adc_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\u_adc_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\u_adc_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_adc_client/bus_req_r.addr"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\u_adc_client/u_adc/tx_word"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\u_uart_ctrl/tx_len_byte"  />
+######## Found 2 RTL RAMs in the design.
+######## Mapping RTL RAM \u_uart_ctrl/u_uart_wrap/u_rx_fifo/ram to 1 EBR blocks in PSEUDO_DUAL_PORT Mode
+
+######## Mapping RTL RAM \u_uart_ctrl/u_uart_wrap/u_tx_fifo/ram to 1 EBR blocks in PSEUDO_DUAL_PORT Mode
+
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(145): " arg1="\u_pwm_client/gen_pwm[2].u_pwm/div_count_33" arg2="c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd" arg3="145"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(188): " arg1="\u_pwm_client/bus_req_r.we_111" arg2="c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd" arg3="188"  />
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+    <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\u_adc_client/bus_req_r.addr_i4"  />
+    <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\u_reset_delay/counter_i4"  />
+Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i1 is a one-to-one match with \u_adc_client/u_adc/tx_word__i7.
+Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i2 is a one-to-one match with \u_adc_client/u_adc/tx_word__i3.
+Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i1 is a one-to-one match with \u_adc_client/u_adc/tx_word__i2.
+Duplicate register/latch removal. \u_adc_client/sweep_frame_idx__i0 is a one-to-one match with \u_adc_client/adc_next_chan__i0.
+Duplicate register/latch removal. \u_adc_client/sweep_frame_idx__i1 is a one-to-one match with \u_adc_client/adc_next_chan__i1.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in uart_spram_top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/se5c00/data/se5clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   7092 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file UARTSPRAM_impl1.ngd.
+
+################### Begin Area Report (uart_spram_top)######################
+Number of register bits => 2942 of 10021 (29 % )
+CCU2D => 196
+DP8KC => 2
+EHXPLLJ => 1
+FD1P3AX => 64
+FD1P3AY => 1
+FD1P3IX => 2495
+FD1P3JX => 16
+FD1S3AX => 80
+FD1S3IX => 217
+FD1S3JX => 69
+GSR => 1
+IB => 2
+INV => 6
+L6MUX21 => 385
+LUT4 => 2543
+MUX21 => 16
+OB => 12
+PFUMX => 531
+ROM16X1A => 192
+SPR16X4C => 256
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+OSCJ("8.31")(1,4) => 1
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : u_pll/clk_sys, loads : 3203
+  Net : u_clk/clk_osc, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 178
+Top 10 highest fanout Clock Enables:
+  Net : u_uart_ctrl/clk_sys_enable_2412, loads : 541
+  Net : u_uart_ctrl/clk_sys_enable_979, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1029, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1079, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_865, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1129, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_929, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1179, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_172, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1229, loads : 50
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u_uart_ctrl/n29759, loads : 591
+  Net : u_bus/mem_addr_4, loads : 544
+  Net : u_uart_ctrl/clk_sys_enable_2412, loads : 541
+  Net : u_uart_ctrl/ex_index_0, loads : 300
+  Net : u_bus/mem_addr_5, loads : 288
+  Net : u_uart_ctrl/ex_index_2, loads : 260
+  Net : u_uart_ctrl/tx_index_0, loads : 258
+  Net : u_uart_ctrl/ex_index_4, loads : 226
+  Net : u_bus/mem_addr_6, loads : 160
+  Net : u_reset_delay/n30225, loads : 158
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_sys]                 |  200.000 MHz|   54.253 MHz|    16 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 168.840  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 5.484  secs
+--------------------------------------------------------------
+
+map -a "MachXO3D" -p LCMXO3D-9400HC -t CABGA256 -s 5 -oc Commercial   "UARTSPRAM_impl1.ngd" -o "UARTSPRAM_impl1_map.ncd" -pr "UARTSPRAM_impl1.prf" -mp "UARTSPRAM_impl1.mrp" -lpf "C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1/UARTSPRAM_impl1.lpf" -lpf "C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: UARTSPRAM_impl1.ngd
+   Picdevice="LCMXO3D-9400HC"
+
+   Pictype="CABGA256"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO3D-9400HCCABGA256, Performance used: 5.
+
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf(7): Semantic error in &quot;FREQUENCY NET &quot;osc_8m31&quot; 8.310000 MHz ;&quot;: " arg1="osc_8m31 matches no clock nets in the design. " arg2="C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf" arg3="7"  />
+Loading device for application map from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:   2942 out of 10021 (29%)
+      PFU registers:         2942 out of  9400 (31%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:      2416 out of  4700 (51%)
+      SLICEs as Logic/ROM:   1648 out of  4700 (35%)
+      SLICEs as RAM:          768 out of  3525 (22%)
+      SLICEs as Carry:        196 out of  4700 (4%)
+   Number of LUT4s:        4662 out of  9400 (50%)
+      Number used as logic LUTs:        2734
+      Number used as distributed RAM:   1536
+      Number used as ripple logic:      392
+      Number used as shift registers:     0
+   Number of PIO sites used: 14 + 4(JTAG) out of 207 (9%)
+   Number of block RAMs:  2 out of 48 (4%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Security used :   No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCSLEWRATEA):  0 out of 6 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net clk_sys: 2153 loads, 2153 rising, 0 falling (Driver: u_pll/PLLInst_0 )
+     Net clk_osc: 1 loads, 1 rising, 0 falling (Driver: u_clk/u_osch )
+   Number of Clock Enables:  178
+     Net u_bus/clk_sys_enable_1845: 16 loads, 16 LSLICEs
+     Net clk_sys_enable_2573: 18 loads, 18 LSLICEs
+     Net u_bus/clk_sys_enable_1904: 9 loads, 9 LSLICEs
+     Net clk_sys_enable_2454: 15 loads, 15 LSLICEs
+     Net clk_sys_enable_2490: 11 loads, 11 LSLICEs
+     Net clk_sys_enable_579: 1 loads, 1 LSLICEs
+     Net clk_sys_enable_1910: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_1973: 9 loads, 9 LSLICEs
+     Net clk_sys_enable_1980: 4 loads, 4 LSLICEs
+     Net clk_sys_enable_2375: 3 loads, 3 LSLICEs
+     Net clk_sys_enable_555: 4 loads, 4 LSLICEs
+     Net clk_sys_enable_2420: 5 loads, 5 LSLICEs
+     Net clk_sys_enable_2428: 5 loads, 5 LSLICEs
+     Net clk_sys_enable_2456: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_2529: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_2540: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_2551: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_2358: 1 loads, 1 LSLICEs
+     Net clk_sys_enable_2458: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_1349: 7 loads, 7 LSLICEs
+     Net clk_sys_enable_1974: 4 loads, 4 LSLICEs
+     Net u_pwm_client/clk_sys_enable_566: 2 loads, 2 LSLICEs
+     Net u_pwm_client/clk_sys_enable_563: 8 loads, 8 LSLICEs
+     Net u_pwm_client/clk_sys_enable_487: 8 loads, 8 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2472: 8 loads, 8 LSLICEs
+     Net clk_sys_enable_1906: 2 loads, 2 LSLICEs
+     Net u_pwm_client/clk_sys_enable_572: 1 loads, 1 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2481: 6 loads, 6 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2480: 1 loads, 1 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2484: 6 loads, 6 LSLICEs
+     Net u_pwm_client/clk_sys_enable_1869: 1 loads, 1 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2483: 6 loads, 6 LSLICEs
+     Net u_pwm_client/clk_sys_enable_2482: 6 loads, 6 LSLICEs
+     Net clk_sys_enable_706: 2 loads, 2 LSLICEs
+     Net clk_sys_enable_1822: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2574: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_195: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1916: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_72: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_99: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_172: 25 loads, 25 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_532: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_524: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_517: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_510: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_499: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_492: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_476: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_465: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_458: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_443: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_435: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_428: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_421: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_414: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_406: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_397: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_390: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_383: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_376: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_366: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_359: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_350: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_277: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_269: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_262: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_255: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_247: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_239: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_231: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_224: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_216: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_209: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_202: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_122: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_114: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2514: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_736: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_729: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_714: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_627: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_618: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_610: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_603: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_595: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_588: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_580: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_749: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_756: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_763: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_770: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_777: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_784: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_791: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_798: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_805: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_812: 5 loads, 5 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_854: 8 loads, 8 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2412: 275 loads, 275 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_861: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_879: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_886: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_865: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2365: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/tx_busy: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2294: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1981: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2569: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1951: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2350: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1320: 21 loads, 21 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2371: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2421: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2336: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2507: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2021: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2035: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2049: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2063: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2077: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2091: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2105: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2119: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2133: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2147: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2161: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2175: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2189: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2203: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2217: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2231: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2245: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2259: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2273: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2287: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2357: 10 loads, 10 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2308: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2315: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2322: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2329: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_2518: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_709: 2 loads, 2 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1917: 3 loads, 3 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_929: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_979: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1029: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1079: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1129: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1179: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1229: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1279: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1823: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/clk_sys_enable_1866: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/clk_sys_enable_2398: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_542: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2390: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2386: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_1908: 3 loads, 3 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2571: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2388: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_1865: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2387: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_1863: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/clk_sys_enable_2389: 1 loads, 1 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_tx_fifo/clk_sys_enable_2479: 6 loads, 6 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_tx_fifo/clk_sys_enable_1937: 5 loads, 5 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_rx_fifo/clk_sys_enable_1958: 5 loads, 5 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_rx_fifo/clk_sys_enable_2478: 5 loads, 5 LSLICEs
+     Net u_adc_client/clk_sys_enable_695: 3 loads, 3 LSLICEs
+     Net u_adc_client/clk_sys_enable_1338: 8 loads, 8 LSLICEs
+     Net u_adc_client/sweep_start_pulse: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_2562: 8 loads, 8 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_597: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_617: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_624: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_634: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_1864: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_1991: 2 loads, 2 LSLICEs
+   Number of LSRs:  71
+     Net n30230: 32 loads, 32 LSLICEs
+     Net n30252: 26 loads, 26 LSLICEs
+     Net n30231: 36 loads, 36 LSLICEs
+     Net u_bus/n25200: 1 loads, 1 LSLICEs
+     Net u_bus/n18358: 1 loads, 1 LSLICEs
+     Net n30232: 50 loads, 50 LSLICEs
+     Net n30233: 35 loads, 35 LSLICEs
+     Net n30225: 1 loads, 1 LSLICEs
+     Net u_bus/n16955: 1 loads, 1 LSLICEs
+     Net n30253: 34 loads, 34 LSLICEs
+     Net n30226: 26 loads, 26 LSLICEs
+     Net n30254: 29 loads, 29 LSLICEs
+     Net n30229: 28 loads, 28 LSLICEs
+     Net n30263: 33 loads, 33 LSLICEs
+     Net n30264: 28 loads, 28 LSLICEs
+     Net n30227: 27 loads, 27 LSLICEs
+     Net n30243: 27 loads, 27 LSLICEs
+     Net n30228: 24 loads, 24 LSLICEs
+     Net n30265: 27 loads, 27 LSLICEs
+     Net n29759: 261 loads, 261 LSLICEs
+     Net u_pwm_client/n15130: 2 loads, 2 LSLICEs
+     Net u_pwm_client/n10814: 8 loads, 8 LSLICEs
+     Net u_pwm_client/n19370: 12 loads, 12 LSLICEs
+     Net u_pwm_client/n19404: 6 loads, 6 LSLICEs
+     Net u_pwm_client/n29642: 1 loads, 1 LSLICEs
+     Net n30255: 29 loads, 29 LSLICEs
+     Net n30256: 30 loads, 30 LSLICEs
+     Net u_pwm_client/n19381: 6 loads, 6 LSLICEs
+     Net u_pwm_client/gen_pwm_3..u_pwm/n19418: 8 loads, 8 LSLICEs
+     Net n30266: 27 loads, 27 LSLICEs
+     Net u_pwm_client/gen_pwm_2..u_pwm/n19417: 8 loads, 8 LSLICEs
+     Net u_pwm_client/gen_pwm_1..u_pwm/n19416: 8 loads, 8 LSLICEs
+     Net u_pwm_client/gen_pwm_0..u_pwm/n19430: 8 loads, 8 LSLICEs
+     Net u_pll/pll_lock: 26 loads, 26 LSLICEs
+     Net u_uart_ctrl/n15501: 9 loads, 9 LSLICEs
+     Net u_uart_ctrl/n15505: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/tx_busy: 2 loads, 2 LSLICEs
+     Net u_uart_ctrl/n25136: 1 loads, 1 LSLICEs
+     Net n30234: 26 loads, 26 LSLICEs
+     Net n30235: 26 loads, 26 LSLICEs
+     Net n30236: 26 loads, 26 LSLICEs
+     Net n30237: 26 loads, 26 LSLICEs
+     Net n30238: 26 loads, 26 LSLICEs
+     Net n30239: 26 loads, 26 LSLICEs
+     Net n30240: 26 loads, 26 LSLICEs
+     Net n30241: 26 loads, 26 LSLICEs
+     Net n30242: 26 loads, 26 LSLICEs
+     Net n30244: 25 loads, 25 LSLICEs
+     Net n30245: 25 loads, 25 LSLICEs
+     Net n30246: 25 loads, 25 LSLICEs
+     Net n30247: 25 loads, 25 LSLICEs
+     Net n30248: 25 loads, 25 LSLICEs
+     Net n30249: 25 loads, 25 LSLICEs
+     Net n30250: 25 loads, 25 LSLICEs
+     Net n30251: 25 loads, 25 LSLICEs
+     Net u_uart_ctrl/n19437: 6 loads, 6 LSLICEs
+     Net u_uart_ctrl/n19433: 8 loads, 8 LSLICEs
+     Net n30257: 29 loads, 29 LSLICEs
+     Net n30258: 29 loads, 29 LSLICEs
+     Net n30259: 28 loads, 28 LSLICEs
+     Net n30260: 29 loads, 29 LSLICEs
+     Net n30261: 28 loads, 28 LSLICEs
+     Net n30262: 29 loads, 29 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/n19504: 4 loads, 4 LSLICEs
+     Net u_uart_ctrl/u_uart_wrap/u_uart/n11792: 5 loads, 5 LSLICEs
+     Net u_adc_client/n18522: 1 loads, 1 LSLICEs
+     Net u_adc_client/n16934: 1 loads, 1 LSLICEs
+     Net u_adc_client/n16926: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/primed_o: 1 loads, 1 LSLICEs
+     Net u_adc_client/u_adc/clk_sys_enable_2562: 2 loads, 2 LSLICEs
+     Net reset_i: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net mem_addr_4: 576 loads
+     Net mem_addr_0: 490 loads
+     Net mem_addr_1: 490 loads
+     Net mem_addr_2: 490 loads
+     Net mem_addr_3: 490 loads
+     Net n30210: 470 loads
+     Net n30211: 470 loads
+     Net n30212: 470 loads
+     Net n30213: 470 loads
+     Net n29759: 334 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 3 secs  
+Total REAL Time: 4 secs  
+Peak Memory Usage: 111 MB
+
+Dumping design to file UARTSPRAM_impl1_map.ncd.
+
+ncd2vdb "UARTSPRAM_impl1_map.ncd" ".vdbs/UARTSPRAM_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+
+mpartrce -p "UARTSPRAM_impl1.p2t" -f "UARTSPRAM_impl1.p3t" -tf "UARTSPRAM_impl1.pt" "UARTSPRAM_impl1_map.ncd" "UARTSPRAM_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "UARTSPRAM_impl1_map.ncd"
+Sun Apr 19 15:05:47 2026
+
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 UARTSPRAM_impl1_map.ncd UARTSPRAM_impl1.dir/5_1.ncd UARTSPRAM_impl1.prf
+Preference file: UARTSPRAM_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file UARTSPRAM_impl1_map.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application par from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   14+4(JTAG)/384     5% used
+                  14+4(JTAG)/207     9% bonded
+
+   SLICE           2416/4700         51% used
+
+   OSC                1/1           100% used
+   EBR                2/48            4% used
+   PLL                1/2            50% used
+
+
+Number of Signals: 9008
+Number of Connections: 29364
+    <postMsg mid="61061045" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   14 out of 14 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_sys (driver: u_pll/PLLInst_0, clk load #: 2152)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    u_uart_ctrl/clk_sys_enable_2412 (driver: u_uart_ctrl/SLICE_3189, clk load #: 0, sr load #: 0, ce load #: 275)
+    n29759 (driver: u_uart_ctrl/SLICE_1627, clk load #: 0, sr load #: 261, ce load #: 0)
+    n30232 (driver: u_spram/mem_7_1, clk load #: 0, sr load #: 50, ce load #: 0)
+    n30231 (driver: u_spram/mem_7_1.491, clk load #: 0, sr load #: 36, ce load #: 0)
+    n30233 (driver: u_spram/mem_7_1, clk load #: 0, sr load #: 35, ce load #: 0)
+    n30253 (driver: u_spram/mem_8_2, clk load #: 0, sr load #: 34, ce load #: 0)
+    n30263 (driver: u_spram/mem_9_1.506, clk load #: 0, sr load #: 33, ce load #: 0)
+    n30230 (driver: u_spram/mem_7_1.491, clk load #: 0, sr load #: 32, ce load #: 0)
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+.....................
+Placer score = 2235088.
+Finished Placer Phase 1.  REAL time: 9 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  2218610
+Finished Placer Phase 2.  REAL time: 9 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 1 out of 2 (50%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_sys" from CLKOP on comp "u_pll/PLLInst_0" on PLL site "LPLL", clk load = 2152
+  SECONDARY "u_uart_ctrl/clk_sys_enable_2412" from F1 on comp "u_uart_ctrl/SLICE_3189" on site "R9C26A", clk load = 0, ce load = 275, sr load = 0
+  SECONDARY "n29759" from F0 on comp "u_uart_ctrl/SLICE_1627" on site "R9C24C", clk load = 0, ce load = 0, sr load = 261
+  SECONDARY "n30232" from Q0 on comp "u_spram/mem_7_1" on site "R23C26B", clk load = 0, ce load = 0, sr load = 50
+  SECONDARY "n30231" from Q1 on comp "u_spram/mem_7_1.491" on site "R23C26A", clk load = 0, ce load = 0, sr load = 36
+  SECONDARY "n30233" from Q1 on comp "u_spram/mem_7_1" on site "R23C26B", clk load = 0, ce load = 0, sr load = 35
+  SECONDARY "n30253" from Q1 on comp "u_spram/mem_8_2" on site "R23C24B", clk load = 0, ce load = 0, sr load = 34
+  SECONDARY "n30263" from Q1 on comp "u_spram/mem_9_1.506" on site "R23C27A", clk load = 0, ce load = 0, sr load = 33
+  SECONDARY "n30230" from Q0 on comp "u_spram/mem_7_1.491" on site "R23C26A", clk load = 0, ce load = 0, sr load = 32
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   14 + 4(JTAG) out of 384 (4.7%) PIO sites used.
+   14 + 4(JTAG) out of 207 (8.7%) bonded PIO sites used.
+   Number of PIO comps: 14; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 6 / 51 ( 11%) | 3.3V       | -         |
+| 1        | 8 / 52 ( 15%) | 3.3V       | -         |
+| 2        | 0 / 52 (  0%) | -          | -         |
+| 3        | 0 / 16 (  0%) | -          | -         |
+| 4        | 0 / 16 (  0%) | -          | -         |
+| 5        | 0 / 20 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 9 secs 
+
+Dumping design to file UARTSPRAM_impl1.dir/5_1.ncd.
+
+0 connections routed; 29364 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=clk_osc loads=1 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 11 secs 
+
+Start NBR router at 15:05:58 04/19/26
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 15:05:59 04/19/26
+
+Start NBR section for initial routing at 15:05:59 04/19/26
+Level 4, iteration 1
+1653(0.32%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 18.269ns/0.000ns; real time: 15 secs 
+
+Info: Initial congestion level at 75% usage is 8
+Info: Initial congestion area  at 75% usage is 206 (14.80%)
+
+Start NBR section for normal routing at 15:06:02 04/19/26
+Level 4, iteration 1
+637(0.12%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 17.718ns/0.000ns; real time: 18 secs 
+Level 4, iteration 2
+281(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 17.733ns/0.000ns; real time: 19 secs 
+Level 4, iteration 3
+156(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 17.342ns/0.000ns; real time: 19 secs 
+Level 4, iteration 4
+67(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 17.342ns/0.000ns; real time: 20 secs 
+Level 4, iteration 5
+41(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 20 secs 
+Level 4, iteration 6
+33(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 20 secs 
+Level 4, iteration 7
+18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 21 secs 
+Level 4, iteration 8
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 21 secs 
+Level 4, iteration 9
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 21 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 21 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 21 secs 
+Level 4, iteration 12
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 21 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 15:06:08 04/19/26
+
+Start NBR section for re-routing at 15:06:09 04/19/26
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.032ns/0.000ns; real time: 22 secs 
+
+Start NBR section for post-routing at 15:06:09 04/19/26
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 16.032ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=clk_osc loads=1 clock_loads=1"  />
+
+Total CPU time 23 secs 
+Total REAL time: 24 secs 
+Completely routed.
+End of route.  29364 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file UARTSPRAM_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 16.032
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.201
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 23 secs 
+Total REAL time to completion: 25 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "UARTSPRAM_impl1.pt" -o "UARTSPRAM_impl1_pwc.twr" "UARTSPRAM_impl1.ncd" "UARTSPRAM_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file uartspram_impl1.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sun Apr 19 15:06:13 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o UARTSPRAM_impl1_pwc.twr -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml UARTSPRAM_impl1.ncd UARTSPRAM_impl1.prf 
+Design file:     uartspram_impl1.ncd
+Preference file: uartspram_impl1.prf
+Device,speed:    LCMXO3D-9400HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 94190 paths, 2 nets, and 29346 connections (99.94% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sun Apr 19 15:06:13 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o UARTSPRAM_impl1_pwc.twr -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml UARTSPRAM_impl1.ncd UARTSPRAM_impl1.prf 
+Design file:     uartspram_impl1.ncd
+Preference file: uartspram_impl1.prf
+Device,speed:    LCMXO3D-9400HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 94190 paths, 2 nets, and 29346 connections (99.94% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 124 MB
+
+
+thermalanalysis -ncd "UARTSPRAM_impl1.ncd" -twr "UARTSPRAM_impl1_pwc.twr" -o "UARTSPRAM_impl1.pwrp" -freq 25 
+
+Loading design for application Thermal Analysis from file UARTSPRAM_impl1.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Thermal Analysis from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Finish process design uart_spram_top
+#:#:COMBINATORIAL:###
+#:#:COMBINATORIAL:###
+
+poweraccess has run successfully.
+
+Current working directory: C:\Users\kwlyon\Box\Codex\HW9_5_Code\impl1
+
+Design and Device Details
+--------------------------
+Family: MachXO3D
+Device: LCMXO3D-9400HC
+Package: CABGA256
+Performance Grade: 5
+Operating Conditions: Commercial
+Part Number: LCMXO3D-9400HC_CABGA256
+Process Type: Worst
+
+Clock Frequency used by TWR
+---------------------------------
+Clock         |   Frequency (MHz)
+---------------------------------
+clk_sys       |   24.93
+---------------------------------
+Clock Frequency used by User Setting: 25 MHz
+
+Note: Use clock frequency from twr file, but use default clock frequency 
+      set in Thermal Analysis of Strategy for clocks which are not in twr file.
+
+Active Factor: 12.5%
+
+Used LUT: 4662
+Total LUT: 9400
+% LUT Utilization: 49.60%
+
+Used IO: 18
+Total IO: 207
+% IO Utilization: 8.70%
+
+VCC=3.3V
+---------------------------------------------------------------------------------------------------------------------------------------------
+Board Selection     |   Heat Sink                |   Air Flow       |   Theta-JA (C/W)  |   Total Power (W)     |   Maximum Safe Ambient (C)
+---------------------------------------------------------------------------------------------------------------------------------------------
+JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.398490            |   60.04
+JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.384746            |   66.59
+JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.383642            |   67.17
+JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.382425            |   67.81
+Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.376570            |   71.04
+Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.373883            |   72.64
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+VCC=2.5V
+---------------------------------------------------------------------------------------------------------------------------------------------
+Board Selection     |   Heat Sink                |   Air Flow       |   Theta-JA (C/W)  |   Total Power (W)     |   Maximum Safe Ambient (C)
+---------------------------------------------------------------------------------------------------------------------------------------------
+JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.293633            |   66.04
+JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.286675            |   71.01
+JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.286088            |   71.46
+JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.285475            |   71.94
+Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.282352            |   74.40
+Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.280896            |   75.61
+---------------------------------------------------------------------------------------------------------------------------------------------
+trce -f "UARTSPRAM_impl1.pt" -o "UARTSPRAM_impl1.twr" "UARTSPRAM_impl1.ncd" "UARTSPRAM_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file uartspram_impl1.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sun Apr 19 15:07:50 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o UARTSPRAM_impl1.twr -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml UARTSPRAM_impl1.ncd UARTSPRAM_impl1.prf 
+Design file:     uartspram_impl1.ncd
+Preference file: uartspram_impl1.prf
+Device,speed:    LCMXO3D-9400HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 94190 paths, 2 nets, and 29346 connections (99.94% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sun Apr 19 15:07:51 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o UARTSPRAM_impl1.twr -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml UARTSPRAM_impl1.ncd UARTSPRAM_impl1.prf 
+Design file:     uartspram_impl1.ncd
+Preference file: uartspram_impl1.prf
+Device,speed:    LCMXO3D-9400HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 94190 paths, 2 nets, and 29346 connections (99.94% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 124 MB
+
+
+tmcheck -par "UARTSPRAM_impl1.par" 
+
+bitgen -f "UARTSPRAM_impl1.t2b" -w "UARTSPRAM_impl1.ncd" -s "../security_setting/UARTSPRAM.secproj" "UARTSPRAM_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+    <postMsg mid="1081328" type="Warning" dynamic="0" navigation="0"  />
+
+Loading design for application Bitgen from file UARTSPRAM_impl1.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Bitgen from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from UARTSPRAM_impl1.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|       CUR_DESIGN_BOOT_LOCATION  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|   BACKGROUND_RECONFIG_SECURITY  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               SLAVE_IDLE_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_RETRY  |                            0**  |
++---------------------------------+---------------------------------+
+|                     SFDP_CHECK  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|             SPIM_ADDRESS_32BIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                   PRIMARY_BOOT  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|                 SECONDARY_BOOT  |                         NONE**  |
++---------------------------------+---------------------------------+
+|               ROLLBACK_CONTROL  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|              I2C_GLITCH_FILTER  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        I2C_GLITCH_FILTER_RANGE  |                    R_16_50NS**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "UARTSPRAM_impl1.bit".
+EBR: BITGEN_DUMMY_COMP_EBR_R8C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C47 => WID = 0b0000000000, its value = 0
+EBR: u_uart_ctrl/u_uart_wrap/u_rx_fifo/ram0 => WID = 0b0000000001, its value = 1
+WID == 1 , pending to handle.
+EBR: u_uart_ctrl/u_uart_wrap/u_tx_fifo/ram0 => WID = 0b0000000001, its value = 1
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 219 MB
+
+tmcheck -par "UARTSPRAM_impl1.par" 
+
+bitgen -f "UARTSPRAM_impl1.t2b" -w "UARTSPRAM_impl1.ncd" -s "../security_setting/UARTSPRAM.secproj" -jedec "UARTSPRAM_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.14.0.75.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+    <postMsg mid="1081328" type="Warning" dynamic="0" navigation="0"  />
+
+Loading design for application Bitgen from file UARTSPRAM_impl1.ncd.
+Design name: uart_spram_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3D-9400HC
+Package:     CABGA256
+Performance: 5
+Loading device for application Bitgen from file 'se5c9400.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 7.
+Performance Hardware Data Status:   Final          Version 2.2.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from UARTSPRAM_impl1.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+|       CUR_DESIGN_BOOT_LOCATION  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|   BACKGROUND_RECONFIG_SECURITY  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               SLAVE_IDLE_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_TIMER  |                            0**  |
++---------------------------------+---------------------------------+
+|MASTER_PREAMBLE_DETECTION_RETRY  |                            0**  |
++---------------------------------+---------------------------------+
+|                     SFDP_CHECK  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|             SPIM_ADDRESS_32BIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                   PRIMARY_BOOT  |                      IMAGE_0**  |
++---------------------------------+---------------------------------+
+|                 SECONDARY_BOOT  |                         NONE**  |
++---------------------------------+---------------------------------+
+|               ROLLBACK_CONTROL  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|              I2C_GLITCH_FILTER  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        I2C_GLITCH_FILTER_RANGE  |                    R_16_50NS**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+Saving bit stream in "UARTSPRAM_impl1_a.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        3582 Pages (128*3582 Bits).
+EBR: BITGEN_DUMMY_COMP_EBR_R8C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R8C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R15C47 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C1 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C4 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C7 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C10 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C13 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C16 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C19 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C22 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C26 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C29 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C32 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C35 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C38 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C41 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C44 => WID = 0b0000000000, its value = 0
+EBR: BITGEN_DUMMY_COMP_EBR_R22C47 => WID = 0b0000000000, its value = 0
+EBR: u_uart_ctrl/u_uart_wrap/u_rx_fifo/ram0 => WID = 0b0000000001, its value = 1
+WID == 1 , pending to handle.
+EBR: u_uart_ctrl/u_uart_wrap/u_tx_fifo/ram0 => WID = 0b0000000001, its value = 1
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 3582 Pages (Page 0 to Page 3581).
+Initialized UFM Pages:                     0 Page.
+ 
+=========
+Padding summary
+=========
+Padded 1248256 bits for this design
+
+
+Jedec File [0]: UARTSPRAM_impl1.fea
+Jedec File [1]: UARTSPRAM_impl1_a.jed
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 219 MB

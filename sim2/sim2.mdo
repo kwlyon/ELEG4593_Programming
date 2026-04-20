@@ -1,0 +1,49 @@
+if {![file exists "C:/Users/kwlyon/Box/Codex/HW9_5_Code/sim2/sim2.mpf"]} { 
+	project new "C:/Users/kwlyon/Box/Codex/HW9_5_Code/sim2" sim2
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/bus_pkg.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/SPRAM.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Master.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/My_Own_FN_FIFO.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232_fifo_wrap.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_rs232_fifo_wrap_controller.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/adc_spram_client.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/PWM_Module/PWM_Module.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/pwm_spram_client.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/reset_delay.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/pll_24m93.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Internal_clk.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_spram_top.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Interface_tb_adc_model.vhd"
+	project addfile "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Interface_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/bus_pkg.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/SPRAM.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Master.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/My_Own_FN_FIFO.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232_fifo_wrap.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_rs232_fifo_wrap_controller.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/adc_spram_client.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/PWM_Module/PWM_Module.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/pwm_spram_client.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/reset_delay.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/pll_24m93.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Internal_clk.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_spram_top.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Interface_tb_adc_model.vhd"
+	vcom -work work "C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Interface_tb.vhd"
+} else {
+	project open "C:/Users/kwlyon/Box/Codex/HW9_5_Code/sim2/sim2"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_machxo3d  Bus_Interface_TestBench_adc_model -t ps
+view wave
+add wave /*
+run 1000ns

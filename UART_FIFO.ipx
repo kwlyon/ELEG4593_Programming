@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="UART_FIFO" module="UART_FIFO" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2026 03 05 08:49:34.552" version="5.8" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="UART_FIFO.lpc" type="lpc" modified="2026 03 05 08:49:31.770"/>
+		<File name="UART_FIFO.vhd" type="top_level_vhdl" modified="2026 03 05 08:49:31.859"/>
+		<File name="UART_FIFO_tmpl.vhd" type="template_vhdl" modified="2026 03 05 08:49:31.860"/>
+		<File name="tb_UART_FIFO_tmpl.vhd" type="testbench_vhdl" modified="2026 03 05 08:49:31.862"/>
+  </Package>
+</DiamondModule>

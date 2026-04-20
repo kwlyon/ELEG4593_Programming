@@ -1,0 +1,170 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn260407194855"></A><B><U><big>pn260407194855</big></U></B>
+#Start recording tcl command: 4/7/2026 19:48:45
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework9/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework9/HW9_Code/UARTSPRAM.ldf"
+#Stop recording: 4/7/2026 19:48:55
+
+
+
+<A name="pn260407195102"></A><B><U><big>pn260407195102</big></U></B>
+#Start recording tcl command: 4/7/2026 19:50:26
+#Project Location: C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework9/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/OneDrive - University of Arkansas/FPGA Course/Homeworks/Homework9/HW9_Code/UARTSPRAM.ldf"
+#Stop recording: 4/7/2026 19:51:02
+
+
+
+<A name="pn260413184619"></A><B><U><big>pn260413184619</big></U></B>
+#Start recording tcl command: 4/13/2026 18:39:21
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src remove "C:/Users/kwlyon/Box/Developed Modules/PWM_Module/PWM_Module.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/PID_Module/PID.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Developed Modules/AD7928_core/AD7928_Core.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Developed Modules/AD7928_core/AD7928_model.vhd"
+prj_project save
+prj_project close
+#Stop recording: 4/13/2026 18:46:19
+
+
+
+<A name="pn260413185305"></A><B><U><big>pn260413185305</big></U></B>
+#Start recording tcl command: 4/13/2026 18:47:24
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src add "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd" "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd" "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_spi_wrapper.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/PID_Module/PID.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/PWM_Module/PWM_Module.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/SPI_Module/spi_ad7928_wrap.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/SPI_Module/spi_ad7928_wrap.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_spi_wrapper.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd"
+prj_project save
+prj_project close
+#Stop recording: 4/13/2026 18:53:05
+
+
+
+<A name="pn260413190543"></A><B><U><big>pn260413190543</big></U></B>
+#Start recording tcl command: 4/13/2026 18:54:15
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src add "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd"
+prj_src syn_sim -src "C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_model.vhd" SimulateOnly
+#Stop recording: 4/13/2026 19:05:43
+
+
+
+<A name="pn260413191856"></A><B><U><big>pn260413191856</big></U></B>
+#Start recording tcl command: 4/13/2026 19:17:11
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_project close
+#Stop recording: 4/13/2026 19:18:56
+
+
+
+<A name="pn260413210414"></A><B><U><big>pn260413210414</big></U></B>
+#Start recording tcl command: 4/13/2026 20:59:26
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_run Export -impl impl1 -forceAll
+#Stop recording: 4/13/2026 21:04:14
+
+
+
+<A name="pn260413212838"></A><B><U><big>pn260413212838</big></U></B>
+#Start recording tcl command: 4/13/2026 21:17:10
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_src remove "C:/Users/kwlyon/Box/Codex/HW9_Code/tb_blinked_leds_top.vhd"
+prj_src remove "C:/Users/kwlyon/Box/Codex/HW9_Code/tb_uart_spram_top_adc.vhd"
+prj_src add "C:/Users/kwlyon/Box/Codex/HW9_Code/Bus_Interface_tb.vhd"
+prj_src syn_sim -src "C:/Users/kwlyon/Box/Codex/HW9_Code/Bus_Interface_tb.vhd" SimulateOnly
+prj_src add "C:/Users/kwlyon/Box/Codex/HW9_Code/sim5/sim5.spf"
+prj_src add "C:/Users/kwlyon/Box/Codex/HW9_Code/sim9/sim9.spf"
+#Stop recording: 4/13/2026 21:28:38
+
+
+
+<A name="pn260415083741"></A><B><U><big>pn260415083741</big></U></B>
+#Start recording tcl command: 4/15/2026 08:35:57
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_Code/UARTSPRAM.ldf"
+prj_project close
+#Stop recording: 4/15/2026 08:37:41
+
+
+
+<A name="pn260417085104"></A><B><U><big>pn260417085104</big></U></B>
+#Start recording tcl command: 4/17/2026 08:29:36
+#Project Location: C:/Users/kwlyon/Box/Codex/HW9_5_Code; Project name: UARTSPRAM
+prj_project open "C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.ldf"
+prj_project close
+#Stop recording: 4/17/2026 08:51:04
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
