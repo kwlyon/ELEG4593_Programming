@@ -3,7 +3,7 @@
 --
 -- Creator: Kevin Lyon
 -- Date Created: 03 March 2026
--- Last Updated: 07 April 2026
+-- Last Updated: 03 May 2026
 --
 -- Description:
 --   Top-level integration for a UART-controlled SPRAM memory interface
@@ -29,6 +29,11 @@
 --           Middle-priority memory-mapped ADC peripheral. Periodically starts
 --           AD7928 conversions and writes the latest valid sample into SPRAM
 --           through the shared Bus_Master interface.
+--
+--       pid_spram_pwm_wrapper.vhd
+--           PID wrapper that reads gains and process values from SPRAM,
+--           executes My_PID at the ADC sweep rate, and drives a dedicated
+--           runtime-divider PWM output.
 --
 --       Bus_Master.vhd
 --           Dedicated prioritized SPRAM arbitration wrapper that services
@@ -84,18 +89,28 @@
 --   - SPRAM is 1024 x 16 words.
 --   - Address bus width is therefore 10 bits.
 --   - PWM control registers begin at SPRAM address 0x0100.
---   - PWM duty-cycle registers are 16 bits wide.
+--   - 0x0100 bit 0 is a global enable for PWM_0 through PWM_3.
+--   - 0x0101 is used by both PWM clients as a bounded PWM frequency control.
+--   - 0x0102 is currently unused by the LED PWM client.
+--   - 0x0103 through 0x0106 are the PWM duty-cycle registers for PWM_0
+--     through PWM_3 respectively.
+--   - 0x0103 is intentionally shared with the PID setpoint.
+--   - LED_1 / PWM_0 is driven from the PID duty output so the first LED
+--     visibly mirrors the buck converter PWM duty.
 --   - ADC sample registers begin at SPRAM address 0x0200 and are written to
 --     sequential words by channel number.
 --   - Client 0 of Bus_Master is assigned to the PWM client so PWM refresh
 --     traffic has highest priority.
---   - Client 1 of Bus_Master is assigned to the ADC client.
---   - Client 2 of Bus_Master is assigned to the UART controller.
+--   - Client 1 of Bus_Master is assigned to the PID wrapper.
+--   - Client 2 of Bus_Master is assigned to the ADC client.
+--   - Client 3 of Bus_Master is assigned to the UART controller.
 --   - Global reset is held active while PLL is unlocked.
 --   - After PLL lock is asserted, reset_delay.vhd holds reset active for
 --     exactly RESET_DELAY_CYCLES additional clk_sys cycles.
 --   - PWM client outputs are internally active-high and inverted at the
 --     top-level outputs for compatibility with active-low LEDs.
+--   - DSP_G1 is driven directly from the PID PWM output and is not inverted.
+--   - DSP_G2 is driven low continuously.
 --   - LED_4 and LED_5 are held inactive high to suppress faint glow.
 --   - LED_6 and LED_7 mirror the RX and TX UART lines for activity indication.
 --
@@ -168,6 +183,29 @@
 --     - Added LED_6 and LED_7 outputs tied to RX and TX for UART activity.
 --     - Added internal UART TX signal so TX activity can also drive LED_7
 --       without reading back an output port.
+--
+--   2026-04-22
+--     - Added pid_spram_pwm_wrapper.vhd to the top-level design.
+--     - Added dedicated DSP_G1 and DSP_G2 top-level outputs.
+--     - Updated the LED PWM client so blink registers 0x0101 and 0x0102 are
+--       ignored and 0x0100 bit 0 acts as a global enable for all four LEDs.
+--     - Updated Bus_Master client order to:
+--         Client 0 = PWM
+--         Client 1 = PID
+--         Client 2 = ADC
+--         Client 3 = UART
+--
+--   2026-05-03
+--     - Decoupled PID calculation rate from the LabVIEW LED_BlinkPRD /
+--       0x0101 register.
+--     - Passed C_SAMPLE_PERIOD_CLKS into pid_spram_pwm_wrapper as
+--       PID_UPDATE_CLKS so the PID executes once per ADC sweep period.
+--     - Reassigned 0x0101 to control the PID PWM divider instead of the PID
+--       update divider.
+--     - Updated 0x0101 behavior again so it controls a bounded PWM frequency
+--       range for both the LED PWM client and the buck/PID PWM output.
+--     - Routed the PID PWM output to both DSP_G1 and PWM_0/LED_1 so the
+--       first LED mirrors the buck converter duty cycle.
 -- ============================================================================
 library ieee;
 use ieee.std_logic_1164.all;
@@ -199,6 +237,8 @@ entity uart_spram_top is
     PWM_1    : out std_logic;
     PWM_2    : out std_logic;
     PWM_3    : out std_logic;
+    DSP_G1   : out std_logic;
+    DSP_G2   : out std_logic;
 
     LED_4    : out std_logic;
     LED_5    : out std_logic;
@@ -245,7 +285,7 @@ architecture rtl of uart_spram_top is
 
   ---------------------------------------------------------------------------
   -- Bus_Master client 1 interface
-  -- Middle priority: ADC SPRAM client
+  -- Second priority: PID SPRAM client
   ---------------------------------------------------------------------------
   signal c1_req : t_bus_req := (
     req   => '0',
@@ -261,7 +301,7 @@ architecture rtl of uart_spram_top is
 
   ---------------------------------------------------------------------------
   -- Bus_Master client 2 interface
-  -- Lowest priority: UART controller
+  -- Third priority: ADC SPRAM client
   ---------------------------------------------------------------------------
   signal c2_req : t_bus_req := (
     req   => '0',
@@ -271,6 +311,22 @@ architecture rtl of uart_spram_top is
   );
 
   signal c2_rsp : t_bus_rsp := (
+    ack   => '0',
+    rdata => (others => '0')
+  );
+
+  ---------------------------------------------------------------------------
+  -- Bus_Master client 3 interface
+  -- Lowest priority: UART controller
+  ---------------------------------------------------------------------------
+  signal c3_req : t_bus_req := (
+    req   => '0',
+    we    => '0',
+    addr  => (others => '0'),
+    wdata => (others => '0')
+  );
+
+  signal c3_rsp : t_bus_rsp := (
     ack   => '0',
     rdata => (others => '0')
   );
@@ -288,15 +344,20 @@ architecture rtl of uart_spram_top is
   -- Internal PWM signals before active-low output inversion
   ---------------------------------------------------------------------------
   signal pwm_raw : std_logic_vector(3 downto 0);
+  signal pid_pwm_raw : std_logic := '0';
 
   ---------------------------------------------------------------------------
   -- PWM configuration constants
   ---------------------------------------------------------------------------
   constant C_PWM_WIDTH       : integer := 12;
-  constant C_PWM_DIVIDER     : integer := 1;  -- Let's get us back up to ~380 Hz
+  constant C_PWM_DIVIDER     : integer := 1;  -- ~6.1 kHz at 24.93 MHz with 12-bit PWM
+  constant C_PWM_FREQ_CTRL_MAX_DIV : integer := 6; -- 0..65535 maps to div 1..6
   constant C_REG_BASE_ADDR   : integer := 16#0100#;
   constant C_PWM_PERIOD_CLKS : integer := C_PWM_DIVIDER * (2 ** C_PWM_WIDTH);
   constant C_POLL_CYCLES     : integer := C_PWM_PERIOD_CLKS;
+  constant C_PID_PWM_WIDTH      : integer := 12;
+  constant C_PID_PWM_DIVIDER    : integer := 1;  -- initial ~6.1 kHz at 24.93 MHz with 12-bit PWM
+  constant C_PID_INTEGRATOR_SHIFT : integer := 8;
 
   ---------------------------------------------------------------------------
   -- ADC configuration constants
@@ -321,10 +382,12 @@ begin
   ---------------------------------------------------------------------------
   -- Active-low LED output inversion
   ---------------------------------------------------------------------------
-  PWM_0 <= not pwm_raw(0);
+  PWM_0 <= not pid_pwm_raw;
   PWM_1 <= not pwm_raw(1);
   PWM_2 <= not pwm_raw(2);
   PWM_3 <= not pwm_raw(3);
+  DSP_G1 <= pid_pwm_raw;
+  DSP_G2 <= '0';
 
   ---------------------------------------------------------------------------
   -- Additional LED assignments
@@ -378,6 +441,7 @@ begin
       CLK_FREQ_HZ   => CLK_FREQ_HZ,
       PWM_WIDTH     => C_PWM_WIDTH,
       PWM_DIVIDER   => C_PWM_DIVIDER,
+      PWM_FREQ_CTRL_MAX_DIV => C_PWM_FREQ_CTRL_MAX_DIV,
       REG_BASE_ADDR => C_REG_BASE_ADDR,
       POLL_CYCLES   => C_POLL_CYCLES
     )
@@ -395,8 +459,28 @@ begin
     );
 
   ---------------------------------------------------------------------------
+  -- PID SPRAM + PWM wrapper
+  -- Second-priority Bus_Master client
+  ---------------------------------------------------------------------------
+  u_pid_client : entity work.pid_spram_pwm_wrapper
+    generic map (
+      PWM_COUNTER_WIDTH => C_PID_PWM_WIDTH,
+      PWM_DIVIDER       => C_PID_PWM_DIVIDER,
+      PWM_FREQ_CTRL_MAX_DIV => C_PWM_FREQ_CTRL_MAX_DIV,
+      PID_UPDATE_CLKS    => C_SAMPLE_PERIOD_CLKS,
+      PID_INTEGRATOR_SHIFT => C_PID_INTEGRATOR_SHIFT
+    )
+    port map (
+      clk_sys   => clk_sys,
+      reset_i   => reset_i,
+      bus_req   => c1_req,
+      bus_rsp   => c1_rsp,
+      pid_pwm_o => pid_pwm_raw
+    );
+
+  ---------------------------------------------------------------------------
   -- ADC SPRAM client
-  -- Middle-priority Bus_Master client
+  -- Third-priority Bus_Master client
   ---------------------------------------------------------------------------
   u_adc_client : entity work.adc_spram_client
     generic map (
@@ -409,8 +493,8 @@ begin
       clk_sys => clk_sys,
       reset_i => reset_i,
 
-      bus_req => c1_req,
-      bus_rsp => c1_rsp,
+      bus_req => c2_req,
+      bus_rsp => c2_rsp,
 
       adc_cs_n_o => SPI_CSn,
       adc_sclk_o => SPI_clk,
@@ -437,13 +521,13 @@ begin
       RX => RX,
       TX => tx_uart,
 
-      bus_req => c2_req,
-      bus_rsp => c2_rsp
+      bus_req => c3_req,
+      bus_rsp => c3_rsp
     );
 
   ---------------------------------------------------------------------------
   -- Dedicated SPRAM wrapper / arbiter
-  -- Priority: client 0 > client 1 > client 2
+  -- Priority: client 0 > client 1 > client 2 > client 3
   ---------------------------------------------------------------------------
   u_bus : entity work.Bus_Master
     port map (
@@ -454,13 +538,17 @@ begin
       c0_req => c0_req,
       c0_rsp => c0_rsp,
 
-      -- Client 1: ADC client
+      -- Client 1: PID wrapper
       c1_req => c1_req,
       c1_rsp => c1_rsp,
 
-      -- Client 2: UART controller
+      -- Client 2: ADC client
       c2_req => c2_req,
       c2_rsp => c2_rsp,
+
+      -- Client 3: UART controller
+      c3_req => c3_req,
+      c3_rsp => c3_rsp,
 
       -- SPRAM side
       mem_addr => mem_addr,

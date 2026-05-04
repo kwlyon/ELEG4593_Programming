@@ -1,136 +1,261 @@
 ----------------------------------------------------------------------
 Report for cell uart_spram_top.TECH
-Register bits:  2942 of 10021 (29.358%)
-I/O cells:      14
+Register bits:  3369 of 10021 (33.619%)
+I/O cells:      16
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D       196          100.0
+                               AND2        27          100.0
+                              CCU2D       602          100.0
                               DP8KC         2          100.0
                             EHXPLLJ         1          100.0
-                            FD1P3AX        64          100.0
-                            FD1P3AY         1          100.0
-                            FD1P3IX      2495          100.0
-                            FD1P3JX        16          100.0
-                            FD1S3AX        80          100.0
-                            FD1S3IX       217          100.0
-                            FD1S3JX        69          100.0
+                             FADD2B       437          100.0
+                            FD1P3AX       205          100.0
+                            FD1P3AY         3          100.0
+                            FD1P3IX      2762          100.0
+                            FD1P3JX        14          100.0
+                            FD1S3AX        91          100.0
+                            FD1S3IX       220          100.0
+                            FD1S3JX        74          100.0
                                 GSR         1          100.0
                                  IB         2          100.0
                                 INV         6          100.0
-                            L6MUX21       385          100.0
-                               LUT4      2543          100.0
-                              MUX21        16          100.0
-                                 OB        12          100.0
-                              PFUMX       531          100.0
+                            L6MUX21       389          100.0
+                               LUT4      3037          100.0
+                              MULT2       296          100.0
+                              MUX21        20          100.0
+                                ND2       118          100.0
+                                 OB        14          100.0
+                               OSCJ         1          100.0
+                              PFUMX       576          100.0
                            ROM16X1A       192          100.0
                            SPR16X4C       256          100.0
-                        VERIFIC_PWR         4          100.0
 SUB MODULES
                          Bus_Master         1
               My_Own_FN_FIFO(8,256)         1
            My_Own_FN_FIFO(8,256)_U0         1
+           My_PID(17,16,10,8,32,24)         1
                               SPRAM         1
                ad7928_spi_master(5)         1
 adc_spram_client(24930000,5,4096,512)         1
                  clock("8.31")(1,4)         1
+pid_spram_pwm_wrapper(17,16,10,8,32,24,12,1,6,4096,257,259,513,768,769,770)         1
                           pll_24m93         1
-             pwm_generic(12,1,true)         1
-          pwm_generic(12,1,true)_U1         1
-          pwm_generic(12,1,true)_U2         1
-          pwm_generic(12,1,true)_U3         1
-pwm_spram_client(24930000,12,1,256,4096,24930)         1
+pwm_spram_client(24930000,12,1,6,256,4096)         1
                     reset_delay(16)         1
     uart_rs232(24930000,9600,8,1,0)         1
 uart_rs232_fifo_wrap(24930000,9600,8,1,0)         1
 uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0)         1
-                              TOTAL      7106
+                              TOTAL      9361
 ----------------------------------------------------------------------
 Report for cell Bus_Master.v1
 Instance Path : u_bus
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3IX       108            4.3
-                            FD1S3IX        13            6.0
+                            FD1P3IX       124            4.5
+                            FD1S3IX        15            6.8
                             FD1S3JX         1            1.4
-                               LUT4        75            2.9
+                               LUT4       109            3.6
+                              PFUMX         5            0.9
+                              TOTAL       254
+----------------------------------------------------------------------
+Report for cell pid_spram_pwm_wrapper(17,16,10,8,32,24,12,1,6,4096,257,259,513,768,769,770).v1
+Instance Path : u_pid_client
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        27          100.0
+                              CCU2D       310           51.5
+                             FADD2B       437          100.0
+                            FD1P3AX       175           85.4
+                            FD1P3AY         1           33.3
+                            FD1P3IX       245            8.9
+                            FD1S3AX        11           12.1
+                            FD1S3IX        51           23.2
+                            FD1S3JX         1            1.4
+                            L6MUX21         1            0.3
+                               LUT4       315           10.4
+                              MULT2       296          100.0
+                              MUX21         4           20.0
+                                ND2       118          100.0
+                              PFUMX        33            5.7
+SUB MODULES
+           My_PID(17,16,10,8,32,24)         1
+                              TOTAL      2026
+----------------------------------------------------------------------
+Report for cell My_PID(17,16,10,8,32,24).v1
+Instance Path : u_pid_client.u_pid
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        27          100.0
+                              CCU2D        76           12.6
+                             FADD2B       437          100.0
+                            FD1P3IX       203            7.3
+                            FD1S3AX         1            1.1
+                            FD1S3IX         2            0.9
+                               LUT4        65            2.1
+                              MULT2       296          100.0
+                                ND2       118          100.0
                               PFUMX         1            0.2
-                              TOTAL       198
+                              TOTAL      1226
 ----------------------------------------------------------------------
 Report for cell SPRAM.v1
 Instance Path : u_spram
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 INV         6          100.0
-                            L6MUX21       192           49.9
-                               LUT4       544           21.4
-                              MUX21        16          100.0
-                              PFUMX       256           48.2
+                            L6MUX21       192           49.4
+                               LUT4       544           17.9
+                              MUX21        16           80.0
+                              PFUMX       256           44.4
                            ROM16X1A       192          100.0
                            SPR16X4C       256          100.0
-                        VERIFIC_PWR         1           25.0
-                              TOTAL      1463
+                              TOTAL      1462
 ----------------------------------------------------------------------
 Report for cell clock("8.31")(1,4).v1
 Instance Path : u_clk
-                              TOTAL         0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               OSCJ         1          100.0
+                              TOTAL         1
 ----------------------------------------------------------------------
-Report for cell pwm_spram_client(24930000,12,1,256,4096,24930).v1
+Report for cell pwm_spram_client(24930000,12,1,6,256,4096).v1
 Instance Path : u_pwm_client
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D       116           59.2
-                            FD1P3AX        40           62.5
-                            FD1P3IX       114            4.6
-                            FD1P3JX        13           81.3
-                            FD1S3IX        72           33.2
+                              CCU2D       213           35.4
+                            FD1P3AX         5            2.4
+                            FD1P3IX       121            4.4
+                            FD1P3JX        12           85.7
+                            FD1S3IX        22           10.0
                             FD1S3JX         1            1.4
-                               LUT4        91            3.6
+                            L6MUX21         3            0.8
+                               LUT4       123            4.1
+                              PFUMX         6            1.0
+                              TOTAL       506
+----------------------------------------------------------------------
+Report for cell uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0).v1
+Instance Path : u_uart_ctrl
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        72           12.0
+                              DP8KC         2          100.0
+                            FD1P3AX        23           11.2
+                            FD1P3AY         1           33.3
+                            FD1P3IX      2223           80.5
+                            FD1S3AX        79           86.8
+                            FD1S3IX        82           37.3
+                            FD1S3JX         8           10.8
+                            L6MUX21       193           49.6
+                               LUT4      1624           53.5
+                              PFUMX       272           47.2
 SUB MODULES
-             pwm_generic(12,1,true)         1
-          pwm_generic(12,1,true)_U1         1
-          pwm_generic(12,1,true)_U2         1
-          pwm_generic(12,1,true)_U3         1
-                              TOTAL       451
+              My_Own_FN_FIFO(8,256)         1
+           My_Own_FN_FIFO(8,256)_U0         1
+    uart_rs232(24930000,9600,8,1,0)         1
+uart_rs232_fifo_wrap(24930000,9600,8,1,0)         1
+                              TOTAL      4583
 ----------------------------------------------------------------------
-Report for cell pwm_generic(12,1,true).v1
-Instance Path : u_pwm_client.gen_pwm[3].u_pwm
+Report for cell uart_rs232_fifo_wrap(24930000,9600,8,1,0).v1
+Instance Path : u_uart_ctrl.u_uart_wrap
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        14            7.1
-                            FD1P3IX        12            0.5
-                            FD1S3IX        13            6.0
-                               LUT4         2            0.1
-                              TOTAL        41
+                              CCU2D        48            8.0
+                              DP8KC         2          100.0
+                            FD1P3AX        12            5.9
+                            FD1P3AY         1           33.3
+                            FD1P3IX        60            2.2
+                            FD1S3AX        68           74.7
+                            FD1S3IX        19            8.6
+                            FD1S3JX         5            6.8
+                            L6MUX21         1            0.3
+                               LUT4       171            5.6
+                              PFUMX         5            0.9
+SUB MODULES
+              My_Own_FN_FIFO(8,256)         1
+           My_Own_FN_FIFO(8,256)_U0         1
+    uart_rs232(24930000,9600,8,1,0)         1
+                              TOTAL       395
 ----------------------------------------------------------------------
-Report for cell pwm_generic(12,1,true)_U1.v1
-Instance Path : u_pwm_client.gen_pwm[2].u_pwm
+Report for cell uart_rs232(24930000,9600,8,1,0).v1
+Instance Path : u_uart_ctrl.u_uart_wrap.u_uart
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        14            7.1
-                            FD1P3IX        12            0.5
-                            FD1S3IX        13            6.0
-                               LUT4         2            0.1
-                              TOTAL        41
+                              CCU2D        12            2.0
+                            FD1P3AX        12            5.9
+                            FD1P3AY         1           33.3
+                            FD1P3IX        26            0.9
+                            FD1S3AX         2            2.2
+                            FD1S3IX        19            8.6
+                            FD1S3JX         5            6.8
+                            L6MUX21         1            0.3
+                               LUT4       111            3.7
+                              PFUMX         4            0.7
+                              TOTAL       193
 ----------------------------------------------------------------------
-Report for cell pwm_generic(12,1,true)_U2.v1
-Instance Path : u_pwm_client.gen_pwm[1].u_pwm
+Report for cell My_Own_FN_FIFO(8,256).v1
+Instance Path : u_uart_ctrl.u_uart_wrap.u_tx_fifo
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        14            7.1
-                            FD1P3IX        12            0.5
-                            FD1S3IX        13            6.0
-                               LUT4         2            0.1
-                              TOTAL        41
+                              CCU2D        18            3.0
+                              DP8KC         1           50.0
+                            FD1P3IX        17            0.6
+                            FD1S3AX        33           36.3
+                               LUT4        39            1.3
+                              PFUMX         1            0.2
+                              TOTAL       109
 ----------------------------------------------------------------------
-Report for cell pwm_generic(12,1,true)_U3.v1
-Instance Path : u_pwm_client.gen_pwm[0].u_pwm
+Report for cell My_Own_FN_FIFO(8,256)_U0.v1
+Instance Path : u_uart_ctrl.u_uart_wrap.u_rx_fifo
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        14            7.1
-                            FD1P3IX        12            0.5
-                            FD1S3IX        13            6.0
-                               LUT4         2            0.1
-                              TOTAL        41
+                              CCU2D        18            3.0
+                              DP8KC         1           50.0
+                            FD1P3IX        17            0.6
+                            FD1S3AX        33           36.3
+                               LUT4        19            0.6
+                              TOTAL        88
+----------------------------------------------------------------------
+Report for cell adc_spram_client(24930000,5,4096,512).v1
+Instance Path : u_adc_client
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7            1.2
+                            FD1P3AX         2            1.0
+                            FD1P3AY         1           33.3
+                            FD1P3IX        46            1.7
+                            FD1P3JX         1            7.1
+                            FD1S3AX         1            1.1
+                            FD1S3IX        49           22.3
+                            FD1S3JX        16           21.6
+                               LUT4       128            4.2
+                              PFUMX         3            0.5
+SUB MODULES
+               ad7928_spi_master(5)         1
+                              TOTAL       255
+----------------------------------------------------------------------
+Report for cell ad7928_spi_master(5).v1
+Instance Path : u_adc_client.u_adc
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1            0.5
+                            FD1P3AY         1           33.3
+                            FD1P3IX        24            0.9
+                            FD1P3JX         1            7.1
+                            FD1S3IX        27           12.3
+                            FD1S3JX         1            1.4
+                               LUT4        80            2.6
+                              PFUMX         2            0.3
+                              TOTAL       137
+----------------------------------------------------------------------
+Report for cell reset_delay(16).v1
+Instance Path : u_reset_delay
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX         3            0.1
+                            FD1P3JX         1            7.1
+                            FD1S3IX         1            0.5
+                            FD1S3JX        47           63.5
+                               LUT4       135            4.4
+                              TOTAL       187
 ----------------------------------------------------------------------
 Report for cell pll_24m93.v1
 Instance Path : u_pll
@@ -139,129 +264,3 @@ Instance Path : u_pll
                             EHXPLLJ         1          100.0
                                LUT4         2            0.1
                               TOTAL         3
-----------------------------------------------------------------------
-Report for cell uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0).v1
-Instance Path : u_uart_ctrl
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        73           37.2
-                              DP8KC         2          100.0
-                            FD1P3AX        22           34.4
-                            FD1P3AY         1          100.0
-                            FD1P3IX      2224           89.1
-                            FD1S3AX        79           98.8
-                            FD1S3IX        82           37.8
-                            FD1S3JX         8           11.6
-                            L6MUX21       193           50.1
-                               LUT4      1642           64.6
-                              PFUMX       270           50.8
-                        VERIFIC_PWR         2           50.0
-SUB MODULES
-              My_Own_FN_FIFO(8,256)         1
-           My_Own_FN_FIFO(8,256)_U0         1
-    uart_rs232(24930000,9600,8,1,0)         1
-uart_rs232_fifo_wrap(24930000,9600,8,1,0)         1
-                              TOTAL      4602
-----------------------------------------------------------------------
-Report for cell uart_rs232_fifo_wrap(24930000,9600,8,1,0).v1
-Instance Path : u_uart_ctrl.u_uart_wrap
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        48           24.5
-                              DP8KC         2          100.0
-                            FD1P3AX        12           18.8
-                            FD1P3AY         1          100.0
-                            FD1P3IX        60            2.4
-                            FD1S3AX        68           85.0
-                            FD1S3IX        19            8.8
-                            FD1S3JX         5            7.2
-                            L6MUX21         1            0.3
-                               LUT4       179            7.0
-                              PFUMX         3            0.6
-                        VERIFIC_PWR         2           50.0
-SUB MODULES
-              My_Own_FN_FIFO(8,256)         1
-           My_Own_FN_FIFO(8,256)_U0         1
-    uart_rs232(24930000,9600,8,1,0)         1
-                              TOTAL       403
-----------------------------------------------------------------------
-Report for cell uart_rs232(24930000,9600,8,1,0).v1
-Instance Path : u_uart_ctrl.u_uart_wrap.u_uart
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        12            6.1
-                            FD1P3AX        12           18.8
-                            FD1P3AY         1          100.0
-                            FD1P3IX        26            1.0
-                            FD1S3AX         2            2.5
-                            FD1S3IX        19            8.8
-                            FD1S3JX         5            7.2
-                            L6MUX21         1            0.3
-                               LUT4       131            5.2
-                              PFUMX         3            0.6
-                              TOTAL       212
-----------------------------------------------------------------------
-Report for cell My_Own_FN_FIFO(8,256).v1
-Instance Path : u_uart_ctrl.u_uart_wrap.u_tx_fifo
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        18            9.2
-                              DP8KC         1           50.0
-                            FD1P3IX        17            0.7
-                            FD1S3AX        33           41.3
-                               LUT4        28            1.1
-                        VERIFIC_PWR         1           25.0
-                              TOTAL        98
-----------------------------------------------------------------------
-Report for cell My_Own_FN_FIFO(8,256)_U0.v1
-Instance Path : u_uart_ctrl.u_uart_wrap.u_rx_fifo
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        18            9.2
-                              DP8KC         1           50.0
-                            FD1P3IX        17            0.7
-                            FD1S3AX        33           41.3
-                               LUT4        18            0.7
-                        VERIFIC_PWR         1           25.0
-                              TOTAL        88
-----------------------------------------------------------------------
-Report for cell adc_spram_client(24930000,5,4096,512).v1
-Instance Path : u_adc_client
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D         7            3.6
-                            FD1P3AX         2            3.1
-                            FD1P3IX        46            1.8
-                            FD1P3JX         2           12.5
-                            FD1S3AX         1            1.3
-                            FD1S3IX        49           22.6
-                            FD1S3JX        16           23.2
-                               LUT4       133            5.2
-                              PFUMX         3            0.6
-SUB MODULES
-               ad7928_spi_master(5)         1
-                              TOTAL       260
-----------------------------------------------------------------------
-Report for cell ad7928_spi_master(5).v1
-Instance Path : u_adc_client.u_adc
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3AX         1            1.6
-                            FD1P3IX        24            1.0
-                            FD1P3JX         2           12.5
-                            FD1S3IX        27           12.4
-                            FD1S3JX         1            1.4
-                               LUT4        85            3.3
-                              PFUMX         2            0.4
-                              TOTAL       142
-----------------------------------------------------------------------
-Report for cell reset_delay(16).v1
-Instance Path : u_reset_delay
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3IX         3            0.1
-                            FD1P3JX         1            6.3
-                            FD1S3IX         1            0.5
-                            FD1S3JX        43           62.3
-                               LUT4         8            0.3
-                              TOTAL        56

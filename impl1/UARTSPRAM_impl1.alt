@@ -1,23 +1,25 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sun Apr 19 15:07:54 2026 *
+NOTE DATE CREATED: Mon May 04 15:12:07 2026 *
 NOTE DESIGN NAME: uart_spram_top *
 NOTE DEVICE NAME: LCMXO3D-9400HC-5CABGA256 *
 NOTE PIN ASSIGNMENTS *
 NOTE PINS PWM_1 : J13 : out *
-NOTE PINS PWM_0 : H11 : out *
-NOTE PINS SPI_Dout : D6 : in *
-NOTE PINS SPI_CSn : C4 : out *
-NOTE PINS RX : A11 : in *
 NOTE PINS LED_7 : P16 : out *
+NOTE PINS PWM_0 : H11 : out *
 NOTE PINS LED_6 : N15 : out *
+NOTE PINS SPI_CSn : C4 : out *
+NOTE PINS SPI_Din : C5 : out *
 NOTE PINS LED_5 : L13 : out *
 NOTE PINS LED_4 : K11 : out *
+NOTE PINS DSP_G2 : E11 : out *
+NOTE PINS DSP_G1 : C12 : out *
 NOTE PINS PWM_3 : L12 : out *
 NOTE PINS PWM_2 : J11 : out *
-NOTE PINS SPI_Din : C5 : out *
 NOTE PINS SPI_clk : E6 : out *
 NOTE PINS TX : C11 : out *
+NOTE PINS RX : A11 : in *
+NOTE PINS SPI_Dout : D6 : in *
 NOTE PINS SYSCONFIG_PIN_MCLK : P6 : inout *
 NOTE PINS SYSCONFIG_PIN_SO : T6 : inout *
 NOTE PINS SYSCONFIG_PIN_SN : R12 : in *

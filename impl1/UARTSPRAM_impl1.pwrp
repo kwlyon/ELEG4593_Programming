@@ -13,7 +13,7 @@ Clock Frequency used by TWR
 ---------------------------------
 Clock         |   Frequency (MHz)
 ---------------------------------
-clk_sys       |   24.93
+clk_sys       |   14.199
 ---------------------------------
 Clock Frequency used by User Setting: 25 MHz
 
@@ -22,34 +22,34 @@ Note: Use clock frequency from twr file, but use default clock frequency
 
 Active Factor: 12.5%
 
-Used LUT: 4662
+Used LUT: 7507
 Total LUT: 9400
-% LUT Utilization: 49.60%
+% LUT Utilization: 79.86%
 
-Used IO: 18
+Used IO: 20
 Total IO: 207
-% IO Utilization: 8.70%
+% IO Utilization: 9.66%
 
 VCC=3.3V
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Board Selection     |   Heat Sink                |   Air Flow       |   Theta-JA (C/W)  |   Total Power (W)     |   Maximum Safe Ambient (C)
 ---------------------------------------------------------------------------------------------------------------------------------------------
-JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.398490            |   60.04
-JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.384746            |   66.59
-JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.383642            |   67.17
-JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.382425            |   67.81
-Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.376570            |   71.04
-Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.373883            |   72.64
+JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.386156            |   59.88
+JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.372327            |   66.47
+JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.371224            |   67.05
+JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.370004            |   67.69
+Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.364126            |   70.95
+Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.361371            |   72.56
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 VCC=2.5V
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Board Selection     |   Heat Sink                |   Air Flow       |   Theta-JA (C/W)  |   Total Power (W)     |   Maximum Safe Ambient (C)
 ---------------------------------------------------------------------------------------------------------------------------------------------
-JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.293633            |   66.04
-JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.286675            |   71.01
-JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.286088            |   71.46
-JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.285475            |   71.94
-Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.282352            |   74.40
-Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.280896            |   75.61
+JEDEC Board (2S2P)  |   No Heat Sink             |   0 LFM          |   27.9            |   0.284001            |   65.92
+JEDEC Board (2S2P)  |   Low Profile Heat Sink    |   200 LFM        |   20.58           |   0.276998            |   70.93
+JEDEC Board (2S2P)  |   Medium Profile Heat Sink |   200 LFM        |   19.93           |   0.276419            |   71.37
+JEDEC Board (2S2P)  |   High Profile Heat Sink   |   200 LFM        |   19.22           |   0.275781            |   71.86
+Small Board         |   No Heat Sink             |   0 LFM          |   15.6            |   0.272651            |   74.33
+Medium Board        |   No Heat Sink             |   0 LFM          |   13.82           |   0.271191            |   75.55
 ---------------------------------------------------------------------------------------------------------------------------------------------

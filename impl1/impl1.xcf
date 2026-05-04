@@ -19,14 +19,14 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1/UARTSPRAM_impl1_a.jed</File>
-			<FileTime>04/17/26 12:54:34</FileTime>
-			<JedecChecksum>0xDFEE</JedecChecksum>
+			<File>C:/Users/kwlyon/Box/Codex/FinalProject/impl1/UARTSPRAM_impl1_a.jed</File>
+			<FileTime>04/22/26 20:38:03</FileTime>
+			<JedecChecksum>0xB04E</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<NVSector	selected="TRUE">
 				<SectorIndex>1</SectorIndex>
 				<SectorName>FlashA</SectorName>
-				<SectorFile>C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1/UARTSPRAM_impl1_a.jed</SectorFile>
+				<SectorFile>C:/Users/kwlyon/Box/Codex/FinalProject/impl1/UARTSPRAM_impl1_a.jed</SectorFile>
 				<SectorOper>FLASH Erase,Program,Verify</SectorOper>
 			</NVSector>
 			<Option>

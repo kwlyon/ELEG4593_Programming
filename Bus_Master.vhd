@@ -3,7 +3,7 @@
 --
 -- Creator: Kevin Lyon
 -- Date Created: 04 March 2026
--- Last Updated: 07 April 2026
+-- Last Updated: 22 April 2026
 --
 -- Description:
 --   Prioritized SPRAM wrapper / arbitration layer for the MachXO3D internal
@@ -33,8 +33,9 @@
 --
 --       Fixed priority arbitration.
 --       Client 0 has highest priority.
---       Client 1 has middle priority.
---       Client 2 has lowest priority.
+--       Client 1 has second priority.
+--       Client 2 has third priority.
+--       Client 3 has lowest priority.
 --
 --   Transaction behavior:
 --
@@ -150,6 +151,15 @@
 --         Client 2 = UART (lowest)
 --     - No intended change to SPRAM transaction timing.
 --
+--   2026-04-22
+--     - Added a fourth client port for the PID wrapper.
+--     - Updated arbitration priority to:
+--         Client 0 = PWM
+--         Client 1 = PID
+--         Client 2 = ADC
+--         Client 3 = UART
+--     - UART remains the lowest-priority bus client.
+--
 -- ============================================================================
 
 library ieee;
@@ -171,16 +181,22 @@ entity Bus_Master is
     c0_rsp : out t_bus_rsp;
 
     ----------------------------------------------------------------------------
-    -- Client 1 ADC (middle priority)
+    -- Client 1 PID (second priority)
     ----------------------------------------------------------------------------
     c1_req : in  t_bus_req;
     c1_rsp : out t_bus_rsp;
 
     ----------------------------------------------------------------------------
-    -- Client 2 RS232 (lowest priority)
+    -- Client 2 ADC (third priority)
     ----------------------------------------------------------------------------
     c2_req : in  t_bus_req;
     c2_rsp : out t_bus_rsp;
+
+    ----------------------------------------------------------------------------
+    -- Client 3 RS232 (lowest priority)
+    ----------------------------------------------------------------------------
+    c3_req : in  t_bus_req;
+    c3_rsp : out t_bus_rsp;
 
     ----------------------------------------------------------------------------
     -- SPRAM interface
@@ -212,7 +228,8 @@ architecture behavioral of Bus_Master is
     SEL_NONE,
     SEL_C0,
     SEL_C1,
-    SEL_C2
+    SEL_C2,
+    SEL_C3
   );
 
   signal bus_state      : t_bus_state  := BUS_IDLE;
@@ -237,11 +254,17 @@ architecture behavioral of Bus_Master is
     rdata => (others => '0')
   );
 
+  signal c3_rsp_r       : t_bus_rsp := (
+    ack   => '0',
+    rdata => (others => '0')
+  );
+
 begin
 
   c0_rsp <= c0_rsp_r;
   c1_rsp <= c1_rsp_r;
   c2_rsp <= c2_rsp_r;
+  c3_rsp <= c3_rsp_r;
 
   ------------------------------------------------------------------------------
   -- Arbitration / SPRAM transaction engine
@@ -254,6 +277,7 @@ begin
       c0_rsp_r.ack <= '0';
       c1_rsp_r.ack <= '0';
       c2_rsp_r.ack <= '0';
+      c3_rsp_r.ack <= '0';
 
       mem_en <= '0';
       mem_we <= '0';
@@ -271,6 +295,8 @@ begin
         c1_rsp_r.rdata   <= (others => '0');
         c2_rsp_r.ack     <= '0';
         c2_rsp_r.rdata   <= (others => '0');
+        c3_rsp_r.ack     <= '0';
+        c3_rsp_r.rdata   <= (others => '0');
 
         mem_addr         <= (others => '0');
         mem_din          <= (others => '0');
@@ -319,6 +345,18 @@ begin
                 bus_state <= BUS_READ_SETUP;
               end if;
 
+            elsif c3_req.req = '1' then
+              active_client <= SEL_C3;
+              active_we     <= c3_req.we;
+              active_addr   <= c3_req.addr;
+              active_wdata  <= c3_req.wdata;
+
+              if c3_req.we = '1' then
+                bus_state <= BUS_WRITE_SETUP;
+              else
+                bus_state <= BUS_READ_SETUP;
+              end if;
+
             else
               bus_state <= BUS_IDLE;
             end if;
@@ -351,6 +389,11 @@ begin
               c2_rsp_r.ack   <= '1';
               bus_state      <= BUS_READ_WAIT_REQ_LOW;
 
+            elsif active_client = SEL_C3 then
+              c3_rsp_r.rdata <= mem_dout;
+              c3_rsp_r.ack   <= '1';
+              bus_state      <= BUS_READ_WAIT_REQ_LOW;
+
             else
               active_client <= SEL_NONE;
               bus_state     <= BUS_IDLE;
@@ -378,6 +421,14 @@ begin
 
             elsif active_client = SEL_C2 then
               if c2_req.req = '0' then
+                active_client <= SEL_NONE;
+                bus_state     <= BUS_IDLE;
+              else
+                bus_state     <= BUS_READ_WAIT_REQ_LOW;
+              end if;
+
+            elsif active_client = SEL_C3 then
+              if c3_req.req = '0' then
                 active_client <= SEL_NONE;
                 bus_state     <= BUS_IDLE;
               else
@@ -420,6 +471,10 @@ begin
               c2_rsp_r.ack <= '1';
               bus_state    <= BUS_WRITE_WAIT_REQ_LOW;
 
+            elsif active_client = SEL_C3 then
+              c3_rsp_r.ack <= '1';
+              bus_state    <= BUS_WRITE_WAIT_REQ_LOW;
+
             else
               active_client <= SEL_NONE;
               bus_state     <= BUS_IDLE;
@@ -447,6 +502,14 @@ begin
 
             elsif active_client = SEL_C2 then
               if c2_req.req = '0' then
+                active_client <= SEL_NONE;
+                bus_state     <= BUS_IDLE;
+              else
+                bus_state     <= BUS_WRITE_WAIT_REQ_LOW;
+              end if;
+
+            elsif active_client = SEL_C3 then
+              if c3_req.req = '0' then
                 active_client <= SEL_NONE;
                 bus_state     <= BUS_IDLE;
               else

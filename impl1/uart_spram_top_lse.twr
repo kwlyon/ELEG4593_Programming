@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Sun Apr 19 15:05:38 2026
+Mon May 04 15:07:50 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,173 +18,965 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_sys]
+Constraint: create_clock -period 40.000000 -name clk0 [get_nets clk_sys]
             4096 items scored, 4096 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error:  The following path violates requirements by 13.432ns
+Error:  The following path violates requirements by 37.942ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3IX    CK             \u_uart_ctrl/rx_buf[1]__i2  (from clk_sys +)
-   Destination:    FD1P3IX    SP             \u_uart_ctrl/err_rsp_pending_1596  (to clk_sys +)
+   Source:         FD1P3AX    CK             \u_pid_client/read_data_r__i0  (from clk_sys +)
+   Destination:    FD1P3IX    D              \u_pid_client/pwm_divider_r_i15  (to clk_sys +)
 
-   Delay:                  18.173ns  (37.1% logic, 62.9% route), 16 logic levels.
+   Delay:                  77.796ns  (53.0% logic, 47.0% route), 148 logic levels.
 
  Constraint Details:
 
-     18.173ns data_path \u_uart_ctrl/rx_buf[1]__i2 to \u_uart_ctrl/err_rsp_pending_1596 violates
-      5.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 4.741ns) by 13.432ns
+     77.796ns data_path \u_pid_client/read_data_r__i0 to \u_pid_client/pwm_divider_r_i15 violates
+     40.000ns delay constraint less
+      0.146ns L_S requirement (totaling 39.854ns) by 37.942ns
 
- Path Details: \u_uart_ctrl/rx_buf[1]__i2 to \u_uart_ctrl/err_rsp_pending_1596
+ Path Details: \u_pid_client/read_data_r__i0 to \u_pid_client/pwm_divider_r_i15
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \u_uart_ctrl/rx_buf[1]__i2 (from clk_sys)
-Route         9   e 1.363                                  \u_uart_ctrl/rx_buf[1][1]
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i2_3_lut_rep_846
-Route         3   e 1.051                                  \u_uart_ctrl/n29755
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i7288_2_lut_3_lut_4_lut
-Route         1   e 0.788                                  \u_uart_ctrl/req_valid_N_5173[7]
-A1_TO_FCO   ---     0.752           C[2] to COUT           \u_uart_ctrl/req_valid_I_20_0
-Route         1   e 0.020                                  \u_uart_ctrl/n24807
-FCI_TO_FCO  ---     0.143            CIN to COUT           \u_uart_ctrl/req_valid_I_20_9
-Route         1   e 0.020                                  \u_uart_ctrl/n24808
-FCI_TO_F    ---     0.544            CIN to S[2]           \u_uart_ctrl/req_valid_I_20_10
-Route         1   e 0.788                                  \u_uart_ctrl/req_valid_N_5171
-LUT4        ---     0.448              D to Z              \u_uart_ctrl/i1_2_lut_rep_708_4_lut
-Route         2   e 0.954                                  \u_uart_ctrl/n29617
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i1_4_lut_adj_102
-Route         1   e 0.020                                  \u_uart_ctrl/n3
-MUXL5       ---     0.212           BLUT to Z              \u_uart_ctrl/i11
-Route         1   e 0.788                                  \u_uart_ctrl/n25411
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i1_2_lut_3_lut_adj_146
-Route         1   e 0.788                                  \u_uart_ctrl/n5
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i1_4_lut_adj_96
-Route        14   e 1.509                                  \u_uart_ctrl/n66
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i2_2_lut_adj_120
-Route         1   e 0.788                                  \u_uart_ctrl/n10_adj_5784
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i7_4_lut_adj_103
-Route         1   e 0.020                                  \u_uart_ctrl/n25091
-MUXL5       ---     0.212           BLUT to Z              \u_uart_ctrl/i8503
-Route         1   e 0.788                                  \u_uart_ctrl/n17705
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i8504_3_lut
-Route         2   e 0.954                                  \u_uart_ctrl/err_rsp_pending_N_5201
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i2_3_lut_adj_134
-Route         1   e 0.788                                  \u_uart_ctrl/clk_sys_enable_1866
+L_CO        ---     0.403             CK to Q              \u_pid_client/read_data_r__i0 (from clk_sys)
+Route         7   e 1.303                                  read_data_r[0]
+LUT4        ---     0.448              A to Z              \u_pid_client/i28166_2_lut
+Route         1   e 0.788                                  \u_pid_client/n18_adj_7322
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/mult_69_add_1_add_2_3
+Route         1   e 0.020                                  \u_pid_client/n40625
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_5
+Route         1   e 0.020                                  \u_pid_client/n40626
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_7
+Route         1   e 0.020                                  \u_pid_client/n40627
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_9
+Route         1   e 0.020                                  \u_pid_client/n40628
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_11
+Route         1   e 0.020                                  \u_pid_client/n40629
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_13
+Route         1   e 0.020                                  \u_pid_client/n40630
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_15
+Route         1   e 0.020                                  \u_pid_client/n40631
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_17
+Route         1   e 0.020                                  \u_pid_client/n40632
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/mult_69_add_1_add_2_19
+Route        11   e 1.651                                  \u_pid_client/n21578
+LUT4        ---     0.448              A to Z              \u_pid_client/i28038_1_lut
+Route         1   e 0.788                                  \u_pid_client/n28335
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/add_324_3
+Route         1   e 0.020                                  \u_pid_client/n40599
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_324_5
+Route         1   e 0.020                                  \u_pid_client/n40600
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_324_7
+Route         1   e 0.020                                  \u_pid_client/n40601
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_324_9
+Route        10   e 1.628                                  \u_pid_client/n1681
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_326_3
+Route         1   e 0.020                                  \u_pid_client/n40604
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_5
+Route         1   e 0.020                                  \u_pid_client/n40605
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_7
+Route         1   e 0.020                                  \u_pid_client/n40606
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_9
+Route         1   e 0.020                                  \u_pid_client/n40607
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_326_11
+Route        13   e 1.794                                  \u_pid_client/n1716
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_328_3
+Route         1   e 0.020                                  \u_pid_client/n40610
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_5
+Route         1   e 0.020                                  \u_pid_client/n40611
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_7
+Route         1   e 0.020                                  \u_pid_client/n40612
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_9
+Route         1   e 0.020                                  \u_pid_client/n40613
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_11
+Route         1   e 0.020                                  \u_pid_client/n40614
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_328_13
+Route        15   e 1.801                                  \u_pid_client/n1751
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_330_3
+Route         1   e 0.020                                  \u_pid_client/n40617
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_5
+Route         1   e 0.020                                  \u_pid_client/n40618
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_7
+Route         1   e 0.020                                  \u_pid_client/n40619
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_9
+Route         1   e 0.020                                  \u_pid_client/n40620
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_11
+Route         1   e 0.020                                  \u_pid_client/n40621
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_13
+Route         1   e 0.020                                  \u_pid_client/n40622
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_330_15
+Route        17   e 1.807                                  \u_pid_client/n1786
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_332_3
+Route         1   e 0.020                                  \u_pid_client/n40635
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_5
+Route         1   e 0.020                                  \u_pid_client/n40636
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_7
+Route         1   e 0.020                                  \u_pid_client/n40637
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_9
+Route         1   e 0.020                                  \u_pid_client/n40638
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_11
+Route         1   e 0.020                                  \u_pid_client/n40639
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_13
+Route         1   e 0.020                                  \u_pid_client/n40640
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_15
+Route         1   e 0.020                                  \u_pid_client/n40641
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_332_17
+Route        17   e 1.807                                  \u_pid_client/n1821
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_334_3
+Route         1   e 0.020                                  \u_pid_client/n40644
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_5
+Route         1   e 0.020                                  \u_pid_client/n40645
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_7
+Route         1   e 0.020                                  \u_pid_client/n40646
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_9
+Route         1   e 0.020                                  \u_pid_client/n40647
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_11
+Route         1   e 0.020                                  \u_pid_client/n40648
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_13
+Route         1   e 0.020                                  \u_pid_client/n40649
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_15
+Route         1   e 0.020                                  \u_pid_client/n40650
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_334_17
+Route        17   e 1.807                                  \u_pid_client/n1856
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_336_3
+Route         1   e 0.020                                  \u_pid_client/n40653
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_5
+Route         1   e 0.020                                  \u_pid_client/n40654
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_7
+Route         1   e 0.020                                  \u_pid_client/n40655
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_9
+Route         1   e 0.020                                  \u_pid_client/n40656
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_11
+Route         1   e 0.020                                  \u_pid_client/n40657
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_13
+Route         1   e 0.020                                  \u_pid_client/n40658
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_15
+Route         1   e 0.020                                  \u_pid_client/n40659
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_336_17
+Route        17   e 1.807                                  \u_pid_client/n1891
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_338_3
+Route         1   e 0.020                                  \u_pid_client/n40662
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_5
+Route         1   e 0.020                                  \u_pid_client/n40663
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_7
+Route         1   e 0.020                                  \u_pid_client/n40664
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_9
+Route         1   e 0.020                                  \u_pid_client/n40665
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_11
+Route         1   e 0.020                                  \u_pid_client/n40666
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_13
+Route         1   e 0.020                                  \u_pid_client/n40667
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_15
+Route         1   e 0.020                                  \u_pid_client/n40668
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_338_17
+Route        17   e 1.807                                  \u_pid_client/n1926
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_340_3
+Route         1   e 0.020                                  \u_pid_client/n40671
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_5
+Route         1   e 0.020                                  \u_pid_client/n40672
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_7
+Route         1   e 0.020                                  \u_pid_client/n40673
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_9
+Route         1   e 0.020                                  \u_pid_client/n40674
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_11
+Route         1   e 0.020                                  \u_pid_client/n40675
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_13
+Route         1   e 0.020                                  \u_pid_client/n40676
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_15
+Route         1   e 0.020                                  \u_pid_client/n40677
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_340_17
+Route        17   e 1.807                                  \u_pid_client/n1961
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_342_3
+Route         1   e 0.020                                  \u_pid_client/n40680
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_5
+Route         1   e 0.020                                  \u_pid_client/n40681
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_7
+Route         1   e 0.020                                  \u_pid_client/n40682
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_9
+Route         1   e 0.020                                  \u_pid_client/n40683
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_11
+Route         1   e 0.020                                  \u_pid_client/n40684
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_13
+Route         1   e 0.020                                  \u_pid_client/n40685
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_15
+Route         1   e 0.020                                  \u_pid_client/n40686
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_342_17
+Route        17   e 1.807                                  \u_pid_client/n1996
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_344_3
+Route         1   e 0.020                                  \u_pid_client/n40689
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_5
+Route         1   e 0.020                                  \u_pid_client/n40690
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_7
+Route         1   e 0.020                                  \u_pid_client/n40691
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_9
+Route         1   e 0.020                                  \u_pid_client/n40692
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_11
+Route         1   e 0.020                                  \u_pid_client/n40693
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_13
+Route         1   e 0.020                                  \u_pid_client/n40694
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_15
+Route         1   e 0.020                                  \u_pid_client/n40695
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_344_17
+Route        17   e 1.807                                  \u_pid_client/n2031
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_346_3
+Route         1   e 0.020                                  \u_pid_client/n40698
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_5
+Route         1   e 0.020                                  \u_pid_client/n40699
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_7
+Route         1   e 0.020                                  \u_pid_client/n40700
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_9
+Route         1   e 0.020                                  \u_pid_client/n40701
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_11
+Route         1   e 0.020                                  \u_pid_client/n40702
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_13
+Route         1   e 0.020                                  \u_pid_client/n40703
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_15
+Route         1   e 0.020                                  \u_pid_client/n40704
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_346_17
+Route        17   e 1.807                                  \u_pid_client/n2066
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_348_3
+Route         1   e 0.020                                  \u_pid_client/n40707
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_5
+Route         1   e 0.020                                  \u_pid_client/n40708
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_7
+Route         1   e 0.020                                  \u_pid_client/n40709
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_9
+Route         1   e 0.020                                  \u_pid_client/n40710
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_11
+Route         1   e 0.020                                  \u_pid_client/n40711
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_13
+Route         1   e 0.020                                  \u_pid_client/n40712
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_15
+Route         1   e 0.020                                  \u_pid_client/n40713
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_348_17
+Route        17   e 1.807                                  \u_pid_client/n2101
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_350_3
+Route         1   e 0.020                                  \u_pid_client/n40716
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_5
+Route         1   e 0.020                                  \u_pid_client/n40717
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_7
+Route         1   e 0.020                                  \u_pid_client/n40718
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_9
+Route         1   e 0.020                                  \u_pid_client/n40719
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_11
+Route         1   e 0.020                                  \u_pid_client/n40720
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_13
+Route         1   e 0.020                                  \u_pid_client/n40721
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_15
+Route         1   e 0.020                                  \u_pid_client/n40722
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_350_17
+Route        17   e 1.807                                  \u_pid_client/n2136
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_352_3
+Route         1   e 0.020                                  \u_pid_client/n40725
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_5
+Route         1   e 0.020                                  \u_pid_client/n40726
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_7
+Route         1   e 0.020                                  \u_pid_client/n40727
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_9
+Route         1   e 0.020                                  \u_pid_client/n40728
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_11
+Route         1   e 0.020                                  \u_pid_client/n40729
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_13
+Route         1   e 0.020                                  \u_pid_client/n40730
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_15
+Route         1   e 0.020                                  \u_pid_client/n40731
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_352_17
+Route        17   e 1.807                                  \u_pid_client/n2171
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_354_3
+Route         1   e 0.020                                  \u_pid_client/n40734
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_5
+Route         1   e 0.020                                  \u_pid_client/n40735
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_7
+Route         1   e 0.020                                  \u_pid_client/n40736
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_9
+Route         1   e 0.020                                  \u_pid_client/n40737
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_11
+Route         1   e 0.020                                  \u_pid_client/n40738
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_13
+Route         1   e 0.020                                  \u_pid_client/n40739
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_15
+Route         1   e 0.020                                  \u_pid_client/n40740
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_354_17
+Route        17   e 1.807                                  \u_pid_client/n2206
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_5502_1
+Route         1   e 0.020                                  \u_pid_client/n40413
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_3
+Route         1   e 0.020                                  \u_pid_client/n40414
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_5
+Route         1   e 0.020                                  \u_pid_client/n40415
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_7
+Route         1   e 0.020                                  \u_pid_client/n40416
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_9
+Route         1   e 0.020                                  \u_pid_client/n40417
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_11
+Route         1   e 0.020                                  \u_pid_client/n40418
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_13
+Route         1   e 0.020                                  \u_pid_client/n40419
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_15
+Route         1   e 0.020                                  \u_pid_client/n40420
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_5502_17
+Route         1   e 0.020                                  \u_pid_client/n2241
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/add_281_1
+Route         1   e 0.020                                  \u_pid_client/n40283
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_3
+Route         1   e 0.020                                  \u_pid_client/n40284
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_5
+Route         1   e 0.020                                  \u_pid_client/n40285
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_7
+Route         1   e 0.020                                  \u_pid_client/n40286
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_9
+Route         1   e 0.020                                  \u_pid_client/n40287
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_11
+Route         1   e 0.020                                  \u_pid_client/n40288
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_13
+Route         1   e 0.020                                  \u_pid_client/n40289
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_15
+Route         1   e 0.020                                  \u_pid_client/n40290
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_281_17
+Route         1   e 0.788                                  \u_pid_client/n2521
                   --------
-                   18.173  (37.1% logic, 62.9% route), 16 logic levels.
+                   77.796  (53.0% logic, 47.0% route), 148 logic levels.
 
 
-Error:  The following path violates requirements by 13.404ns
+Error:  The following path violates requirements by 37.942ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3IX    CK             \u_uart_ctrl/rx_buf[1]__i3  (from clk_sys +)
-   Destination:    FD1P3IX    SP             \u_uart_ctrl/err_rsp_pending_1596  (to clk_sys +)
+   Source:         FD1P3AX    CK             \u_pid_client/read_data_r__i0  (from clk_sys +)
+   Destination:    FD1P3IX    D              \u_pid_client/pwm_divider_r_i15  (to clk_sys +)
 
-   Delay:                  18.145ns  (37.2% logic, 62.8% route), 16 logic levels.
+   Delay:                  77.796ns  (53.0% logic, 47.0% route), 148 logic levels.
 
  Constraint Details:
 
-     18.145ns data_path \u_uart_ctrl/rx_buf[1]__i3 to \u_uart_ctrl/err_rsp_pending_1596 violates
-      5.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 4.741ns) by 13.404ns
+     77.796ns data_path \u_pid_client/read_data_r__i0 to \u_pid_client/pwm_divider_r_i15 violates
+     40.000ns delay constraint less
+      0.146ns L_S requirement (totaling 39.854ns) by 37.942ns
 
- Path Details: \u_uart_ctrl/rx_buf[1]__i3 to \u_uart_ctrl/err_rsp_pending_1596
+ Path Details: \u_pid_client/read_data_r__i0 to \u_pid_client/pwm_divider_r_i15
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \u_uart_ctrl/rx_buf[1]__i3 (from clk_sys)
-Route         8   e 1.335                                  \u_uart_ctrl/rx_buf[1][2]
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i2_3_lut_rep_846
-Route         3   e 1.051                                  \u_uart_ctrl/n29755
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i7288_2_lut_3_lut_4_lut
-Route         1   e 0.788                                  \u_uart_ctrl/req_valid_N_5173[7]
-A1_TO_FCO   ---     0.752           C[2] to COUT           \u_uart_ctrl/req_valid_I_20_0
-Route         1   e 0.020                                  \u_uart_ctrl/n24807
-FCI_TO_FCO  ---     0.143            CIN to COUT           \u_uart_ctrl/req_valid_I_20_9
-Route         1   e 0.020                                  \u_uart_ctrl/n24808
-FCI_TO_F    ---     0.544            CIN to S[2]           \u_uart_ctrl/req_valid_I_20_10
-Route         1   e 0.788                                  \u_uart_ctrl/req_valid_N_5171
-LUT4        ---     0.448              D to Z              \u_uart_ctrl/i1_2_lut_rep_708_4_lut
-Route         2   e 0.954                                  \u_uart_ctrl/n29617
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i1_4_lut_adj_102
-Route         1   e 0.020                                  \u_uart_ctrl/n3
-MUXL5       ---     0.212           BLUT to Z              \u_uart_ctrl/i11
-Route         1   e 0.788                                  \u_uart_ctrl/n25411
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i1_2_lut_3_lut_adj_146
-Route         1   e 0.788                                  \u_uart_ctrl/n5
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i1_4_lut_adj_96
-Route        14   e 1.509                                  \u_uart_ctrl/n66
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i2_2_lut_adj_120
-Route         1   e 0.788                                  \u_uart_ctrl/n10_adj_5784
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i7_4_lut_adj_103
-Route         1   e 0.020                                  \u_uart_ctrl/n25091
-MUXL5       ---     0.212           BLUT to Z              \u_uart_ctrl/i8503
-Route         1   e 0.788                                  \u_uart_ctrl/n17705
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i8504_3_lut
-Route         2   e 0.954                                  \u_uart_ctrl/err_rsp_pending_N_5201
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i2_3_lut_adj_134
-Route         1   e 0.788                                  \u_uart_ctrl/clk_sys_enable_1866
+L_CO        ---     0.403             CK to Q              \u_pid_client/read_data_r__i0 (from clk_sys)
+Route         7   e 1.303                                  read_data_r[0]
+LUT4        ---     0.448              A to Z              \u_pid_client/i28166_2_lut
+Route         1   e 0.788                                  \u_pid_client/n18_adj_7322
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/mult_69_add_1_add_2_3
+Route         1   e 0.020                                  \u_pid_client/n40625
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_5
+Route         1   e 0.020                                  \u_pid_client/n40626
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_7
+Route         1   e 0.020                                  \u_pid_client/n40627
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_9
+Route         1   e 0.020                                  \u_pid_client/n40628
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_11
+Route         1   e 0.020                                  \u_pid_client/n40629
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_13
+Route         1   e 0.020                                  \u_pid_client/n40630
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_15
+Route         1   e 0.020                                  \u_pid_client/n40631
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_17
+Route         1   e 0.020                                  \u_pid_client/n40632
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_19
+Route         1   e 0.020                                  \u_pid_client/n40633
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/mult_69_add_1_add_2_cout
+Route        11   e 1.651                                  \u_pid_client/n720
+LUT4        ---     0.448              B to Z              \u_pid_client/n21578_bdd_3_lut
+Route         1   e 0.788                                  \u_pid_client/n47103
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/add_324_5
+Route         1   e 0.020                                  \u_pid_client/n40600
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_324_7
+Route         1   e 0.020                                  \u_pid_client/n40601
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_324_9
+Route        10   e 1.628                                  \u_pid_client/n1681
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_326_3
+Route         1   e 0.020                                  \u_pid_client/n40604
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_5
+Route         1   e 0.020                                  \u_pid_client/n40605
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_7
+Route         1   e 0.020                                  \u_pid_client/n40606
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_9
+Route         1   e 0.020                                  \u_pid_client/n40607
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_326_11
+Route        13   e 1.794                                  \u_pid_client/n1716
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_328_3
+Route         1   e 0.020                                  \u_pid_client/n40610
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_5
+Route         1   e 0.020                                  \u_pid_client/n40611
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_7
+Route         1   e 0.020                                  \u_pid_client/n40612
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_9
+Route         1   e 0.020                                  \u_pid_client/n40613
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_11
+Route         1   e 0.020                                  \u_pid_client/n40614
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_328_13
+Route        15   e 1.801                                  \u_pid_client/n1751
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_330_3
+Route         1   e 0.020                                  \u_pid_client/n40617
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_5
+Route         1   e 0.020                                  \u_pid_client/n40618
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_7
+Route         1   e 0.020                                  \u_pid_client/n40619
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_9
+Route         1   e 0.020                                  \u_pid_client/n40620
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_11
+Route         1   e 0.020                                  \u_pid_client/n40621
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_13
+Route         1   e 0.020                                  \u_pid_client/n40622
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_330_15
+Route        17   e 1.807                                  \u_pid_client/n1786
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_332_3
+Route         1   e 0.020                                  \u_pid_client/n40635
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_5
+Route         1   e 0.020                                  \u_pid_client/n40636
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_7
+Route         1   e 0.020                                  \u_pid_client/n40637
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_9
+Route         1   e 0.020                                  \u_pid_client/n40638
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_11
+Route         1   e 0.020                                  \u_pid_client/n40639
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_13
+Route         1   e 0.020                                  \u_pid_client/n40640
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_15
+Route         1   e 0.020                                  \u_pid_client/n40641
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_332_17
+Route        17   e 1.807                                  \u_pid_client/n1821
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_334_3
+Route         1   e 0.020                                  \u_pid_client/n40644
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_5
+Route         1   e 0.020                                  \u_pid_client/n40645
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_7
+Route         1   e 0.020                                  \u_pid_client/n40646
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_9
+Route         1   e 0.020                                  \u_pid_client/n40647
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_11
+Route         1   e 0.020                                  \u_pid_client/n40648
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_13
+Route         1   e 0.020                                  \u_pid_client/n40649
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_15
+Route         1   e 0.020                                  \u_pid_client/n40650
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_334_17
+Route        17   e 1.807                                  \u_pid_client/n1856
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_336_3
+Route         1   e 0.020                                  \u_pid_client/n40653
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_5
+Route         1   e 0.020                                  \u_pid_client/n40654
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_7
+Route         1   e 0.020                                  \u_pid_client/n40655
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_9
+Route         1   e 0.020                                  \u_pid_client/n40656
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_11
+Route         1   e 0.020                                  \u_pid_client/n40657
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_13
+Route         1   e 0.020                                  \u_pid_client/n40658
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_15
+Route         1   e 0.020                                  \u_pid_client/n40659
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_336_17
+Route        17   e 1.807                                  \u_pid_client/n1891
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_338_3
+Route         1   e 0.020                                  \u_pid_client/n40662
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_5
+Route         1   e 0.020                                  \u_pid_client/n40663
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_7
+Route         1   e 0.020                                  \u_pid_client/n40664
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_9
+Route         1   e 0.020                                  \u_pid_client/n40665
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_11
+Route         1   e 0.020                                  \u_pid_client/n40666
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_13
+Route         1   e 0.020                                  \u_pid_client/n40667
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_15
+Route         1   e 0.020                                  \u_pid_client/n40668
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_338_17
+Route        17   e 1.807                                  \u_pid_client/n1926
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_340_3
+Route         1   e 0.020                                  \u_pid_client/n40671
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_5
+Route         1   e 0.020                                  \u_pid_client/n40672
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_7
+Route         1   e 0.020                                  \u_pid_client/n40673
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_9
+Route         1   e 0.020                                  \u_pid_client/n40674
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_11
+Route         1   e 0.020                                  \u_pid_client/n40675
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_13
+Route         1   e 0.020                                  \u_pid_client/n40676
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_15
+Route         1   e 0.020                                  \u_pid_client/n40677
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_340_17
+Route        17   e 1.807                                  \u_pid_client/n1961
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_342_3
+Route         1   e 0.020                                  \u_pid_client/n40680
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_5
+Route         1   e 0.020                                  \u_pid_client/n40681
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_7
+Route         1   e 0.020                                  \u_pid_client/n40682
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_9
+Route         1   e 0.020                                  \u_pid_client/n40683
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_11
+Route         1   e 0.020                                  \u_pid_client/n40684
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_13
+Route         1   e 0.020                                  \u_pid_client/n40685
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_15
+Route         1   e 0.020                                  \u_pid_client/n40686
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_342_17
+Route        17   e 1.807                                  \u_pid_client/n1996
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_344_3
+Route         1   e 0.020                                  \u_pid_client/n40689
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_5
+Route         1   e 0.020                                  \u_pid_client/n40690
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_7
+Route         1   e 0.020                                  \u_pid_client/n40691
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_9
+Route         1   e 0.020                                  \u_pid_client/n40692
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_11
+Route         1   e 0.020                                  \u_pid_client/n40693
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_13
+Route         1   e 0.020                                  \u_pid_client/n40694
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_15
+Route         1   e 0.020                                  \u_pid_client/n40695
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_344_17
+Route        17   e 1.807                                  \u_pid_client/n2031
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_346_3
+Route         1   e 0.020                                  \u_pid_client/n40698
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_5
+Route         1   e 0.020                                  \u_pid_client/n40699
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_7
+Route         1   e 0.020                                  \u_pid_client/n40700
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_9
+Route         1   e 0.020                                  \u_pid_client/n40701
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_11
+Route         1   e 0.020                                  \u_pid_client/n40702
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_13
+Route         1   e 0.020                                  \u_pid_client/n40703
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_15
+Route         1   e 0.020                                  \u_pid_client/n40704
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_346_17
+Route        17   e 1.807                                  \u_pid_client/n2066
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_348_3
+Route         1   e 0.020                                  \u_pid_client/n40707
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_5
+Route         1   e 0.020                                  \u_pid_client/n40708
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_7
+Route         1   e 0.020                                  \u_pid_client/n40709
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_9
+Route         1   e 0.020                                  \u_pid_client/n40710
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_11
+Route         1   e 0.020                                  \u_pid_client/n40711
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_13
+Route         1   e 0.020                                  \u_pid_client/n40712
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_15
+Route         1   e 0.020                                  \u_pid_client/n40713
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_348_17
+Route        17   e 1.807                                  \u_pid_client/n2101
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_350_3
+Route         1   e 0.020                                  \u_pid_client/n40716
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_5
+Route         1   e 0.020                                  \u_pid_client/n40717
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_7
+Route         1   e 0.020                                  \u_pid_client/n40718
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_9
+Route         1   e 0.020                                  \u_pid_client/n40719
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_11
+Route         1   e 0.020                                  \u_pid_client/n40720
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_13
+Route         1   e 0.020                                  \u_pid_client/n40721
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_15
+Route         1   e 0.020                                  \u_pid_client/n40722
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_350_17
+Route        17   e 1.807                                  \u_pid_client/n2136
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_352_3
+Route         1   e 0.020                                  \u_pid_client/n40725
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_5
+Route         1   e 0.020                                  \u_pid_client/n40726
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_7
+Route         1   e 0.020                                  \u_pid_client/n40727
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_9
+Route         1   e 0.020                                  \u_pid_client/n40728
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_11
+Route         1   e 0.020                                  \u_pid_client/n40729
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_13
+Route         1   e 0.020                                  \u_pid_client/n40730
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_15
+Route         1   e 0.020                                  \u_pid_client/n40731
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_352_17
+Route        17   e 1.807                                  \u_pid_client/n2171
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_354_3
+Route         1   e 0.020                                  \u_pid_client/n40734
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_5
+Route         1   e 0.020                                  \u_pid_client/n40735
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_7
+Route         1   e 0.020                                  \u_pid_client/n40736
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_9
+Route         1   e 0.020                                  \u_pid_client/n40737
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_11
+Route         1   e 0.020                                  \u_pid_client/n40738
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_13
+Route         1   e 0.020                                  \u_pid_client/n40739
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_15
+Route         1   e 0.020                                  \u_pid_client/n40740
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_354_17
+Route        17   e 1.807                                  \u_pid_client/n2206
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_5502_1
+Route         1   e 0.020                                  \u_pid_client/n40413
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_3
+Route         1   e 0.020                                  \u_pid_client/n40414
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_5
+Route         1   e 0.020                                  \u_pid_client/n40415
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_7
+Route         1   e 0.020                                  \u_pid_client/n40416
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_9
+Route         1   e 0.020                                  \u_pid_client/n40417
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_11
+Route         1   e 0.020                                  \u_pid_client/n40418
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_13
+Route         1   e 0.020                                  \u_pid_client/n40419
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_15
+Route         1   e 0.020                                  \u_pid_client/n40420
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_5502_17
+Route         1   e 0.020                                  \u_pid_client/n2241
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/add_281_1
+Route         1   e 0.020                                  \u_pid_client/n40283
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_3
+Route         1   e 0.020                                  \u_pid_client/n40284
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_5
+Route         1   e 0.020                                  \u_pid_client/n40285
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_7
+Route         1   e 0.020                                  \u_pid_client/n40286
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_9
+Route         1   e 0.020                                  \u_pid_client/n40287
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_11
+Route         1   e 0.020                                  \u_pid_client/n40288
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_13
+Route         1   e 0.020                                  \u_pid_client/n40289
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_15
+Route         1   e 0.020                                  \u_pid_client/n40290
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_281_17
+Route         1   e 0.788                                  \u_pid_client/n2521
                   --------
-                   18.145  (37.2% logic, 62.8% route), 16 logic levels.
+                   77.796  (53.0% logic, 47.0% route), 148 logic levels.
 
 
-Error:  The following path violates requirements by 13.372ns
+Error:  The following path violates requirements by 37.942ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3IX    CK             \u_uart_ctrl/rx_buf[1]__i4  (from clk_sys +)
-   Destination:    FD1P3IX    SP             \u_uart_ctrl/err_rsp_pending_1596  (to clk_sys +)
+   Source:         FD1P3AX    CK             \u_pid_client/read_data_r__i0  (from clk_sys +)
+   Destination:    FD1P3IX    D              \u_pid_client/pwm_divider_r_i15  (to clk_sys +)
 
-   Delay:                  18.113ns  (37.2% logic, 62.8% route), 16 logic levels.
+   Delay:                  77.796ns  (53.0% logic, 47.0% route), 148 logic levels.
 
  Constraint Details:
 
-     18.113ns data_path \u_uart_ctrl/rx_buf[1]__i4 to \u_uart_ctrl/err_rsp_pending_1596 violates
-      5.000ns delay constraint less
-      0.259ns LCE_S requirement (totaling 4.741ns) by 13.372ns
+     77.796ns data_path \u_pid_client/read_data_r__i0 to \u_pid_client/pwm_divider_r_i15 violates
+     40.000ns delay constraint less
+      0.146ns L_S requirement (totaling 39.854ns) by 37.942ns
 
- Path Details: \u_uart_ctrl/rx_buf[1]__i4 to \u_uart_ctrl/err_rsp_pending_1596
+ Path Details: \u_pid_client/read_data_r__i0 to \u_pid_client/pwm_divider_r_i15
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.403             CK to Q              \u_uart_ctrl/rx_buf[1]__i4 (from clk_sys)
-Route         7   e 1.303                                  \u_uart_ctrl/rx_buf[1][3]
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i2_3_lut_rep_846
-Route         3   e 1.051                                  \u_uart_ctrl/n29755
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i7288_2_lut_3_lut_4_lut
-Route         1   e 0.788                                  \u_uart_ctrl/req_valid_N_5173[7]
-A1_TO_FCO   ---     0.752           C[2] to COUT           \u_uart_ctrl/req_valid_I_20_0
-Route         1   e 0.020                                  \u_uart_ctrl/n24807
-FCI_TO_FCO  ---     0.143            CIN to COUT           \u_uart_ctrl/req_valid_I_20_9
-Route         1   e 0.020                                  \u_uart_ctrl/n24808
-FCI_TO_F    ---     0.544            CIN to S[2]           \u_uart_ctrl/req_valid_I_20_10
-Route         1   e 0.788                                  \u_uart_ctrl/req_valid_N_5171
-LUT4        ---     0.448              D to Z              \u_uart_ctrl/i1_2_lut_rep_708_4_lut
-Route         2   e 0.954                                  \u_uart_ctrl/n29617
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i1_4_lut_adj_102
-Route         1   e 0.020                                  \u_uart_ctrl/n3
-MUXL5       ---     0.212           BLUT to Z              \u_uart_ctrl/i11
-Route         1   e 0.788                                  \u_uart_ctrl/n25411
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i1_2_lut_3_lut_adj_146
-Route         1   e 0.788                                  \u_uart_ctrl/n5
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i1_4_lut_adj_96
-Route        14   e 1.509                                  \u_uart_ctrl/n66
-LUT4        ---     0.448              B to Z              \u_uart_ctrl/i2_2_lut_adj_120
-Route         1   e 0.788                                  \u_uart_ctrl/n10_adj_5784
-LUT4        ---     0.448              C to Z              \u_uart_ctrl/i7_4_lut_adj_103
-Route         1   e 0.020                                  \u_uart_ctrl/n25091
-MUXL5       ---     0.212           BLUT to Z              \u_uart_ctrl/i8503
-Route         1   e 0.788                                  \u_uart_ctrl/n17705
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i8504_3_lut
-Route         2   e 0.954                                  \u_uart_ctrl/err_rsp_pending_N_5201
-LUT4        ---     0.448              A to Z              \u_uart_ctrl/i2_3_lut_adj_134
-Route         1   e 0.788                                  \u_uart_ctrl/clk_sys_enable_1866
+L_CO        ---     0.403             CK to Q              \u_pid_client/read_data_r__i0 (from clk_sys)
+Route         7   e 1.303                                  read_data_r[0]
+LUT4        ---     0.448              A to Z              \u_pid_client/i28166_2_lut
+Route         1   e 0.788                                  \u_pid_client/n18_adj_7322
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/mult_69_add_1_add_2_3
+Route         1   e 0.020                                  \u_pid_client/n40625
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_5
+Route         1   e 0.020                                  \u_pid_client/n40626
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_7
+Route         1   e 0.020                                  \u_pid_client/n40627
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_9
+Route         1   e 0.020                                  \u_pid_client/n40628
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_11
+Route         1   e 0.020                                  \u_pid_client/n40629
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_13
+Route         1   e 0.020                                  \u_pid_client/n40630
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_15
+Route         1   e 0.020                                  \u_pid_client/n40631
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_17
+Route         1   e 0.020                                  \u_pid_client/n40632
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/mult_69_add_1_add_2_19
+Route         1   e 0.020                                  \u_pid_client/n40633
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/mult_69_add_1_add_2_cout
+Route        11   e 1.651                                  \u_pid_client/n720
+LUT4        ---     0.448              B to Z              \u_pid_client/i2_3_lut
+Route         1   e 0.788                                  \u_pid_client/n28332
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/add_324_5
+Route         1   e 0.020                                  \u_pid_client/n40600
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_324_7
+Route         1   e 0.020                                  \u_pid_client/n40601
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_324_9
+Route        10   e 1.628                                  \u_pid_client/n1681
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_326_3
+Route         1   e 0.020                                  \u_pid_client/n40604
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_5
+Route         1   e 0.020                                  \u_pid_client/n40605
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_7
+Route         1   e 0.020                                  \u_pid_client/n40606
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_326_9
+Route         1   e 0.020                                  \u_pid_client/n40607
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_326_11
+Route        13   e 1.794                                  \u_pid_client/n1716
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_328_3
+Route         1   e 0.020                                  \u_pid_client/n40610
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_5
+Route         1   e 0.020                                  \u_pid_client/n40611
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_7
+Route         1   e 0.020                                  \u_pid_client/n40612
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_9
+Route         1   e 0.020                                  \u_pid_client/n40613
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_328_11
+Route         1   e 0.020                                  \u_pid_client/n40614
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_328_13
+Route        15   e 1.801                                  \u_pid_client/n1751
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_330_3
+Route         1   e 0.020                                  \u_pid_client/n40617
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_5
+Route         1   e 0.020                                  \u_pid_client/n40618
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_7
+Route         1   e 0.020                                  \u_pid_client/n40619
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_9
+Route         1   e 0.020                                  \u_pid_client/n40620
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_11
+Route         1   e 0.020                                  \u_pid_client/n40621
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_330_13
+Route         1   e 0.020                                  \u_pid_client/n40622
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_330_15
+Route        17   e 1.807                                  \u_pid_client/n1786
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_332_3
+Route         1   e 0.020                                  \u_pid_client/n40635
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_5
+Route         1   e 0.020                                  \u_pid_client/n40636
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_7
+Route         1   e 0.020                                  \u_pid_client/n40637
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_9
+Route         1   e 0.020                                  \u_pid_client/n40638
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_11
+Route         1   e 0.020                                  \u_pid_client/n40639
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_13
+Route         1   e 0.020                                  \u_pid_client/n40640
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_332_15
+Route         1   e 0.020                                  \u_pid_client/n40641
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_332_17
+Route        17   e 1.807                                  \u_pid_client/n1821
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_334_3
+Route         1   e 0.020                                  \u_pid_client/n40644
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_5
+Route         1   e 0.020                                  \u_pid_client/n40645
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_7
+Route         1   e 0.020                                  \u_pid_client/n40646
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_9
+Route         1   e 0.020                                  \u_pid_client/n40647
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_11
+Route         1   e 0.020                                  \u_pid_client/n40648
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_13
+Route         1   e 0.020                                  \u_pid_client/n40649
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_334_15
+Route         1   e 0.020                                  \u_pid_client/n40650
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_334_17
+Route        17   e 1.807                                  \u_pid_client/n1856
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_336_3
+Route         1   e 0.020                                  \u_pid_client/n40653
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_5
+Route         1   e 0.020                                  \u_pid_client/n40654
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_7
+Route         1   e 0.020                                  \u_pid_client/n40655
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_9
+Route         1   e 0.020                                  \u_pid_client/n40656
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_11
+Route         1   e 0.020                                  \u_pid_client/n40657
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_13
+Route         1   e 0.020                                  \u_pid_client/n40658
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_336_15
+Route         1   e 0.020                                  \u_pid_client/n40659
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_336_17
+Route        17   e 1.807                                  \u_pid_client/n1891
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_338_3
+Route         1   e 0.020                                  \u_pid_client/n40662
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_5
+Route         1   e 0.020                                  \u_pid_client/n40663
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_7
+Route         1   e 0.020                                  \u_pid_client/n40664
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_9
+Route         1   e 0.020                                  \u_pid_client/n40665
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_11
+Route         1   e 0.020                                  \u_pid_client/n40666
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_13
+Route         1   e 0.020                                  \u_pid_client/n40667
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_338_15
+Route         1   e 0.020                                  \u_pid_client/n40668
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_338_17
+Route        17   e 1.807                                  \u_pid_client/n1926
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_340_3
+Route         1   e 0.020                                  \u_pid_client/n40671
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_5
+Route         1   e 0.020                                  \u_pid_client/n40672
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_7
+Route         1   e 0.020                                  \u_pid_client/n40673
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_9
+Route         1   e 0.020                                  \u_pid_client/n40674
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_11
+Route         1   e 0.020                                  \u_pid_client/n40675
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_13
+Route         1   e 0.020                                  \u_pid_client/n40676
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_340_15
+Route         1   e 0.020                                  \u_pid_client/n40677
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_340_17
+Route        17   e 1.807                                  \u_pid_client/n1961
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_342_3
+Route         1   e 0.020                                  \u_pid_client/n40680
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_5
+Route         1   e 0.020                                  \u_pid_client/n40681
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_7
+Route         1   e 0.020                                  \u_pid_client/n40682
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_9
+Route         1   e 0.020                                  \u_pid_client/n40683
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_11
+Route         1   e 0.020                                  \u_pid_client/n40684
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_13
+Route         1   e 0.020                                  \u_pid_client/n40685
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_342_15
+Route         1   e 0.020                                  \u_pid_client/n40686
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_342_17
+Route        17   e 1.807                                  \u_pid_client/n1996
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_344_3
+Route         1   e 0.020                                  \u_pid_client/n40689
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_5
+Route         1   e 0.020                                  \u_pid_client/n40690
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_7
+Route         1   e 0.020                                  \u_pid_client/n40691
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_9
+Route         1   e 0.020                                  \u_pid_client/n40692
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_11
+Route         1   e 0.020                                  \u_pid_client/n40693
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_13
+Route         1   e 0.020                                  \u_pid_client/n40694
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_344_15
+Route         1   e 0.020                                  \u_pid_client/n40695
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_344_17
+Route        17   e 1.807                                  \u_pid_client/n2031
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_346_3
+Route         1   e 0.020                                  \u_pid_client/n40698
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_5
+Route         1   e 0.020                                  \u_pid_client/n40699
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_7
+Route         1   e 0.020                                  \u_pid_client/n40700
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_9
+Route         1   e 0.020                                  \u_pid_client/n40701
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_11
+Route         1   e 0.020                                  \u_pid_client/n40702
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_13
+Route         1   e 0.020                                  \u_pid_client/n40703
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_346_15
+Route         1   e 0.020                                  \u_pid_client/n40704
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_346_17
+Route        17   e 1.807                                  \u_pid_client/n2066
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_348_3
+Route         1   e 0.020                                  \u_pid_client/n40707
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_5
+Route         1   e 0.020                                  \u_pid_client/n40708
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_7
+Route         1   e 0.020                                  \u_pid_client/n40709
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_9
+Route         1   e 0.020                                  \u_pid_client/n40710
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_11
+Route         1   e 0.020                                  \u_pid_client/n40711
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_13
+Route         1   e 0.020                                  \u_pid_client/n40712
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_348_15
+Route         1   e 0.020                                  \u_pid_client/n40713
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_348_17
+Route        17   e 1.807                                  \u_pid_client/n2101
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_350_3
+Route         1   e 0.020                                  \u_pid_client/n40716
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_5
+Route         1   e 0.020                                  \u_pid_client/n40717
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_7
+Route         1   e 0.020                                  \u_pid_client/n40718
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_9
+Route         1   e 0.020                                  \u_pid_client/n40719
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_11
+Route         1   e 0.020                                  \u_pid_client/n40720
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_13
+Route         1   e 0.020                                  \u_pid_client/n40721
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_350_15
+Route         1   e 0.020                                  \u_pid_client/n40722
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_350_17
+Route        17   e 1.807                                  \u_pid_client/n2136
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_352_3
+Route         1   e 0.020                                  \u_pid_client/n40725
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_5
+Route         1   e 0.020                                  \u_pid_client/n40726
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_7
+Route         1   e 0.020                                  \u_pid_client/n40727
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_9
+Route         1   e 0.020                                  \u_pid_client/n40728
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_11
+Route         1   e 0.020                                  \u_pid_client/n40729
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_13
+Route         1   e 0.020                                  \u_pid_client/n40730
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_352_15
+Route         1   e 0.020                                  \u_pid_client/n40731
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_352_17
+Route        17   e 1.807                                  \u_pid_client/n2171
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_354_3
+Route         1   e 0.020                                  \u_pid_client/n40734
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_5
+Route         1   e 0.020                                  \u_pid_client/n40735
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_7
+Route         1   e 0.020                                  \u_pid_client/n40736
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_9
+Route         1   e 0.020                                  \u_pid_client/n40737
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_11
+Route         1   e 0.020                                  \u_pid_client/n40738
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_13
+Route         1   e 0.020                                  \u_pid_client/n40739
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_354_15
+Route         1   e 0.020                                  \u_pid_client/n40740
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_354_17
+Route        17   e 1.807                                  \u_pid_client/n2206
+A1_TO_FCO   ---     0.752           B[2] to COUT           \u_pid_client/add_5502_1
+Route         1   e 0.020                                  \u_pid_client/n40413
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_3
+Route         1   e 0.020                                  \u_pid_client/n40414
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_5
+Route         1   e 0.020                                  \u_pid_client/n40415
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_7
+Route         1   e 0.020                                  \u_pid_client/n40416
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_9
+Route         1   e 0.020                                  \u_pid_client/n40417
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_11
+Route         1   e 0.020                                  \u_pid_client/n40418
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_13
+Route         1   e 0.020                                  \u_pid_client/n40419
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_5502_15
+Route         1   e 0.020                                  \u_pid_client/n40420
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_5502_17
+Route         1   e 0.020                                  \u_pid_client/n2241
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_pid_client/add_281_1
+Route         1   e 0.020                                  \u_pid_client/n40283
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_3
+Route         1   e 0.020                                  \u_pid_client/n40284
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_5
+Route         1   e 0.020                                  \u_pid_client/n40285
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_7
+Route         1   e 0.020                                  \u_pid_client/n40286
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_9
+Route         1   e 0.020                                  \u_pid_client/n40287
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_11
+Route         1   e 0.020                                  \u_pid_client/n40288
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_13
+Route         1   e 0.020                                  \u_pid_client/n40289
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_pid_client/add_281_15
+Route         1   e 0.020                                  \u_pid_client/n40290
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_pid_client/add_281_17
+Route         1   e 0.788                                  \u_pid_client/n2521
                   --------
-                   18.113  (37.2% logic, 62.8% route), 16 logic levels.
+                   77.796  (53.0% logic, 47.0% route), 148 logic levels.
 
-Warning: 18.432 ns is the maximum delay for this constraint.
+Warning: 77.942 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -193,8 +985,8 @@ Timing Report Summary
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_sys]                 |     5.000 ns|    18.432 ns|    16 *
+create_clock -period 40.000000 -name    |             |             |
+clk0 [get_nets clk_sys]                 |    40.000 ns|    77.942 ns|   148 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -204,39 +996,309 @@ clk0 [get_nets clk_sys]                 |     5.000 ns|    18.432 ns|    16 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\u_uart_ctrl/n5                         |       1|    4096|     99.00%
+\u_pid_client/n18_adj_7322              |       1|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n66                        |      14|    4096|     99.00%
+\u_pid_client/n1681                     |      10|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n25411                     |       1|    4096|     99.00%
+\u_pid_client/n1716                     |      13|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n29617                     |       2|    4091|     99.88%
+\u_pid_client/n1751                     |      15|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/req_valid_N_5171           |       1|    4085|     99.73%
+\u_pid_client/n1786                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n24808                     |       1|    4083|     99.68%
+\u_pid_client/n1821                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n3                         |       1|    4044|     98.73%
+\u_pid_client/n1856                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n24807                     |       1|    4034|     98.49%
+\u_pid_client/n1891                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n29694                     |       2|    2371|     57.89%
+\u_pid_client/n1926                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/rx_buf[1][1]               |       9|    1650|     40.28%
+\u_pid_client/n1961                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/n29755                     |       3|    1647|     40.21%
+\u_pid_client/n1996                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/req_valid_N_5173[7]        |       1|    1644|     40.14%
+\u_pid_client/n2031                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/req_valid_N_5172           |       1|    1566|     38.23%
+\u_pid_client/n2066                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/rx_buf[1][2]               |       8|    1076|     26.27%
+\u_pid_client/n2101                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/req_valid_N_5173[8]        |       1|     823|     20.09%
+\u_pid_client/n2136                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/rx_buf[1][4]               |       8|     765|     18.68%
+\u_pid_client/n2171                     |      17|    4096|     99.00%
                                         |        |        |
-\u_uart_ctrl/rx_buf[1][3]               |       7|     563|     13.75%
+\u_pid_client/n2206                     |      17|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n2241                     |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n2521                     |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40283                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40284                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40285                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40286                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40287                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40288                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40289                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40290                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40413                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40414                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40415                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40416                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40417                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40418                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40419                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40420                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40600                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40601                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40604                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40605                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40606                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40607                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40610                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40611                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40612                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40613                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40614                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40617                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40618                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40619                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40620                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40621                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40622                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40625                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40626                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40627                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40628                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40629                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40630                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40631                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40632                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40635                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40636                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40637                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40638                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40639                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40640                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40641                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40644                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40645                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40646                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40647                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40648                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40649                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40650                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40653                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40654                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40655                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40656                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40657                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40658                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40659                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40662                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40663                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40664                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40665                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40666                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40667                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40668                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40671                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40672                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40673                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40674                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40675                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40676                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40677                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40680                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40681                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40682                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40683                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40684                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40685                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40686                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40689                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40690                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40691                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40692                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40693                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40694                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40695                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40698                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40699                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40700                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40701                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40702                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40703                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40704                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40707                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40708                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40709                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40710                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40711                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40712                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40713                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40716                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40717                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40718                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40719                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40720                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40721                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40722                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40725                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40726                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40727                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40728                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40729                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40730                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40731                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40734                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40735                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40736                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40737                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40738                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40739                    |       1|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n40740                    |       1|    4096|     99.00%
+                                        |        |        |
+read_data_r[0]                          |       7|    4096|     99.00%
+                                        |        |        |
+\u_pid_client/n720                      |      11|    2517|     61.45%
+                                        |        |        |
+\u_pid_client/n40633                    |       1|    2517|     61.45%
+                                        |        |        |
+\u_pid_client/n28332                    |       1|    1941|     47.39%
+                                        |        |        |
+\u_pid_client/n21578                    |      11|    1579|     38.55%
+                                        |        |        |
+\u_pid_client/n28335                    |       1|    1579|     38.55%
+                                        |        |        |
+\u_pid_client/n40599                    |       1|    1579|     38.55%
+                                        |        |        |
+\u_pid_client/n47103                    |       1|     576|     14.06%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -244,10 +1306,10 @@ Critical Nets                           |   Loads|  Errors| % of total
 Timing summary:
 ---------------
 
-Timing errors: 4096  Score: 41904452
+Timing errors: 4096  Score: 155410432
 
-Constraints cover  123346 paths, 6769 nets, and 19220 connections (72.6% coverage)
+Constraints cover >4294967295 paths, 9993 nets, and 28548 connections (78.7% coverage)
 
 
-Peak memory: 176148480 bytes, TRCE: 24633344 bytes, DLYMAN: 2129920 bytes
+Peak memory: 274890752 bytes, TRCE: 89481216 bytes, DLYMAN: 2949120 bytes
 CPU_TIME_REPORT: 0 secs 

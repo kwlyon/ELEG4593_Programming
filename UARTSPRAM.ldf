@@ -48,7 +48,13 @@
         <Source name="adc_spram_client.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
+        <Source name="pid_spram_pwm_wrapper.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="../PWM_Module/PWM_Module.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../PID_Module/My_PID.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
         <Source name="../AD7928_core/AD7928_Core.vhd" type="VHDL" type_short="VHDL">

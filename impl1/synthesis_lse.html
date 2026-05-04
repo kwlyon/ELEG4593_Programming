@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Apr 19 15:05:31 2026
+Mon May 04 15:07:38 2026
 
 
-Command Line:  synthesis -f UARTSPRAM_impl1_lattice.synproj -gui -msgset C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml 
+Command Line:  synthesis -f UARTSPRAM_impl1_lattice.synproj -gui -msgset C:/Users/kwlyon/Box/Codex/FinalProject/promote.xml 
 
 Synthesis options:
 The -a option is MachXO3D.
@@ -45,7 +45,7 @@ Using performance grade 5.
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
 Top-level module name = uart_spram_top.
-Target frequency = 200.000000 MHz.
+Target frequency = 25.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
@@ -71,23 +71,25 @@ RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
 -p C:/lscc/diamond/3.14/ispfpga/se5c00/data (searchpath added)
--p C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1 (searchpath added)
--p C:/Users/kwlyon/Box/Codex/HW9_5_Code (searchpath added)
+-p C:/Users/kwlyon/Box/Codex/FinalProject/impl1 (searchpath added)
+-p C:/Users/kwlyon/Box/Codex/FinalProject (searchpath added)
 VHDL library = work
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/My_Own_FN_FIFO.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_spram_top.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/Internal_clk.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/reset_delay.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/uart_rs232_fifo_wrap_controller.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232_fifo_wrap.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/UART_rs232.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/pll_24m93.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/Bus_Master.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/SPRAM.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/bus_pkg.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/pwm_spram_client.vhd
-VHDL design file = C:/Users/kwlyon/Box/Codex/HW9_5_Code/adc_spram_client.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/My_Own_FN_FIFO.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/uart_spram_top.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/Internal_clk.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/reset_delay.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/uart_rs232_fifo_wrap_controller.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/UART_rs232_fifo_wrap.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/UART_rs232.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/pll_24m93.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/Bus_Master.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/SPRAM.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/bus_pkg.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/pwm_spram_client.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/adc_spram_client.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/FinalProject/pid_spram_pwm_wrapper.vhd
 VHDL design file = C:/Users/kwlyon/Box/Codex/PWM_Module/PWM_Module.vhd
+VHDL design file = C:/Users/kwlyon/Box/Codex/PID_Module/My_PID.vhd
 VHDL design file = C:/Users/kwlyon/Box/Codex/AD7928_core/AD7928_Core.vhd
 NGD file = UARTSPRAM_impl1.ngd
 -sdc option: SDC file input not used.
@@ -99,29 +101,84 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1". VHDL-1504
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd(34): analyzing entity my_own_fn_fifo. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd(54): analyzing architecture rtl. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "C:/Users/kwlyon/Box/Codex/FinalProject/impl1". VHDL-1504
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd(34): analyzing entity my_own_fn_fifo. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd(54): analyzing architecture rtl. VHDL-1010
 unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd(22): analyzing package bus_pkg. VHDL-1014
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd(44): analyzing package body bus_pkg. VHDL-1013
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd(22): analyzing package bus_pkg. VHDL-1014
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd(44): analyzing package body bus_pkg. VHDL-1013
 unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd. VHDL-1481
-WARNING - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(24): 'components' is not compiled in library machxo3d. VHDL-1240
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(30): analyzing entity clock. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(43): analyzing architecture rtl. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd(14): analyzing entity pll_24m93. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd(21): analyzing architecture structure. VHDL-1010
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd. VHDL-1481
+WARNING - synthesis: c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd(24): 'components' is not compiled in library machxo3d. VHDL-1240
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd(30): analyzing entity clock. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd(43): analyzing architecture rtl. VHDL-1010
 unit uart_spram_top is not yet analyzed. VHDL-1485
 unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd(28): analyzing entity reset_delay. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd(39): analyzing architecture rtl. VHDL-1010
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd(14): analyzing entity pll_24m93. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd(21): analyzing architecture structure. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd(28): analyzing entity reset_delay. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd(39): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd(58): analyzing entity pwm_spram_client. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd(81): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/pid_module/my_pid.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(88): analyzing entity my_pid. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(111): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd(110): analyzing entity pid_spram_pwm_wrapper. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd(138): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(38): analyzing entity ad7928_spi_master. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(82): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd(83): analyzing entity adc_spram_client. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd(106): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd(55): analyzing entity uart_rs232. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd(89): analyzing architecture behavioral. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd(41): analyzing entity uart_rs232_fifo_wrap. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd(75): analyzing architecture rtl. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd(118): analyzing entity uart_rs232_fifo_wrap_controller. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd(140): analyzing architecture behavioral. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/bus_master.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/bus_master.vhd(172): analyzing entity bus_master. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/bus_master.vhd(212): analyzing architecture behavioral. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/spram.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/spram.vhd(14): analyzing entity spram. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/spram.vhd(24): analyzing architecture structure. VHDL-1010
+unit uart_spram_top is not yet analyzed. VHDL-1485
+unit uart_spram_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd. VHDL-1481
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(217): analyzing entity uart_spram_top. VHDL-1012
+INFO - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(250): analyzing architecture rtl. VHDL-1010
 unit uart_spram_top is not yet analyzed. VHDL-1485
 unit uart_spram_top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd. VHDL-1481
@@ -129,55 +186,10 @@ INFO - synthesis: c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(69): analy
 INFO - synthesis: c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(84): analyzing architecture rtl. VHDL-1010
 unit uart_spram_top is not yet analyzed. VHDL-1485
 unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(27): analyzing entity pwm_spram_client. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(50): analyzing architecture rtl. VHDL-1010
 unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(39): analyzing entity ad7928_spi_master. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(83): analyzing architecture rtl. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd(83): analyzing entity adc_spram_client. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd(106): analyzing architecture rtl. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd(55): analyzing entity uart_rs232. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd(89): analyzing architecture behavioral. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd(41): analyzing entity uart_rs232_fifo_wrap. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd(75): analyzing architecture rtl. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd(118): analyzing entity uart_rs232_fifo_wrap_controller. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd(140): analyzing architecture behavioral. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd(162): analyzing entity bus_master. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd(196): analyzing architecture behavioral. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd(14): analyzing entity spram. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd(24): analyzing architecture structure. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd. VHDL-1481
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(179): analyzing entity uart_spram_top. VHDL-1012
-INFO - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(210): analyzing architecture rtl. VHDL-1010
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-unit uart_spram_top is not yet analyzed. VHDL-1485
-c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(179): executing uart_spram_top(rtl)
+c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(217): executing uart_spram_top(rtl)
 
-WARNING - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(208): replacing existing netlist uart_spram_top(rtl). VHDL-1205
+WARNING - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(248): replacing existing netlist uart_spram_top(rtl). VHDL-1205
 Top module name (VHDL): uart_spram_top
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/se5c00/data/se5clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
@@ -188,6 +200,7 @@ Loading device for application map from file 'se5c9400.nph' in environment: C:/l
 Package Status:                     Final          Version 7.
 Top-level module name = uart_spram_top.
 WARNING - synthesis: Initial value found on net TX will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net DSP_G1 will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net reset_i will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net c0_req.req will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net c0_req.we will be ignored due to unrecognized driver type
@@ -324,10 +337,51 @@ WARNING - synthesis: Initial value found on net c2_rsp.rdata[3] will be ignored 
 WARNING - synthesis: Initial value found on net c2_rsp.rdata[2] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net c2_rsp.rdata[1] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net c2_rsp.rdata[0] will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net PWM_0 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net PWM_1 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net PWM_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net PWM_3 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.req will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.we will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[9] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[8] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[7] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[6] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[5] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[4] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.addr[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[15] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[14] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[13] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[12] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[11] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[10] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[9] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[8] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[7] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[6] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[5] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[4] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_req.wdata[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.ack will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[15] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[14] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[13] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[12] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[11] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[10] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[9] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[8] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[7] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[6] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[5] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[4] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net c3_rsp.rdata[0] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net curr_addr[9] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net curr_addr[8] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net curr_addr[7] will be ignored due to unrecognized driver type
@@ -338,10 +392,6 @@ WARNING - synthesis: Initial value found on net curr_addr[3] will be ignored due
 WARNING - synthesis: Initial value found on net curr_addr[2] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net curr_addr[1] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net curr_addr[0] will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwm_raw[0] will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwm_raw[1] will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwm_raw[2] will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwm_raw[3] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net pwr will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net adc_busy will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net adc_data_valid will be ignored due to unrecognized driver type
@@ -360,7 +410,7 @@ WARNING - synthesis: Initial value found on net adc_result[0] will be ignored du
 WARNING - synthesis: Initial value found on net adc_result_chan[2] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net adc_result_chan[1] will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net adc_result_chan[0] will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(234): net c0_req.wdata[15] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(274): net c0_req.wdata[15] does not have a driver. VDB-1002
 ######## Missing driver on net c0_req.wdata[15]. Patching with GND.
 ######## Missing driver on net c0_req.wdata[14]. Patching with GND.
 ######## Missing driver on net c0_req.wdata[13]. Patching with GND.
@@ -380,13 +430,15 @@ WARNING - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(234
 INFO - synthesis: Extracted state machine for register '\u_pwm_client/state' with one-hot encoding
 original encoding -> new encoding (one-hot encoding)
 
- 00 -> 0001
+ 000 -> 00001
 
- 01 -> 0010
+ 001 -> 00010
 
- 10 -> 0100
+ 010 -> 00100
 
- 11 -> 1000
+ 011 -> 01000
+
+ 100 -> 10000
 
 INFO - synthesis: Extracted state machine for register '\u_adc_client/sched_state' with one-hot encoding
 original encoding -> new encoding (one-hot encoding)
@@ -534,8 +586,9 @@ WARNING - synthesis: Bit 15 of Register \u_adc_client/bus_req_r.wdata is stuck a
 WARNING - synthesis: Bit 14 of Register \u_adc_client/bus_req_r.wdata is stuck at Zero
 WARNING - synthesis: Bit 13 of Register \u_adc_client/bus_req_r.wdata is stuck at Zero
 WARNING - synthesis: Bit 12 of Register \u_adc_client/bus_req_r.wdata is stuck at Zero
+Removed duplicate sequential element \u_pid_client/u_pid/prev_error_r(17 bit), because it is equivalent to \u_pid_client/u_pid/stage1_error_r
+
 WARNING - synthesis: Bit 9 of Register \u_pwm_client/bus_req_r.addr is stuck at Zero
-WARNING - synthesis: Bit 8 of Register \u_pwm_client/bus_req_r.addr is stuck at One
 WARNING - synthesis: Bit 7 of Register \u_pwm_client/bus_req_r.addr is stuck at Zero
 WARNING - synthesis: Bit 6 of Register \u_pwm_client/bus_req_r.addr is stuck at Zero
 WARNING - synthesis: Bit 5 of Register \u_pwm_client/bus_req_r.addr is stuck at Zero
@@ -568,17 +621,228 @@ WARNING - synthesis: Bit 7 of Register \u_uart_ctrl/tx_len_byte is stuck at Zero
 
 ######## Mapping RTL RAM \u_uart_ctrl/u_uart_wrap/u_tx_fifo/ram to 1 EBR blocks in PSEUDO_DUAL_PORT Mode
 
-WARNING - synthesis: c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(145): Register \u_pwm_client/gen_pwm[2].u_pwm/div_count_33 is stuck at Zero. VDB-5013
-WARNING - synthesis: c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(188): Register \u_pwm_client/bus_req_r.we_111 is stuck at Zero. VDB-5013
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_17s_17s.v. VERI-1482
+WARNING - synthesis: net \/a2[27] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[49] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[48] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[47] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[46] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[45] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[44] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[46] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[30] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[3] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[37] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[49] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[36] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[35] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[20] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[1] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[40] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[28] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[8] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[33] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[40] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[41] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[6] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[32] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[19] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[13] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[39] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[43] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[11] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[39] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[15] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[46] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[29] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[12] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[44] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[12] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[49] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[27] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[2] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[10] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[42] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[24] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[3] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[41] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[45] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[0] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[21] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[7] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[5] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[23] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[10] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[8] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[43] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[26] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[18] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[14] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[21] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[16] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[16] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[25] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[17] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[17] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[0] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[26] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[15] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[19] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[19] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[3] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[47] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[20] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[25] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[28] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[29] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[38] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[2] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[28] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[42] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[37] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[31] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[34] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[24] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[47] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[48] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[30] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[18] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[1] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[4] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[30] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[2] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[5] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[9] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[9] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[48] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[4] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[11] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[23] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[13] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[14] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[31] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[32] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[10] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[32] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[7] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[11] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[33] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[12] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[33] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[36] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[34] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[37] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[17] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[14] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[35] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[15] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[34] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[18] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[40] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[8] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[38] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[21] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[35] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[42] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[43] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[22] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[41] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[20] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[16] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[36] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[45] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[44] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[6] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[22] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[23] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[13] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[24] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[7] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[29] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[9] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[27] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[0] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[25] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[4] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[26] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a2[6] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[39] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[31] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[22] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[38] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a0[5] does not have a driver. VDB-1002
+WARNING - synthesis: net \/a1[1] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(205): input port a[16] is not connected on this instance. VDB-1013
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_24s_17s.v. VERI-1482
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): replacing existing cell AND2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): replacing existing cell ND2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): replacing existing cell FADD2B. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): replacing existing cell MULT2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): replacing existing cell VLO. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): replacing existing cell VHI. VERI-1108
+WARNING - synthesis: c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(206): input port a[23] is not connected on this instance. VDB-1013
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file mult_32s_17s.v. VERI-1482
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): replacing existing cell AND2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): replacing existing cell ND2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): replacing existing cell FADD2B. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): replacing existing cell MULT2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): replacing existing cell VLO. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): replacing existing cell VHI. VERI-1108
+WARNING - synthesis: c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(207): input port a[31] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd(250): Register \u_pwm_client/bus_req_r.we_123 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd(658): Register \u_pid_client/dbg_setpoint_r__i12 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \u_pid_client/bus_req_r.addr_i6 is a one-to-one match with \u_pid_client/bus_req_r.addr_i7.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-WARNING - synthesis: Initial value found on instance \u_adc_client/bus_req_r.addr_i4 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_pwm_client/pwm_freq_div_r_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_pid_client/state_i0 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_reset_delay/counter_i4 will be ignored.
-Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i1 is a one-to-one match with \u_adc_client/u_adc/tx_word__i7.
-Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i2 is a one-to-one match with \u_adc_client/u_adc/tx_word__i3.
+WARNING - synthesis: Initial value found on instance \u_adc_client/bus_req_r.addr_i4 will be ignored.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i0 is a one-to-one match with \u_pid_client/dbg_pwm_r__i0.
 Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i1 is a one-to-one match with \u_adc_client/u_adc/tx_word__i2.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i1 is a one-to-one match with \u_pid_client/dbg_pwm_r__i1.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i2 is a one-to-one match with \u_pid_client/dbg_pwm_r__i2.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i3 is a one-to-one match with \u_pid_client/dbg_pwm_r__i3.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i4 is a one-to-one match with \u_pid_client/dbg_pwm_r__i4.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i5 is a one-to-one match with \u_pid_client/dbg_pwm_r__i5.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i6 is a one-to-one match with \u_pid_client/dbg_pwm_r__i6.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i7 is a one-to-one match with \u_pid_client/dbg_pwm_r__i7.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i8 is a one-to-one match with \u_pid_client/dbg_pwm_r__i8.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i9 is a one-to-one match with \u_pid_client/dbg_pwm_r__i9.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i10 is a one-to-one match with \u_pid_client/dbg_pwm_r__i10.
+Duplicate register/latch removal. \u_pid_client/pwm_duty_r__i11 is a one-to-one match with \u_pid_client/dbg_pwm_r__i11.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i17 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i18.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i19 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i17.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i20 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i19.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i21 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i20.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i22 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i21.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i23 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i22.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i24 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i23.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i25 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i24.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i26 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i25.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i27 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i26.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i28 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i27.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i29 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i28.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i30 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i29.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage1_deriv_r__i31 is a one-to-one match with \u_pid_client/u_pid/stage1_deriv_r__i30.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i39 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i40.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i41 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i39.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i42 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i41.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i43 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i42.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i44 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i43.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i45 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i44.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i46 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i45.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i47 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i46.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i48 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i47.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i49 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i48.
+Duplicate register/latch removal. \u_pid_client/u_pid/stage2_scaled_sum_r__i50 is a one-to-one match with \u_pid_client/u_pid/stage2_scaled_sum_r__i49.
+Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i3 is a one-to-one match with \u_adc_client/u_adc/tx_word__i1.
+Duplicate register/latch removal. \u_adc_client/u_adc/tx_word__i7 is a one-to-one match with \u_adc_client/u_adc/tx_word__i3.
 Duplicate register/latch removal. \u_adc_client/sweep_frame_idx__i0 is a one-to-one match with \u_adc_client/adc_next_chan__i0.
 Duplicate register/latch removal. \u_adc_client/sweep_frame_idx__i1 is a one-to-one match with \u_adc_client/adc_next_chan__i1.
-Applying 200.000000 MHz constraint to all clocks
+Applying 25.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in uart_spram_top_drc.log.
@@ -591,64 +855,68 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file UARTSPRAM_impl1.ngd.
 
 ################### Begin Area Report (uart_spram_top)######################
-Number of register bits => 2942 of 10021 (29 % )
-CCU2D => 196
+Number of register bits => 3369 of 10021 (33 % )
+AND2 => 27
+CCU2D => 602
 DP8KC => 2
 EHXPLLJ => 1
-FD1P3AX => 64
-FD1P3AY => 1
-FD1P3IX => 2495
-FD1P3JX => 16
-FD1S3AX => 80
-FD1S3IX => 217
-FD1S3JX => 69
+FADD2B => 437
+FD1P3AX => 205
+FD1P3AY => 3
+FD1P3IX => 2762
+FD1P3JX => 14
+FD1S3AX => 91
+FD1S3IX => 220
+FD1S3JX => 74
 GSR => 1
 IB => 2
 INV => 6
-L6MUX21 => 385
-LUT4 => 2543
-MUX21 => 16
-OB => 12
-PFUMX => 531
+L6MUX21 => 389
+LUT4 => 3037
+MULT2 => 296
+MUX21 => 20
+ND2 => 118
+OB => 14
+OSCJ => 1
+PFUMX => 576
 ROM16X1A => 192
 SPR16X4C => 256
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
-OSCJ("8.31")(1,4) => 1
 TSALL => 1
 ################### End BlackBox Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 2
-  Net : u_pll/clk_sys, loads : 3203
+  Net : u_pll/clk_sys, loads : 3630
   Net : u_clk/clk_osc, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 178
+Number of Clock Enables: 197
 Top 10 highest fanout Clock Enables:
-  Net : u_uart_ctrl/clk_sys_enable_2412, loads : 541
-  Net : u_uart_ctrl/clk_sys_enable_979, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_1029, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_1079, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_865, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_1129, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_929, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_1179, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_172, loads : 50
-  Net : u_uart_ctrl/clk_sys_enable_1229, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_2790, loads : 541
+  Net : u_pid_client/u_pid/clk_sys_enable_2279, loads : 107
+  Net : u_reset_delay/clk_sys_enable_346, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1153, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1203, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1453, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1253, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1039, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_1303, loads : 50
+  Net : u_uart_ctrl/clk_sys_enable_156, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : u_uart_ctrl/n29759, loads : 591
+  Net : u_uart_ctrl/n47449, loads : 591
   Net : u_bus/mem_addr_4, loads : 544
-  Net : u_uart_ctrl/clk_sys_enable_2412, loads : 541
-  Net : u_uart_ctrl/ex_index_0, loads : 300
+  Net : u_uart_ctrl/clk_sys_enable_2790, loads : 541
+  Net : u_reset_delay/n48213, loads : 309
   Net : u_bus/mem_addr_5, loads : 288
-  Net : u_uart_ctrl/ex_index_2, loads : 260
-  Net : u_uart_ctrl/tx_index_0, loads : 258
-  Net : u_uart_ctrl/ex_index_4, loads : 226
-  Net : u_bus/mem_addr_6, loads : 160
-  Net : u_reset_delay/n30225, loads : 158
+  Net : u_uart_ctrl/ex_index_4, loads : 272
+  Net : u_uart_ctrl/ex_index_0, loads : 269
+  Net : u_uart_ctrl/tx_index_0, loads : 257
+  Net : u_pid_client/u_pid/stage1_deriv_r_31, loads : 256
+  Net : u_uart_ctrl/ex_index_3, loads : 247
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -657,8 +925,8 @@ Top 10 highest fanout non-clock nets:
 Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_sys]                 |  200.000 MHz|   54.253 MHz|    16 *
+create_clock -period 40.000000 -name    |             |             |
+clk0 [get_nets clk_sys]                 |   25.000 MHz|   12.830 MHz|   148 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -666,10 +934,10 @@ clk0 [get_nets clk_sys]                 |  200.000 MHz|   54.253 MHz|    16 *
 1 constraints not met.
 
 
-Peak Memory Usage: 168.840  MB
+Peak Memory Usage: 263.500  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 5.484  secs
+Elapsed CPU time for LSE flow : 11.375  secs
 --------------------------------------------------------------
 
 

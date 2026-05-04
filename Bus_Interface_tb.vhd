@@ -144,6 +144,8 @@ BEGIN
 		PWM_1 => LED_2,
 		PWM_2 => LED_3,
 		PWM_3 => LED_4,
+		DSP_G1 => open,
+		DSP_G2 => open,
 		LED_4 => LED_5,
 		LED_5 => LED_6,
 		LED_6 => LED_7,

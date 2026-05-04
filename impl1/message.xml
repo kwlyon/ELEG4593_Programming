@@ -20,10 +20,10 @@
         <Message>
             <ID>1100523</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf(7): Semantic error in &quot;FREQUENCY NET &quot;osc_8m31&quot; 8.310000 MHz ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/kwlyon/Box/Codex/FinalProject/UARTSPRAM.lpf(10): Semantic error in &quot;FREQUENCY NET &quot;osc_8m31&quot; 8.310000 MHz ;&quot;: </Dynamic>
             <Dynamic>osc_8m31 matches no clock nets in the design. </Dynamic>
-            <Navigation>C:/Users/kwlyon/Box/Codex/HW9_5_Code/UARTSPRAM.lpf</Navigation>
-            <Navigation>7</Navigation>
+            <Navigation>C:/Users/kwlyon/Box/Codex/FinalProject/UARTSPRAM.lpf</Navigation>
+            <Navigation>10</Navigation>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -39,96 +39,272 @@
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>C:/Users/kwlyon/Box/Codex/HW9_5_Code/impl1</Dynamic>
+            <Dynamic>C:/Users/kwlyon/Box/Codex/FinalProject/impl1</Dynamic>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd(34): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd(34): </Dynamic>
             <Dynamic>my_own_fn_fifo</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd</Navigation>
             <Navigation>34</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd(54): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd(54): </Dynamic>
             <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/my_own_fn_fifo.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/my_own_fn_fifo.vhd</Navigation>
             <Navigation>54</Navigation>
         </Message>
         <Message>
             <ID>35921014</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd(22): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd(22): </Dynamic>
             <Dynamic>bus_pkg</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd</Navigation>
             <Navigation>22</Navigation>
         </Message>
         <Message>
             <ID>35921013</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd(44): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd(44): </Dynamic>
             <Dynamic>bus_pkg</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/bus_pkg.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/bus_pkg.vhd</Navigation>
             <Navigation>44</Navigation>
         </Message>
         <Message>
             <ID>35921240</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(24): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd(24): </Dynamic>
             <Dynamic>components</Dynamic>
             <Dynamic>machxo3d</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd</Navigation>
             <Navigation>24</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(30): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd(30): </Dynamic>
             <Dynamic>clock</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd</Navigation>
             <Navigation>30</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd(43): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd(43): </Dynamic>
             <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/internal_clk.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/internal_clk.vhd</Navigation>
             <Navigation>43</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd(14): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd(14): </Dynamic>
             <Dynamic>pll_24m93</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd</Navigation>
             <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd(21): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd(21): </Dynamic>
             <Dynamic>structure</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/pll_24m93.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pll_24m93.vhd</Navigation>
             <Navigation>21</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd(28): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd(28): </Dynamic>
             <Dynamic>reset_delay</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd(39): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd(39): </Dynamic>
             <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/reset_delay.vhd</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/reset_delay.vhd</Navigation>
             <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd(58): </Dynamic>
+            <Dynamic>pwm_spram_client</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd(81): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd</Navigation>
+            <Navigation>81</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(88): </Dynamic>
+            <Dynamic>my_pid</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(111): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd</Navigation>
+            <Navigation>111</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd(110): </Dynamic>
+            <Dynamic>pid_spram_pwm_wrapper</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd</Navigation>
+            <Navigation>110</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd(138): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(38): </Dynamic>
+            <Dynamic>ad7928_spi_master</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(82): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd(83): </Dynamic>
+            <Dynamic>adc_spram_client</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd</Navigation>
+            <Navigation>83</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd(106): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/adc_spram_client.vhd</Navigation>
+            <Navigation>106</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd(55): </Dynamic>
+            <Dynamic>uart_rs232</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd(89): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_rs232.vhd</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd(41): </Dynamic>
+            <Dynamic>uart_rs232_fifo_wrap</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd(75): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap.vhd</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd(118): </Dynamic>
+            <Dynamic>uart_rs232_fifo_wrap_controller</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd</Navigation>
+            <Navigation>118</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd(140): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_rs232_fifo_wrap_controller.vhd</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/bus_master.vhd(172): </Dynamic>
+            <Dynamic>bus_master</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/bus_master.vhd</Navigation>
+            <Navigation>172</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/bus_master.vhd(212): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/bus_master.vhd</Navigation>
+            <Navigation>212</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/spram.vhd(14): </Dynamic>
+            <Dynamic>spram</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/spram.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/spram.vhd(24): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/spram.vhd</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(217): </Dynamic>
+            <Dynamic>uart_spram_top</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd</Navigation>
+            <Navigation>217</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(250): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd</Navigation>
+            <Navigation>250</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -147,162 +323,23 @@
             <Navigation>84</Navigation>
         </Message>
         <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(27): </Dynamic>
-            <Dynamic>pwm_spram_client</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd</Navigation>
-            <Navigation>27</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(50): </Dynamic>
-            <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd</Navigation>
-            <Navigation>50</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(39): </Dynamic>
-            <Dynamic>ad7928_spi_master</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd</Navigation>
-            <Navigation>39</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd(83): </Dynamic>
-            <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/ad7928_core/ad7928_core.vhd</Navigation>
-            <Navigation>83</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd(83): </Dynamic>
-            <Dynamic>adc_spram_client</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd</Navigation>
-            <Navigation>83</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd(106): </Dynamic>
-            <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/adc_spram_client.vhd</Navigation>
-            <Navigation>106</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd(55): </Dynamic>
-            <Dynamic>uart_rs232</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd</Navigation>
-            <Navigation>55</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd(89): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232.vhd</Navigation>
-            <Navigation>89</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd(41): </Dynamic>
-            <Dynamic>uart_rs232_fifo_wrap</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd</Navigation>
-            <Navigation>41</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd(75): </Dynamic>
-            <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap.vhd</Navigation>
-            <Navigation>75</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd(118): </Dynamic>
-            <Dynamic>uart_rs232_fifo_wrap_controller</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd</Navigation>
-            <Navigation>118</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd(140): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_rs232_fifo_wrap_controller.vhd</Navigation>
-            <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd(162): </Dynamic>
-            <Dynamic>bus_master</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd</Navigation>
-            <Navigation>162</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd(196): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/bus_master.vhd</Navigation>
-            <Navigation>196</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd(14): </Dynamic>
-            <Dynamic>spram</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd(24): </Dynamic>
-            <Dynamic>structure</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/spram.vhd</Navigation>
-            <Navigation>24</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(179): </Dynamic>
-            <Dynamic>uart_spram_top</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd</Navigation>
-            <Navigation>179</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(210): </Dynamic>
-            <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd</Navigation>
-            <Navigation>210</Navigation>
-        </Message>
-        <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(208): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(248): </Dynamic>
             <Dynamic>uart_spram_top</Dynamic>
             <Dynamic>rtl</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd</Navigation>
-            <Navigation>208</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd</Navigation>
+            <Navigation>248</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>TX</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DSP_G1</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -987,22 +1024,227 @@
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>PWM_0</Dynamic>
+            <Dynamic>c3_req.req</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>PWM_1</Dynamic>
+            <Dynamic>c3_req.we</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>PWM_2</Dynamic>
+            <Dynamic>c3_req.addr[9]</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>PWM_3</Dynamic>
+            <Dynamic>c3_req.addr[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.addr[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_req.wdata[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.ack</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c3_rsp.rdata[0]</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -1053,26 +1295,6 @@
             <ID>35001771</ID>
             <Severity>Warning</Severity>
             <Dynamic>curr_addr[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pwm_raw[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pwm_raw[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pwm_raw[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>pwm_raw[3]</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -1167,10 +1389,10 @@
         <Message>
             <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd(234): </Dynamic>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd(274): </Dynamic>
             <Dynamic>c0_req.wdata[15]</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/uart_spram_top.vhd</Navigation>
-            <Navigation>234</Navigation>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/uart_spram_top.vhd</Navigation>
+            <Navigation>274</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>
@@ -1260,12 +1482,6 @@
             <ID>35001747</ID>
             <Severity>Warning</Severity>
             <Dynamic>9</Dynamic>
-            <Dynamic>\u_pwm_client/bus_req_r.addr</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001748</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>8</Dynamic>
             <Dynamic>\u_pwm_client/bus_req_r.addr</Dynamic>
         </Message>
         <Message>
@@ -1431,25 +1647,1050 @@
             <Dynamic>\u_uart_ctrl/tx_len_byte</Dynamic>
         </Message>
         <Message>
-            <ID>35935013</ID>
+            <ID>35931002</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd(145): </Dynamic>
-            <Dynamic>\u_pwm_client/gen_pwm[2].u_pwm/div_count_33</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/pwm_module/pwm_module.vhd</Navigation>
-            <Navigation>145</Navigation>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[27]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[49]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[48]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[47]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[46]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[45]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[44]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[46]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[30]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[37]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[49]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[36]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[35]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[20]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[40]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[28]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[33]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[40]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[41]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[32]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[19]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[39]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[43]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[39]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[46]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[29]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[44]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[49]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[27]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[42]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[24]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[41]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[45]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[21]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[23]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[43]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[26]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[18]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[21]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[16]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[16]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[25]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[17]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[17]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[26]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[19]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[19]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[47]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[20]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[25]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[28]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[29]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[38]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[28]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[42]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[37]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[31]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[34]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[24]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[47]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[48]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[30]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[18]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[30]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[48]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[23]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[31]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[32]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[32]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[33]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[33]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[36]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[34]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[37]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[17]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[35]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[34]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[18]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[40]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[38]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[21]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[35]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[42]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[43]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[22]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[41]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[20]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[16]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[36]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[45]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[44]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[22]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[23]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[24]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[29]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[27]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[25]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[26]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a2[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[39]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[31]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[22]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[38]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a0[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>\/a1[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(205): </Dynamic>
+            <Dynamic>a[16]</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd</Navigation>
+            <Navigation>205</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
+            <Dynamic>ND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>797</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(206): </Dynamic>
+            <Dynamic>a[23]</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd</Navigation>
+            <Navigation>206</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
+            <Dynamic>ND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>797</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901108</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd(207): </Dynamic>
+            <Dynamic>a[31]</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/pid_module/my_pid.vhd</Navigation>
+            <Navigation>207</Navigation>
         </Message>
         <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd(188): </Dynamic>
-            <Dynamic>\u_pwm_client/bus_req_r.we_111</Dynamic>
-            <Navigation>c:/users/kwlyon/box/codex/hw9_5_code/pwm_spram_client.vhd</Navigation>
-            <Navigation>188</Navigation>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd(250): </Dynamic>
+            <Dynamic>\u_pwm_client/bus_req_r.we_123</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pwm_spram_client.vhd</Navigation>
+            <Navigation>250</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd(658): </Dynamic>
+            <Dynamic>\u_pid_client/dbg_setpoint_r__i12</Dynamic>
+            <Navigation>c:/users/kwlyon/box/codex/finalproject/pid_spram_pwm_wrapper.vhd</Navigation>
+            <Navigation>658</Navigation>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_adc_client/bus_req_r.addr_i4</Dynamic>
+            <Dynamic>\u_pwm_client/pwm_freq_div_r_i0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_pid_client/state_i0</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -1457,11 +2698,20 @@
             <Dynamic>\u_reset_delay/counter_i4</Dynamic>
         </Message>
         <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_adc_client/bus_req_r.addr_i4</Dynamic>
+        </Message>
+        <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
     </Task>
     <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
         <Message>
             <ID>61061045</ID>
             <Severity>Warning</Severity>

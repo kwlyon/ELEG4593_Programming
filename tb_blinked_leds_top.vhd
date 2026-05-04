@@ -71,6 +71,8 @@ architecture sim of tb_blinked_leds_top is
   signal PWM_1    : std_logic;
   signal PWM_2    : std_logic;
   signal PWM_3    : std_logic;
+  signal DSP_G1   : std_logic;
+  signal DSP_G2   : std_logic;
 
   signal LED_4    : std_logic;
   signal LED_5    : std_logic;
@@ -159,6 +161,8 @@ begin
       PWM_1    => PWM_1,
       PWM_2    => PWM_2,
       PWM_3    => PWM_3,
+      DSP_G1   => DSP_G1,
+      DSP_G2   => DSP_G2,
 
       LED_4    => LED_4,
       LED_5    => LED_5,

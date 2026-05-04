@@ -1,0 +1,10 @@
+\contentsline {section}{Abstract:}{2}{Doc-Start}%
+\contentsline {section}{Assignment Summary}{4}{Doc-Start}%
+\contentsline {section}{System Architecture}{4}{Doc-Start}%
+\contentsline {section}{PID Implementation}{5}{table.caption.1}%
+\contentsline {section}{PID Wrapper Operation}{6}{table.caption.2}%
+\contentsline {section}{Serial Commands For PID Coefficients}{7}{equation.0.5}%
+\contentsline {section}{Hardware Results}{7}{table.caption.3}%
+\contentsline {section}{Integrator Behavior}{9}{figure.caption.5}%
+\contentsline {section}{Conclusion}{9}{equation.0.6}%
+\contentsline {section}{Appendix A: Source Code Listings}{10}{equation.0.6}%

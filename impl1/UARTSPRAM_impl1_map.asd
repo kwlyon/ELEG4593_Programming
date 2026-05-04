@@ -3,13 +3,13 @@ Device = LCMXO3D-9400HC;
 Package = CABGA256;
 Performance = 5;
 LUTS_avail = 9400;
-LUTS_used = 4662;
+LUTS_used = 7507;
 FF_avail = 9607;
-FF_used = 2942;
+FF_used = 3369;
 INPUT_LVCMOS33 = 2;
-OUTPUT_LVCMOS33 = 12;
+OUTPUT_LVCMOS33 = 14;
 IO_avail = 207;
-IO_used = 14;
+IO_used = 16;
 EBR_avail = 48;
 EBR_used = 2;
 ; Begin EBR Section

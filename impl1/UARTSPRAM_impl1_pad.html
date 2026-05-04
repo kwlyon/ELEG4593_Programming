@@ -14,12 +14,14 @@ Performance Grade:      5
 PACKAGE:          CABGA256
 Package Status:                     Final          Version 7
 
-Sun Apr 19 15:05:57 2026
+Mon May 04 15:08:16 2026
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| DSP_G1    | C12/0    | LVCMOS33_OUT | PT43A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| DSP_G2    | E11/0    | LVCMOS33_OUT | PT29B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | LED_4     | K11/1    | LVCMOS33_OUT | PR25C |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | LED_5     | L13/1    | LVCMOS33_OUT | PR25D |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | LED_6     | N15/1    | LVCMOS33_OUT | PR28C |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
@@ -93,7 +95,7 @@ Vccio by Bank:
 | C9/0     |     unused, PULL:DOWN |            |               | PT27D | SDA/PCLKC0_0         |           |           |
 | C10/0    |     unused, PULL:DOWN |            |               | PT31C | JTAGENB              |           |           |
 | C11/0    | TX                    | LOCATED    | LVCMOS33_OUT  | PT38B |                      |           |           |
-| C12/0    |     unused, PULL:DOWN |            |               | PT43A |                      |           |           |
+| C12/0    | DSP_G1                | LOCATED    | LVCMOS33_OUT  | PT43A |                      |           |           |
 | C13/0    |     unused, PULL:DOWN |            |               | PT44D | DONE                 |           |           |
 | C15/1    |     unused, PULL:DOWN |            |               | PR2C  |                      |           |           |
 | C16/1    |     unused, PULL:DOWN |            |               | PR4C  |                      |           |           |
@@ -117,7 +119,7 @@ Vccio by Bank:
 | E8/0     |     unused, PULL:DOWN |            |               | PT22B |                      |           |           |
 | E9/0     |     unused, PULL:DOWN |            |               | PT24B |                      |           |           |
 | E10/0    |     unused, PULL:DOWN |            |               | PT31B |                      |           |           |
-| E11/0    |     unused, PULL:DOWN |            |               | PT29B |                      |           |           |
+| E11/0    | DSP_G2                | LOCATED    | LVCMOS33_OUT  | PT29B |                      |           |           |
 | E14/1    |     unused, PULL:DOWN |            |               | PR3B  | R_GPLLC_IN/DQ0       |           |           |
 | E15/1    |     unused, PULL:DOWN |            |               | PR2B  | R_GPLLC_FB/DQ0       |           |           |
 | E16/1    |     unused, PULL:DOWN |            |               | PR5A  | DQ0                  |           |           |
@@ -462,6 +464,8 @@ Dedicated sysCONFIG Pins:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
+LOCATE  COMP  "DSP_G1"  SITE  "C12";
+LOCATE  COMP  "DSP_G2"  SITE  "E11";
 LOCATE  COMP  "LED_4"  SITE  "K11";
 LOCATE  COMP  "LED_5"  SITE  "L13";
 LOCATE  COMP  "LED_6"  SITE  "N15";
@@ -489,7 +493,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Apr 19 15:05:57 2026
+Mon May 04 15:08:16 2026
 
 
 

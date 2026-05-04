@@ -3,38 +3,60 @@ Report for cell uart_spram_top
    Instance path: uart_spram_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	    2416.00        100.0
-                                  LUT4	    2734.00        100.0
+                                  SLIC	    3826.00        100.0
+                                  LUT4	    3301.00        100.0
                                DISTRAM	     768.00        100.0
-                                 IOBUF	         14        100.0
-                                PFUREG	       2942        100.0
-                                RIPPLE	        196        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	       3369        100.0
+                                RIPPLE	       1335        100.0
                                    EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0)	          1        55.7
-                       reset_delay(16)	          1         0.8
-pwm_spram_client(24930000,12,1,256,4096,24930)	          1         6.0
+uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0)	          1        35.5
+                       reset_delay(16)	          1         1.2
+pwm_spram_client(24930000,12,1,6,256,4096)	          1         7.5
+pid_spram_pwm_wrapper(17,16,10,8,32,24,12,1,6,4096,257,259,513,768,769,770)	          1        22.4
                              pll_24m93	          1         0.0
                     clock("8.31")(1,4)	          1         0.0
- adc_spram_client(24930000,5,4096,512)	          1         3.1
-                                 SPRAM	          1        31.4
-                            Bus_Master	          1         2.5
+ adc_spram_client(24930000,5,4096,512)	          1         2.0
+                                 SPRAM	          1        29.0
+                            Bus_Master	          1         2.0
 ---------------------------------------------------
 Report for cell Bus_Master
    Instance path: uart_spram_top/u_bus
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      60.17         2.5
-                                  LUT4	      75.00         2.7
-                                PFUREG	        122         4.1
+                                  SLIC	      75.83         2.0
+                                  LUT4	     109.00         3.3
+                                PFUREG	        140         4.2
+---------------------------------------------------
+Report for cell pid_spram_pwm_wrapper(17,16,10,8,32,24,12,1,6,4096,257,259,513,768,769,770)
+   Instance path: uart_spram_top/u_pid_client
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     858.10        22.4
+                                  LUT4	     388.00        11.8
+                                PFUREG	        484        14.4
+                                RIPPLE	       1043        78.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+              My_PID(17,16,10,8,32,24)	          1        16.0
+---------------------------------------------------
+Report for cell My_PID(17,16,10,8,32,24)
+   Instance path: uart_spram_top/u_pid_client/u_pid
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     612.10        16.0
+                                  LUT4	     136.00         4.1
+                                PFUREG	        206         6.1
+                                RIPPLE	        809        60.6
 ---------------------------------------------------
 Report for cell SPRAM
    Instance path: uart_spram_top/u_spram
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     757.92        31.4
-                                  LUT4	     736.00        26.9
+                                  SLIC	    1108.82        29.0
+                                  LUT4	     736.00        22.3
                                DISTRAM	     768.00        100.0
 ---------------------------------------------------
 Report for cell clock("8.31")(1,4)
@@ -42,56 +64,99 @@ Report for cell clock("8.31")(1,4)
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell pwm_spram_client(24930000,12,1,256,4096,24930)
+Report for cell pwm_spram_client(24930000,12,1,6,256,4096)
    Instance path: uart_spram_top/u_pwm_client
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     145.15         6.0
-                                  LUT4	      91.00         3.3
-                                PFUREG	        240         8.2
-                                RIPPLE	        116        59.2
+                                  SLIC	     287.37         7.5
+                                  LUT4	     123.00         3.7
+                                PFUREG	        161         4.8
+                                RIPPLE	        213        16.0
+---------------------------------------------------
+Report for cell uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0)
+   Instance path: uart_spram_top/u_uart_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    1358.48        35.5
+                                  LUT4	    1620.00        49.1
+                                PFUREG	       2416        71.7
+                                RIPPLE	         72         5.4
+                                   EBR	          2        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-             pwm_generic(12,1,true)_U2	          1         0.6
-             pwm_generic(12,1,true)_U3	          1         0.6
-                pwm_generic(12,1,true)	          1         0.6
-             pwm_generic(12,1,true)_U1	          1         0.6
+uart_rs232_fifo_wrap(24930000,9600,8,1,0)	          1         3.1
 ---------------------------------------------------
-Report for cell pwm_generic(12,1,true)
-   Instance path: uart_spram_top/u_pwm_client/gen_pwm_3..u_pwm
+Report for cell uart_rs232_fifo_wrap(24930000,9600,8,1,0)
+   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      15.08         0.6
-                                  LUT4	       2.00         0.1
-                                PFUREG	         25         0.8
-                                RIPPLE	         14         7.1
+                                  SLIC	     117.50         3.1
+                                  LUT4	     171.00         5.2
+                                PFUREG	        165         4.9
+                                RIPPLE	         48         3.6
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+       uart_rs232(24930000,9600,8,1,0)	          1         1.5
+                 My_Own_FN_FIFO(8,256)	          1         0.8
+              My_Own_FN_FIFO(8,256)_U0	          1         0.7
 ---------------------------------------------------
-Report for cell pwm_generic(12,1,true)_U1
-   Instance path: uart_spram_top/u_pwm_client/gen_pwm_2..u_pwm
+Report for cell uart_rs232(24930000,9600,8,1,0)
+   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap/u_uart
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      14.42         0.6
-                                  LUT4	       2.00         0.1
-                                PFUREG	         25         0.8
-                                RIPPLE	         14         7.1
+                                  SLIC	      57.17         1.5
+                                  LUT4	     111.33         3.4
+                                PFUREG	         65         1.9
+                                RIPPLE	         12         0.9
 ---------------------------------------------------
-Report for cell pwm_generic(12,1,true)_U2
-   Instance path: uart_spram_top/u_pwm_client/gen_pwm_1..u_pwm
+Report for cell My_Own_FN_FIFO(8,256)
+   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap/u_tx_fifo
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      14.08         0.6
-                                  LUT4	       2.00         0.1
-                                PFUREG	         25         0.8
-                                RIPPLE	         14         7.1
+                                  SLIC	      32.33         0.8
+                                  LUT4	      38.67         1.2
+                                PFUREG	         50         1.5
+                                RIPPLE	         18         1.3
+                                   EBR	          1        50.0
 ---------------------------------------------------
-Report for cell pwm_generic(12,1,true)_U3
-   Instance path: uart_spram_top/u_pwm_client/gen_pwm_0..u_pwm
+Report for cell My_Own_FN_FIFO(8,256)_U0
+   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap/u_rx_fifo
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      15.08         0.6
-                                  LUT4	       2.00         0.1
-                                PFUREG	         25         0.8
-                                RIPPLE	         14         7.1
+                                  SLIC	      27.42         0.7
+                                  LUT4	      19.00         0.6
+                                PFUREG	         50         1.5
+                                RIPPLE	         18         1.3
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell adc_spram_client(24930000,5,4096,512)
+   Instance path: uart_spram_top/u_adc_client
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      74.67         2.0
+                                  LUT4	     127.00         3.8
+                                PFUREG	        116         3.4
+                                RIPPLE	          7         0.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                  ad7928_spi_master(5)	          1         1.0
+---------------------------------------------------
+Report for cell ad7928_spi_master(5)
+   Instance path: uart_spram_top/u_adc_client/u_adc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      38.25         1.0
+                                  LUT4	      79.00         2.4
+                                PFUREG	         55         1.6
+---------------------------------------------------
+Report for cell reset_delay(16)
+   Instance path: uart_spram_top/u_reset_delay
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      46.15         1.2
+                                  LUT4	     135.00         4.1
+                                PFUREG	         52         1.5
 ---------------------------------------------------
 Report for cell pll_24m93
    Instance path: uart_spram_top/u_pll
@@ -99,88 +164,3 @@ Report for cell pll_24m93
                                   cell	      count    Res Usage(%)
                                   SLIC	       0.25         0.0
                                   LUT4	       1.00         0.0
----------------------------------------------------
-Report for cell uart_rs232_fifo_wrap_controller(24930000,9600,8,1,0)
-   Instance path: uart_spram_top/u_uart_ctrl
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	    1345.27        55.7
-                                  LUT4	    1640.00        60.0
-                                PFUREG	       2416        82.1
-                                RIPPLE	         73        37.2
-                                   EBR	          2        100.0
-SUB MODULES
-                                  cell	      count    SLC Usage(%)
-uart_rs232_fifo_wrap(24930000,9600,8,1,0)	          1         5.1
----------------------------------------------------
-Report for cell uart_rs232_fifo_wrap(24930000,9600,8,1,0)
-   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	     122.83         5.1
-                                  LUT4	     179.00         6.5
-                                PFUREG	        165         5.6
-                                RIPPLE	         48        24.5
-                                   EBR	          2        100.0
-SUB MODULES
-                                  cell	      count    SLC Usage(%)
-       uart_rs232(24930000,9600,8,1,0)	          1         2.5
-              My_Own_FN_FIFO(8,256)_U0	          1         1.2
-                 My_Own_FN_FIFO(8,256)	          1         1.4
----------------------------------------------------
-Report for cell uart_rs232(24930000,9600,8,1,0)
-   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap/u_uart
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      61.00         2.5
-                                  LUT4	     131.33         4.8
-                                PFUREG	         65         2.2
-                                RIPPLE	         12         6.1
----------------------------------------------------
-Report for cell My_Own_FN_FIFO(8,256)
-   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap/u_tx_fifo
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      33.08         1.4
-                                  LUT4	      27.67         1.0
-                                PFUREG	         50         1.7
-                                RIPPLE	         18         9.2
-                                   EBR	          1        50.0
----------------------------------------------------
-Report for cell My_Own_FN_FIFO(8,256)_U0
-   Instance path: uart_spram_top/u_uart_ctrl/u_uart_wrap/u_rx_fifo
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      28.17         1.2
-                                  LUT4	      18.00         0.7
-                                PFUREG	         50         1.7
-                                RIPPLE	         18         9.2
-                                   EBR	          1        50.0
----------------------------------------------------
-Report for cell adc_spram_client(24930000,5,4096,512)
-   Instance path: uart_spram_top/u_adc_client
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      75.25         3.1
-                                  LUT4	     132.00         4.8
-                                PFUREG	        116         3.9
-                                RIPPLE	          7         3.6
-SUB MODULES
-                                  cell	      count    SLC Usage(%)
-                  ad7928_spi_master(5)	          1         1.7
----------------------------------------------------
-Report for cell ad7928_spi_master(5)
-   Instance path: uart_spram_top/u_adc_client/u_adc
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      40.08         1.7
-                                  LUT4	      84.00         3.1
-                                PFUREG	         55         1.9
----------------------------------------------------
-Report for cell reset_delay(16)
-   Instance path: uart_spram_top/u_reset_delay
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      18.58         0.8
-                                  LUT4	       8.00         0.3
-                                PFUREG	         48         1.6

@@ -4,11 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Apr 19 15:05:47 2026
+Mon May 04 15:08:04 2026
 
 C:/lscc/diamond/3.14/ispfpga\bin\nt64\par -f UARTSPRAM_impl1.p2t
 UARTSPRAM_impl1_map.ncd UARTSPRAM_impl1.dir UARTSPRAM_impl1.prf -gui -msgset
-C:/Users/kwlyon/Box/Codex/HW9_5_Code/promote.xml
+C:/Users/kwlyon/Box/Codex/FinalProject/promote.xml
 
 
 Preference file: UARTSPRAM_impl1.prf.
@@ -16,11 +16,11 @@ Preference file: UARTSPRAM_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            16.032       0            0.201        0            25           Completed
+5_1   *      0            -30.315      123361327    0.222        0            01:21        Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 25 secs 
+Total (real) run time for 1-seed: 1 mins 21 secs 
 
 par done!
 
